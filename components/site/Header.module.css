@@ -1,0 +1,277 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: var(--header-h);
+  display: flex;
+  align-items: center;
+  color: var(--ink);
+  transition:
+    background-color var(--dur-slow) var(--ease),
+    color var(--dur-slow) var(--ease),
+    border-color var(--dur-slow) var(--ease);
+  border-bottom: 1px solid transparent;
+}
+
+/* Solid state — past the hero, or on pages without a photographic hero. */
+.solid {
+  background-color: var(--surface);
+  color: var(--ink);
+  border-bottom-color: var(--line);
+}
+
+/* Over the photograph. */
+.over {
+  background-color: transparent;
+  color: var(--cream);
+  border-bottom-color: transparent;
+}
+
+/* Legibility for light type on unknown photography, without a scrim box. */
+.over .inner { text-shadow: 0 1px 20px rgba(16, 14, 12, 0.45); }
+
+/* Hides on the way down, returns on the way up — the photograph gets the room. */
+.hidden { transform: translateY(-101%); }
+
+.header {
+  transform: translateY(0);
+  transition:
+    transform var(--dur) var(--ease),
+    background-color var(--dur-slow) var(--ease),
+    color var(--dur-slow) var(--ease),
+    border-color var(--dur-slow) var(--ease);
+}
+
+.inner {
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.wordmark {
+  position: relative;
+  display: block;
+  flex: none;
+  line-height: 0;
+}
+
+.wordmark img {
+  width: auto;
+  height: clamp(20px, 2.1vw, 30px);
+  object-fit: contain;
+  transition: opacity var(--dur-slow) var(--ease);
+}
+
+/* Both header states sit on a dark ground now (transparent-over-photo, or
+   the near-black solid bar), so the cream tone carries both. */
+.markDark { position: absolute; inset: 0; opacity: 0; }
+.markLight { opacity: 1; }
+
+.nav { display: none; }
+
+/* A floating cluster of pills, the way the reference sites carry navigation
+   over a photograph. On the solid bar it simply loses its backdrop. */
+.navCluster {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.3rem;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  transition: background-color var(--dur-slow) var(--ease),
+    border-color var(--dur-slow) var(--ease);
+}
+
+.over .navCluster {
+  background: rgba(16, 14, 12, 0.34);
+  border-color: rgba(244, 239, 230, 0.16);
+}
+
+.navItem {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.62rem 1rem;
+  border-radius: var(--radius);
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 1;
+  min-height: 40px;
+  transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+
+.navItem:hover,
+.navItem[aria-current='page'] {
+  background: var(--ink);
+  color: var(--ink-900);
+}
+
+.over .navItem:hover,
+.over .navItem[aria-current='page'] {
+  background: var(--cream);
+  color: var(--ink-900);
+  text-shadow: none;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: clamp(1.25rem, 2.4vw, 2.25rem);
+}
+
+/* Vendi / Affitta: commercially the most important link, so it carries a
+   hairline marker rather than a button that would break the editorial tone. */
+.emphasis {
+  position: relative;
+  padding-left: 0.9rem;
+}
+
+.emphasis::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 4px;
+  height: 4px;
+  margin-top: -2px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.55;
+  transition: opacity var(--dur) var(--ease);
+}
+
+.emphasis:hover::before { opacity: 1; }
+
+.contact {
+  display: none;
+  border: 1px solid currentColor;
+  padding: 0.6rem 1.35rem;
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  line-height: 1;
+  border-radius: var(--radius-pill);
+  transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+
+.solid .contact:hover { background: var(--dark); color: var(--cream); border-color: var(--dark); }
+.over .contact:hover { background: var(--warm-white); color: var(--dark); }
+
+/* ------------------------------------------------------------- burger ---- */
+.burger {
+  --bar: 1px;
+  position: relative;
+  width: 30px;
+  height: 44px;
+  margin-right: -6px;
+  display: grid;
+  place-content: center;
+  color: inherit;
+}
+
+.burger span {
+  display: block;
+  width: 26px;
+  height: var(--bar);
+  background: currentColor;
+  transition: transform var(--dur) var(--ease), opacity var(--dur-fast) var(--ease);
+}
+
+.burger span + span { margin-top: 7px; }
+
+.burgerOpen span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.burgerOpen span:nth-child(2) { opacity: 0; }
+.burgerOpen span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+@media (min-width: 1080px) {
+  .nav { display: flex; }
+  .contact { display: inline-flex; }
+  .burger { display: none; }
+}
+
+/* --------------------------------------------------------- mobile menu --- */
+.menu {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  background: var(--surface);
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  padding: calc(var(--header-h) + 2.5rem) var(--gutter) max(2rem, env(safe-area-inset-bottom));
+  /* A solid curtain drawn down over the page — never a translucent overlay
+     with the photograph showing through it. */
+  visibility: hidden;
+  transform: translateY(-100%);
+  transition:
+    transform var(--dur-slow) var(--ease),
+    visibility 0s linear var(--dur-slow);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.menuOpen {
+  visibility: visible;
+  transform: translateY(0);
+  transition-delay: 0s;
+}
+
+.menuList { display: flex; flex-direction: column; }
+
+.menuItem {
+  border-top: 1px solid var(--line);
+}
+.menuItem:last-child { border-bottom: 1px solid var(--line); }
+
+.menuLink {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: clamp(1.05rem, 3.4vw, 1.6rem) 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.75rem, 8vw, 2.75rem);
+  line-height: 1;
+  letter-spacing: -0.032em;
+  text-transform: uppercase;
+  min-height: 56px;
+  transition: color var(--dur) var(--ease);
+}
+
+.menuLink:hover { color: var(--sand); }
+
+.menuIndex {
+  font-family: var(--font-sans);
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  color: var(--ink-faint);
+}
+
+.menuFoot {
+  margin-top: auto;
+  padding-top: clamp(1.5rem, 5vh, 3rem);
+  display: grid;
+  gap: 0.35rem;
+}
+
+.menuFoot .label { margin-bottom: 0.5rem; margin-top: 1.25rem; }
+
+@media (min-width: 1080px) {
+  .menu { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header, .menu, .burger span { transition-duration: 0.001ms !important; }
+}

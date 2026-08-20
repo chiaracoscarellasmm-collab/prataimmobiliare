@@ -1,0 +1,119 @@
+/* =========================================================================
+   PROPERTY CARD — a photograph with a record under it. No box, no shadow.
+   ========================================================================= */
+.card {
+  display: block;
+  position: relative;
+  color: inherit;
+}
+
+.media {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--surface-3);
+  aspect-ratio: var(--ratio, 4 / 3);
+}
+
+.media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 800ms var(--ease);
+  will-change: transform;
+}
+
+/* Tags sit on the photograph, in cream, never in a bright colour. */
+.tags {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.tag {
+  padding: 0.35rem 0.6rem;
+  border-radius: 8px;
+  background: rgba(244, 239, 230, 0.92);
+  color: var(--ink-900);
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.tagQuiet { background: rgba(244, 239, 230, 0.78); }
+
+/* ----------------------------------------------------------------- body - */
+.body { display: grid; gap: 0.3rem; padding-top: clamp(0.9rem, 1.5vw, 1.15rem); }
+
+.meta {
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  transition: color var(--dur) var(--ease);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.125rem, 1.5vw, 1.375rem);
+  line-height: 1.16;
+  letter-spacing: -0.022em;
+  transition: color var(--dur) var(--ease);
+}
+
+.price {
+  font-size: clamp(1rem, 1.25vw, 1.125rem);
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  margin-top: 0.15rem;
+}
+
+.specs {
+  font-size: var(--fs-small);
+  color: var(--ink-muted);
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.55rem;
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.ctaArrow { transition: transform var(--dur) var(--ease); }
+
+@media (hover: hover) and (pointer: fine) {
+  .card:hover .media img { transform: scale(1.025); }
+  .card:hover .ctaArrow { transform: translateX(4px); }
+  .card:hover .meta { color: var(--brown); }
+  .card:hover .title { color: var(--brown); }
+}
+
+.card:focus-visible { outline-offset: 6px; }
+
+/* Dark ground variant, used inside the USAF section. */
+.onDark .meta { color: rgba(239, 231, 219, 0.5); }
+.onDark .specs { color: var(--on-dark-muted); }
+.onDark .cta { color: var(--ink); }
+
+@media (hover: hover) and (pointer: fine) {
+  .onDark:hover .meta,
+  .onDark:hover .title { color: var(--beige); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .media img, .ctaArrow { transition: none; }
+}

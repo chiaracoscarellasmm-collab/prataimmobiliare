@@ -1,0 +1,176 @@
+.section {
+  padding-block: var(--section-y);
+  overflow: clip;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(2.5rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.text { display: grid; gap: clamp(0.9rem, 1.8vw, 1.4rem); align-content: center; }
+
+.eyebrow {
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-h2);
+  line-height: 0.96;
+  letter-spacing: -0.032em;
+  text-transform: uppercase;
+  color: var(--ink);
+  max-width: 14ch;
+}
+
+/* The quiet second voice under the question. */
+.italic {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.375rem, 2.4vw, 2.25rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--sand);
+  margin-top: -0.2rem;
+}
+
+.body {
+  font-size: var(--fs-body);
+  line-height: 1.62;
+  color: var(--ink-muted);
+  max-width: 44ch;
+  margin-top: 0.5rem;
+}
+
+/* ------------------------------------------------------------------- cta - */
+.action { display: grid; gap: 0.5rem; justify-items: start; margin-top: 0.75rem; }
+
+.cta {
+  position: relative;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.7em;
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--ink);
+  padding-block: 0.6rem;
+  cursor: pointer;
+}
+
+.cta::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0.32);
+  transform-origin: left;
+  transition: transform var(--dur-slow) var(--ease);
+}
+
+.cta:hover::after,
+.cta:focus-visible::after { transform: scaleX(1); }
+
+.ctaArrow { display: inline-block; transition: transform var(--dur-slow) var(--ease); }
+.cta:hover .ctaArrow,
+.cta:focus-visible .ctaArrow { transform: translateX(5px); }
+
+.note { font-size: var(--fs-small); color: var(--ink-faint); }
+
+/* -------------------------------------------------------------- benefits - */
+.benefits {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: clamp(1.25rem, 2.5vw, 2rem);
+  padding-top: clamp(1.1rem, 2.2vw, 1.6rem);
+  border-top: 1px solid var(--line);
+}
+
+.benefit { display: grid; gap: 0.15rem; }
+
+.benefitTerm {
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.benefitDesc { font-size: var(--fs-small); color: var(--ink-muted); }
+
+/* --------------------------------------------------------------- figure -- */
+.figure {
+  position: relative;
+  aspect-ratio: 16 / 11;
+  overflow: hidden;
+  background: var(--beige);
+  border-radius: var(--radius);
+}
+
+.figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.045);
+  transition: transform 1200ms var(--ease);
+  will-change: transform;
+}
+
+/* Settles as the frame arrives, and answers the call to action. */
+.figure[data-in] img { transform: scale(1); }
+.grid:has(.cta:hover) .figure[data-in] img,
+.grid:has(.cta:focus-visible) .figure[data-in] img { transform: scale(1.022); }
+
+@media (min-width: 640px) {
+  .benefits {
+    grid-template-columns: repeat(3, minmax(0, auto));
+    justify-content: start;
+    gap: 0;
+  }
+
+  /* Hairlines between, never around. */
+  .benefit + .benefit {
+    padding-left: clamp(1rem, 2.2vw, 2rem);
+    margin-left: clamp(1rem, 2.2vw, 2rem);
+    border-left: 1px solid var(--line);
+  }
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.2fr);
+    gap: clamp(3rem, 6vw, 6rem);
+  }
+
+  /* The photograph keeps its long curved edge and runs off the page. */
+  .figure {
+    aspect-ratio: 4 / 3;
+    width: calc(100% + var(--gutter));
+    margin-right: calc(var(--gutter) * -1);
+    border-radius: var(--radius) 0 0 var(--radius);
+  }
+
+  .text { padding-right: clamp(1rem, 3vw, 3rem); }
+}
+
+@media (min-width: 1440px) {
+  .figure { aspect-ratio: 3 / 2; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .figure img,
+  .figure[data-in] img { transform: none; transition: none; }
+}

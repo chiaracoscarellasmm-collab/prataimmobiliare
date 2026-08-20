@@ -1,0 +1,38 @@
+.page { padding-bottom: var(--section-y-sm); }
+
+.prose {
+  max-width: 68ch;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.prose h2 {
+  font-family: var(--font-serif);
+  font-size: var(--fs-h3);
+  letter-spacing: -0.018em;
+  margin-top: clamp(2rem, 4vw, 3rem);
+}
+
+.prose h3 {
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-top: 1rem;
+}
+
+.prose p,
+.prose li { color: var(--ink-muted); }
+
+.prose ul { display: grid; gap: 0.5rem; padding-left: 1.1rem; list-style: disc; }
+
+.notice {
+  border: 1px solid var(--line-strong);
+  padding: clamp(1.25rem, 3vw, 2rem);
+  font-size: var(--fs-small);
+  color: var(--ink);
+  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+  max-width: 68ch;
+  border-radius: var(--radius);
+}

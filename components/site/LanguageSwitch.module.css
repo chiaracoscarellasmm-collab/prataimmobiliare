@@ -1,0 +1,51 @@
+.switch {
+  display: flex;
+  align-items: center;
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.dot {
+  margin-inline: 0.45em;
+  opacity: 0.4;
+}
+
+.idle,
+.active {
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0.35rem 0;
+  min-height: 44px;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  cursor: pointer;
+}
+
+.idle {
+  opacity: 0.42;
+}
+
+.idle:hover,
+.idle:focus-visible {
+  opacity: 0.8;
+}
+
+.active {
+  opacity: 1;
+  cursor: default;
+}
+
+.idle:disabled,
+.active:disabled {
+  cursor: wait;
+}

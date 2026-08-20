@@ -1,0 +1,154 @@
+.section {
+  position: relative;
+  isolation: isolate;
+  background: #0e0d0b;
+  color: var(--on-dark);
+  padding-block: var(--section-y);
+  overflow: hidden;
+}
+
+/* ---------------------------------------------------------------- ground - */
+/* The flag, held right down into the dark: recognisable on a second look,
+   never competing with the headline. */
+.ground {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: url('/USAF_housing_aviano.png');
+  background-size: cover;
+  /* Ancorata a destra, dove nella sorgente sta il corpo della bandiera. */
+  background-position: 100% 52%;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  /* Contrasto alto e saturazione bassa: emergono le strisce, non il rosso. */
+  filter: saturate(0.32) contrast(1.4) brightness(0.78);
+  pointer-events: none;
+}
+
+/* Alza il contrasto del testo senza spegnere la fotografia: si esaurisce
+   prima della metà, così le strisce restano piene nella parte destra. */
+.textVeil {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(14, 13, 11, 0.78) 0%,
+    rgba(14, 13, 11, 0.7) 32%,
+    rgba(14, 13, 11, 0.32) 56%,
+    rgba(14, 13, 11, 0) 76%
+  );
+}
+
+/* `.on-dark` porta con sé un background opaco: qui serve solo per i colori
+   del testo, non deve dipingere un rettangolo sopra la fotografia. La classe
+   raddoppiata alza la specificità quanto basta per vincere sul globale. */
+.content.content {
+  position: relative;
+  z-index: 2;
+  background: transparent;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(2.75rem, 6vw, 5rem);
+}
+
+/* Nothing replaces the oval — the space it freed is the composition. */
+.text {
+  display: grid;
+  gap: clamp(1.25rem, 2.4vw, 2rem);
+  align-content: start;
+  max-width: 820px;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: var(--fs-h2);
+  line-height: 1.02;
+  letter-spacing: -0.024em;
+  max-width: 16ch;
+}
+
+.body { max-width: 46ch; }
+
+/* Two routes, set as text — not buttons. */
+.routes {
+  display: grid;
+  margin-top: clamp(0.5rem, 1.5vw, 1rem);
+  border-top: 1px solid var(--on-dark-line);
+}
+
+.route {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: clamp(1.05rem, 2.2vw, 1.5rem) 0;
+  border-bottom: 1px solid var(--on-dark-line);
+  font-family: var(--font-sans);
+  font-size: clamp(0.9375rem, 1.35vw, 1.125rem);
+  font-weight: 500;
+  letter-spacing: 0.005em;
+  min-height: 56px;
+  transition: color 620ms var(--ease), padding-left 620ms var(--ease),
+    border-color 620ms var(--ease);
+}
+
+.route .arrow {
+  transition: transform var(--dur) var(--ease);
+  color: rgba(239, 231, 219, 0.55);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .route:hover,
+  .route:focus-visible { color: var(--beige); padding-left: 4px; border-bottom-color: rgba(239, 231, 219, 0.42); }
+  .route:hover .arrow,
+  .route:focus-visible .arrow { transform: translateX(5px); color: var(--beige); }
+
+  /* The photograph answers whichever route is being considered. */
+  .grid:has(.route:hover) }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 0.5rem;
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: rgba(239, 231, 219, 0.45);
+}
+
+/* Deliberately small and desaturated — a mark, not an emblem. */
+.flag { width: 18px; height: 12px; opacity: 0.7; flex: none; border-radius: 2px; overflow: hidden; }
+
+.foot {
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  padding-top: clamp(1.25rem, 2.5vw, 2rem);
+  border-top: 1px solid var(--on-dark-line);
+}
+
+@media (min-width: 900px) {
+  .grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+
+@media (max-width: 767px) {
+  .ground { background-position: 100% 34%; }
+
+  /* Su mobile il testo attraversa tutta la larghezza. */
+  .textVeil {
+    background: linear-gradient(
+      180deg,
+      rgba(14, 13, 11, 0.72) 0%,
+      rgba(14, 13, 11, 0.68) 62%,
+      rgba(14, 13, 11, 0.3) 100%
+    );
+  }
+  /* Su mobile il testo occupa tutta la larghezza: la bandiera respira solo
+     sotto al contenuto. */
+  }

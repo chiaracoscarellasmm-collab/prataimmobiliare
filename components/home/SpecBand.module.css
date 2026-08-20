@@ -1,0 +1,165 @@
+/* The specification band under the hero: a drawing on paper beside a dark
+   data panel, the way the reference layout presents a development. */
+.band {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  background: var(--ink-900);
+  border-top: 1px solid var(--line);
+}
+
+/* ---- left: the drawing ---- */
+.plate {
+  position: relative;
+  background: var(--cream);
+  aspect-ratio: 16 / 11;
+  overflow: hidden;
+}
+
+.plate img { width: 100%; height: 100%; object-fit: cover; }
+
+.plateTag {
+  position: absolute;
+  left: clamp(1rem, 2vw, 1.75rem);
+  top: clamp(1rem, 2vw, 1.75rem);
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: rgba(26, 23, 19, 0.55);
+}
+
+/* ---- right: the data ---- */
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  padding: clamp(1.75rem, 3.4vw, 3.25rem);
+  color: var(--ink);
+}
+
+.head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.label {
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.counter {
+  font-family: var(--font-cond);
+  font-variation-settings: 'wdth' 78;
+  font-weight: 600;
+  font-size: var(--fs-small);
+  letter-spacing: 0.04em;
+  color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.75rem, 3vw, 3rem);
+  line-height: 0.94;
+  letter-spacing: -0.032em;
+  text-transform: uppercase;
+  max-width: 16ch;
+}
+
+.location { font-size: var(--fs-small); color: var(--ink-muted); margin-top: 0.5rem; }
+
+/* Three big condensed figures — the register of a spec sheet. */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 2rem);
+  padding-top: clamp(1.25rem, 2.5vw, 2rem);
+  border-top: 1px solid var(--line);
+  margin-top: auto;
+}
+
+.statKey {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 0.55rem;
+}
+
+.statKey svg { width: 13px; height: 13px; flex: none; opacity: 0.8; }
+
+.statValue {
+  font-family: var(--font-cond);
+  font-variation-settings: 'wdth' 74;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 2.6vw, 2.75rem);
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+  font-variant-numeric: lining-nums tabular-nums;
+  text-transform: uppercase;
+}
+
+.foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-top: clamp(1rem, 2vw, 1.5rem);
+  border-top: 1px solid var(--line);
+}
+
+.nav { display: flex; gap: 0.5rem; }
+
+.navBtn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--line-strong);
+  display: grid;
+  place-items: center;
+  color: var(--ink);
+  font-size: 0.95rem;
+  transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease),
+    border-color var(--dur) var(--ease);
+}
+
+.navBtn:hover { background: var(--ink); color: var(--ink-900); border-color: var(--ink); }
+
+.typeTag { text-align: right; }
+
+.typeLabel {
+  font-size: var(--fs-label);
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.typeValue { font-size: var(--fs-small); margin-top: 0.2rem; }
+
+.thumbs { display: flex; gap: 0.4rem; }
+
+.thumb {
+  width: 54px;
+  height: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--ink-700);
+}
+
+.thumb img { width: 100%; height: 100%; object-fit: cover; }
+
+@media (min-width: 900px) {
+  .band { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); }
+  .plate { aspect-ratio: auto; }
+}

@@ -1,0 +1,223 @@
+/* =========================================================================
+   SERVICES — a continuous architectural composition, not a row of cards.
+   Hairlines between frames, no radius, no shadow, no floating.
+   ========================================================================= */
+.section { background: var(--surface); }
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  border-top: 1px solid var(--line);
+}
+
+/* ------------------------------------------------------------------ copy - */
+.copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: clamp(2.5rem, 6vw, 5rem);
+  padding: clamp(2rem, 4vw, 3.5rem);
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.label {
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.125rem, 3.6vw, 3.5rem);
+  line-height: 0.94;
+  letter-spacing: -0.034em;
+  text-transform: uppercase;
+  white-space: pre-line;
+  margin-top: 1rem;
+}
+
+.copyFoot { display: grid; gap: clamp(1.25rem, 2.5vw, 2rem); }
+
+.intro {
+  font-size: var(--fs-body);
+  line-height: 1.62;
+  color: var(--ink-muted);
+  max-width: 36ch;
+}
+
+.actions { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+/* ----------------------------------------------------------------- cards - */
+.card {
+  position: relative;
+  display: block;
+  min-height: clamp(340px, 52vw, 420px);
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  color: var(--cream);
+  cursor: pointer;
+  isolation: isolate;
+}
+
+.plate { position: absolute; inset: 0; z-index: 0; display: block; }
+
+.plate img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 900ms var(--ease);
+  will-change: transform;
+}
+
+/* The veil never hides the photograph — it only deepens under the type. */
+.veil {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(to bottom, rgba(38, 31, 26, 0.1) 0%, rgba(38, 31, 26, 0.42) 100%),
+    rgba(38, 31, 26, 0.2);
+  transition: background-color 900ms var(--ease), opacity 900ms var(--ease);
+}
+
+.cardBody {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  padding: clamp(1.1rem, 2vw, 1.6rem);
+}
+
+
+.cardTitle {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.25rem, 1.9vw, 1.75rem);
+  line-height: 1;
+  letter-spacing: -0.028em;
+  text-transform: uppercase;
+  white-space: pre-line;
+  text-shadow: 0 1px 20px rgba(38, 31, 26, 0.55);
+  transition: transform 900ms var(--ease);
+}
+
+.reveal {
+  display: grid;
+  gap: 0.7rem;
+  justify-items: start;
+}
+
+.cardText {
+  font-size: var(--fs-small);
+  line-height: 1.5;
+  color: rgba(244, 239, 230, 0.9);
+  max-width: 30ch;
+  text-shadow: 0 1px 16px rgba(38, 31, 26, 0.6);
+}
+
+.cardCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--cream);
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid rgba(244, 239, 230, 0.5);
+}
+
+.cardArrow { transition: transform 620ms var(--ease); }
+
+.card:focus-visible { outline: 2px solid var(--cream); outline-offset: -6px; }
+
+/* ------------------------------------------------------- touch + narrow -- */
+/* Without hover the frame shows everything by default: the information is
+   never behind a pointer. */
+@media (hover: none), (max-width: 1023px) {
+  .veil {
+    background:
+      linear-gradient(to bottom, rgba(38, 31, 26, 0.12) 0%, rgba(38, 31, 26, 0.58) 100%),
+      rgba(38, 31, 26, 0.3);
+  }
+}
+
+/* --------------------------------------------------------- hover states -- */
+@media (hover: hover) and (pointer: fine) and (min-width: 1024px) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 900ms var(--ease), transform 900ms var(--ease);
+  }
+
+  .card:hover .plate img,
+  .card:focus-visible .plate img { transform: scale(1.04); }
+
+  .card:hover .veil,
+  .card:focus-visible .veil {
+    background:
+      linear-gradient(to bottom, rgba(38, 31, 26, 0.3) 0%, rgba(38, 31, 26, 0.7) 100%),
+      rgba(38, 31, 26, 0.6);
+  }
+
+  .card:hover .cardTitle,
+  .card:focus-visible .cardTitle { transform: translateY(-4px); }
+
+  .card:hover .reveal,
+  .card:focus-visible .reveal { opacity: 1; transform: translateY(0); }
+
+  .card:hover .cardArrow,
+  .card:focus-visible .cardArrow { transform: translateX(4px); }
+}
+
+/* ----------------------------------------------------------- breakpoints - */
+@media (min-width: 720px) {
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .copy { grid-column: 1 / -1; }
+  .card { border-right: 1px solid var(--line); }
+  .card:nth-of-type(even) { border-right: 0; }
+}
+
+/* The spread proper: the copy holds the left column, and each row is carried
+   by one wider photograph so the grid never settles into equal tiles. */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: minmax(0, 0.86fr) repeat(3, minmax(0, 1fr));
+    grid-template-areas:
+      'copy a a b'
+      'copy c d b'
+      'copy e e f';
+    border-top: 0;
+  }
+
+  .copy { grid-area: copy; border-right: 1px solid var(--line); }
+  .card { min-height: clamp(240px, 21vw, 320px); }
+  .card[data-area='a'] { grid-area: a; }
+  .card[data-area='b'] { grid-area: b; border-right: 0; }
+  .card[data-area='c'] { grid-area: c; }
+  .card[data-area='d'] { grid-area: d; }
+  .card[data-area='e'] { grid-area: e; }
+  .card[data-area='f'] { grid-area: f; border-right: 0; }
+}
+
+@media (min-width: 1440px) {
+  .card { min-height: clamp(280px, 19vw, 360px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plate img,
+  .veil,
+  .cardTitle,
+  .reveal,
+  .cardArrow { transition: none !important; transform: none !important; }
+  .reveal { opacity: 1 !important; }
+}

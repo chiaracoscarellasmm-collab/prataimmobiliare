@@ -1,0 +1,155 @@
+'use client';
+
+import Image from 'next/image';
+import Link from 'next/link';
+
+import { useI18n } from '@/components/i18n/LanguageProvider';
+import styles from './ServiceGrid.module.css';
+
+type ServiceKey =
+  | 'sales'
+  | 'valuation'
+  | 'rentals'
+  | 'developments'
+  | 'mortgages'
+  | 'advisory'
+  | 'holiday';
+
+type Service = {
+  key: ServiceKey;
+  href: string;
+  image: string;
+  /** Slot in the editorial grid declared in the stylesheet. */
+  area: string;
+  /** Flip to true to publish a service that is prepared but not yet shown. */
+  enabled: boolean;
+};
+
+/**
+ * The agency's competences, read as a magazine spread rather than a set of
+ * equal tiles: the frames differ in width and height, and one photograph
+ * dominates each row.
+ *
+ * Adding a service is a one-line change here plus its copy in the dictionary
+ * and a photograph at the matching path.
+ */
+const SERVICES: Service[] = [
+  { key: 'sales', href: '/immobili', image: '/images/services/sales.jpg', area: 'a', enabled: true },
+  {
+    key: 'valuation',
+    href: '/vendi-affitta#questionario',
+    image: '/images/services/valuation.jpg',
+    area: 'b',
+    enabled: true,
+  },
+  {
+    key: 'rentals',
+    href: '/locazioni-base-usaf',
+    image: '/images/services/rentals-usaf.jpg',
+    area: 'c',
+    enabled: true,
+  },
+  {
+    key: 'developments',
+    href: '/#developments-title',
+    image: '/images/services/developments.jpg',
+    area: 'd',
+    enabled: true,
+  },
+  {
+    key: 'mortgages',
+    href: '/contatti',
+    image: '/images/services/mortgages.jpg',
+    area: 'e',
+    enabled: true,
+  },
+  {
+    key: 'advisory',
+    href: '/contatti',
+    image: '/images/services/advisory.jpg',
+    area: 'f',
+    enabled: true,
+  },
+  // Pronto per il futuro: immobili nelle località turistiche.
+  {
+    key: 'holiday',
+    href: '/immobili',
+    image: '/images/services/holiday.jpg',
+    area: 'g',
+    enabled: false,
+  },
+];
+
+export default function ServiceGrid() {
+  const { t } = useI18n();
+  const services = SERVICES.filter((service) => service.enabled);
+
+  return (
+    <section className={styles.section} aria-labelledby="services-title">
+      <div className={styles.grid}>
+        <div className={styles.copy}>
+          <div>
+            <p className={styles.label}>{t.services.label}</p>
+            <h2 id="services-title" className={styles.title}>
+              {t.services.title}
+            </h2>
+          </div>
+
+          <div className={styles.copyFoot}>
+            <p className={styles.intro}>{t.services.intro}</p>
+            <div className={styles.actions}>
+              <Link href="/vendi-affitta#questionario" className="pill pill-solid">
+                {t.services.ctaPrimary}
+                <span className="arrow" aria-hidden="true">
+                  →
+                </span>
+              </Link>
+              <Link href="/contatti" className="pill">
+                {t.nav.contact}
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {services.map(({ key, href, image, area }, i) => {
+          const item = t.services.items[key];
+          return (
+            <Link
+              key={key}
+              href={href}
+              className={styles.card}
+              data-area={area}
+              aria-label={`${item.title.replace('\n', ' ')} — ${item.body}`}
+            >
+              <span className={styles.plate}>
+                <Image
+                  src={image}
+                  alt=""
+                  fill
+                  sizes="(min-width: 1024px) 32vw, (min-width: 720px) 50vw, 100vw"
+                  quality={80}
+                  loading={i < 2 ? 'eager' : 'lazy'}
+                />
+              </span>
+              <span className={styles.veil} aria-hidden="true" />
+
+              <span className={styles.cardBody}>
+                <span className={styles.cardTitle}>{item.title}</span>
+
+                <span className={styles.reveal}>
+                  <span className={styles.cardText}>{item.body}</span>
+                  <span className={styles.cardCta}>
+                    {item.cta}
+                    <span className={styles.cardArrow} aria-hidden="true">
+                      →
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </Link>
+          );
+        })}
+      </div>
+    </section>
+  );
+}

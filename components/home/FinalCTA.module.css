@@ -1,0 +1,78 @@
+.section {
+  position: relative;
+  min-height: 92svh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  background: var(--dark);
+  color: var(--warm-white);
+  padding-block: clamp(4rem, 10vw, 8rem);
+}
+
+.bg { position: absolute; inset: 0; }
+
+.bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 60%;
+  /* Desaturata e leggermente calda, in linea con le altre fotografie. */
+  filter: saturate(0.62) contrast(0.96) brightness(0.94) sepia(0.08);
+}
+
+.scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(38, 31, 26, 0.28) 0%,
+    rgba(38, 31, 26, 0.5) 45%,
+    rgba(38, 31, 26, 0.82) 100%
+  );
+}
+
+.content { position: relative; z-index: 2; width: 100%; }
+
+.title {
+  font-family: var(--font-serif);
+  font-size: var(--fs-h2);
+  line-height: 0.98;
+  letter-spacing: -0.028em;
+  max-width: 19ch;
+  margin-top: clamp(1rem, 2vw, 1.5rem);
+  text-shadow: 0 2px 40px rgba(38, 31, 26, 0.4);
+}
+
+.routes {
+  margin-top: clamp(2.5rem, 6vw, 5rem);
+  border-top: 1px solid rgba(251, 249, 245, 0.24);
+  max-width: 62ch;
+}
+
+.route {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: clamp(1rem, 2.4vw, 1.6rem) 0;
+  border-bottom: 1px solid rgba(251, 249, 245, 0.24);
+  font-family: var(--font-serif);
+  font-size: clamp(1.125rem, 1.9vw, 1.625rem);
+  line-height: 1.1;
+  letter-spacing: -0.018em;
+  min-height: 56px;
+  transition: padding-left var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+
+.route .arrow {
+  font-family: var(--font-sans);
+  font-size: 0.5em;
+  transition: transform var(--dur) var(--ease);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .route:hover { padding-left: 0.6rem; color: var(--beige); }
+  .route:hover .arrow { transform: translateX(8px); }
+}
+
+.label { color: rgba(251, 249, 245, 0.72) !important; }

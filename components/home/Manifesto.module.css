@@ -1,0 +1,67 @@
+.section {
+  background: var(--cream);
+  padding-block: var(--section-y);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(2.5rem, 6vw, 5rem);
+}
+
+.text { display: grid; align-content: start; gap: clamp(1.5rem, 2.6vw, 2.25rem); }
+
+.heading {
+  font-family: var(--font-serif);
+  font-size: var(--fs-h2);
+  font-weight: 500;
+  line-height: 1.06;
+  letter-spacing: -0.016em;
+  max-width: 18ch;
+}
+
+/* The second sentence carries the actual promise — it gets the weight. */
+.headingSoft { color: var(--sand); display: block; }
+
+.body { max-width: 46ch; }
+
+.figure { position: relative; }
+
+.frame {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  background: var(--beige);
+  border-radius: var(--radius);
+}
+
+.frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.caption {
+  margin-top: 1rem;
+  font-size: var(--fs-small);
+  color: var(--ink-faint);
+  max-width: 28ch;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.72fr);
+    gap: clamp(3rem, 7vw, 8rem);
+    align-items: start;
+  }
+
+  .text { padding-top: clamp(2rem, 6vw, 6rem); }
+
+  /* Deliberately off the baseline — the composition should feel drawn,
+     not snapped to a 50/50 component. */
+  .figure { transform: translateY(clamp(-6rem, -5vw, -2rem)); }
+}
+
+@media (min-width: 1280px) {
+  .text { padding-right: clamp(2rem, 5vw, 6rem); }
+}

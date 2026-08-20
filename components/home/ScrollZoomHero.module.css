@@ -1,0 +1,227 @@
+/* =========================================================================
+   HERO — cinematic push-in driven by scroll.
+   A single custom property (--p, 0→1) is written per animation frame;
+   every derived value is computed by CSS. One style write, no layout work.
+   ========================================================================= */
+
+@property --p {
+  syntax: '<number>';
+  initial-value: 0;
+  inherits: true;
+}
+
+.hero {
+  --p: 0;
+  --zoom: 0.055; /* mobile default — deliberately restrained */
+  position: relative;
+  /* 100svh visible + the scroll progression that drives the push-in. */
+  height: 200svh;
+  background: var(--dark);
+}
+
+.sentinel {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.pin {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ------------------------------------------------------------- the image - */
+.frame {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  /* Slow camera push-in. Transform only — never width/height/top/left. */
+  transform: scale(calc(1 + var(--zoom) * var(--p)));
+  transform-origin: 52% 46%;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 52%;
+}
+
+/* Legibility scrim. Functional, not decorative — it deepens as the
+   copy fades, which is what sells the "camera moving in" read. */
+.scrim {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(16, 14, 12, 0.62) 0%,
+      rgba(16, 14, 12, 0.34) 30%,
+      rgba(16, 14, 12, 0.5) 60%,
+      rgba(16, 14, 12, 0.9) 100%
+    );
+  opacity: calc(1 + var(--p) * 0.42);
+  pointer-events: none;
+}
+
+/* --------------------------------------------------------------- layers -- */
+/* Anchors the photograph into the page and keeps the lower copy legible. */
+.floorScrim {
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 52%;
+  z-index: 2;
+  background: linear-gradient(to bottom, rgba(16, 14, 12, 0) 0%, rgba(16, 14, 12, 0.62) 55%, rgba(16, 14, 12, 0.94) 100%);
+  pointer-events: none;
+}
+
+/* ----------------------------------------------------------------- copy -- */
+/* Set to the full measure of the page, the way a masthead is. */
+.title {
+  position: absolute;
+  z-index: 3;
+  left: var(--gutter);
+  right: var(--gutter);
+  bottom: 30%;
+  margin-inline: auto;
+  max-width: var(--maxw);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.75rem, 9.1vw, 11.5rem);
+  line-height: 0.82;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: var(--cream);
+  transform: translate3d(0, calc(var(--p) * -6vh), 0);
+  opacity: clamp(0, calc(1 - var(--p) * 1.25), 1);
+  will-change: transform, opacity;
+}
+
+.title span { display: block; }
+.title span:nth-child(2) { padding-left: 0.06em; color: var(--beige); }
+
+.titleEm {
+  font-style: italic;
+  font-weight: 400;
+  color: inherit;
+}
+
+/* From tablet up the scale is tuned so each line holds together: two lines,
+   no orphan. Below that the headline may wrap — three lines read fine on a
+   narrow screen and keep the type from becoming small. */
+@media (min-width: 768px) {
+  .title span { white-space: nowrap; }
+}
+
+.content {
+  position: relative;
+  z-index: 4;
+  height: 100%;
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding: calc(var(--header-h) + clamp(1.5rem, 4vw, 3rem)) var(--gutter)
+    clamp(1.75rem, 4vw, 3.25rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: var(--cream);
+  pointer-events: none;
+}
+
+.lower {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  align-items: end;
+  transform: translate3d(0, calc(var(--p) * -3vh), 0);
+  opacity: clamp(0, calc(1 - var(--p) * 2.15), 1);
+  will-change: transform, opacity;
+}
+
+.lower > * { pointer-events: auto; }
+
+.support {
+  font-size: var(--fs-body);
+  line-height: 1.5;
+  color: rgba(244, 239, 230, 0.82);
+  max-width: 40ch;
+}
+
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.cta { background: var(--cream); color: var(--ink-900); border-color: var(--cream); }
+.cta:hover { background: var(--sand); border-color: var(--sand); }
+
+.ctaGhost { color: var(--cream); border-color: rgba(244, 239, 230, 0.42); }
+.ctaGhost:hover { background: var(--cream); color: var(--ink-900); border-color: var(--cream); }
+
+/* ------------------------------------------------------------- entrance -- */
+.hero[data-entered='false'] .title span > i,
+.hero[data-entered='false'] .aside,
+.hero[data-entered='true'] .title { animation: fadeUp var(--dur-slower) var(--ease) 120ms both; }
+
+.hero[data-entered='true'] .lower { animation: fadeUp var(--dur-slow) var(--ease) 460ms both; }
+@keyframes riseIn {
+  from { transform: translate3d(0, 105%, 0); }
+  to { transform: translate3d(0, 0, 0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translate3d(0, 18px, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+/* ----------------------------------------------------------- breakpoints - */
+@media (min-width: 768px) {
+  .hero { --zoom: 0.09; height: 220svh; }
+}
+
+@media (min-width: 1024px) {
+  .hero { --zoom: 0.12; height: 235svh; }
+
+  .lower {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: clamp(2rem, 5vw, 6rem);
+    align-items: end;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero { --zoom: 0.135; }
+}
+
+/* Landscape phones: the hero must not become an unreadable letterbox. */
+@media (max-height: 560px) and (orientation: landscape) {
+  .title { font-size: clamp(2.25rem, 7vh, 3.5rem); }
+  .support { display: none; }
+}
+
+/* ------------------------------------------------------- reduced motion -- */
+@media (prefers-reduced-motion: reduce) {
+  .hero { height: auto; --zoom: 0; }
+  .pin { position: relative; height: 100svh; }
+  .frame { transform: none; }
+  .scrim { opacity: 1; }
+  .title,
+  .lower { transform: none; opacity: 1; }
+  .hero[data-entered='false'] .title,
+  .hero[data-entered='false'] .lower { opacity: 1; }
+
+  .hero[data-entered='true'] .title,
+  .hero[data-entered='true'] .lower { animation: none; }
+}

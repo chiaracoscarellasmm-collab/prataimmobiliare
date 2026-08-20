@@ -1,0 +1,147 @@
+.footer {
+  background: var(--dark);
+  color: var(--on-dark);
+  padding-top: clamp(4.5rem, 9vw, 9rem);
+  overflow: hidden;
+}
+
+.top {
+  display: grid;
+  gap: clamp(2.75rem, 5vw, 4rem);
+  padding-bottom: clamp(3.5rem, 7vw, 6rem);
+}
+
+.lede {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 3.4vw, 3.25rem);
+  line-height: 1.06;
+  letter-spacing: -0.022em;
+  max-width: 16ch;
+}
+
+.cols {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(2rem, 4vw, 3rem);
+}
+
+.col { display: grid; gap: 0.55rem; align-content: start; }
+
+.colHead {
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: rgba(239, 231, 219, 0.45);
+  margin-bottom: 0.85rem;
+}
+
+.link {
+  position: relative;
+  display: inline-block;
+  font-size: var(--fs-small);
+  color: var(--on-dark);
+  padding-block: 0.25rem;
+  width: fit-content;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0.2rem;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--dur) var(--ease);
+}
+
+.link:hover::after,
+.link:focus-visible::after { transform: scaleX(1); }
+
+.value {
+  font-size: var(--fs-small);
+  color: var(--on-dark-muted);
+  padding-block: 0.25rem;
+}
+
+.hours {
+  display: grid;
+  gap: 0.95rem;
+  margin: 0;
+}
+
+.hoursBlock dt {
+  margin: 0 0 0.2rem;
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--on-dark);
+}
+
+.hoursBlock dd {
+  margin: 0;
+  font-size: var(--fs-small);
+  color: var(--on-dark-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.hoursNote {
+  font-size: var(--fs-small);
+  color: var(--on-dark-muted);
+  line-height: 1.5;
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  padding-block: 1.75rem;
+  border-top: 1px solid var(--on-dark-line);
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.fine {
+  font-size: var(--fs-small);
+  color: rgba(239, 231, 219, 0.42);
+}
+
+/* Wordmark di chiusura: contenitore a piena larghezza, artwork ridotta e
+   centrata così da non toccare i bordi della pagina. */
+.wordmark {
+  width: 100%;
+  padding-bottom: clamp(0.5rem, 1.5vw, 1.5rem);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.wordmark img {
+  display: block;
+  width: 65%;
+  height: auto;
+  /* Beige pieno, tenuto indietro quanto basta da restare una firma. */
+  opacity: 0.62;
+}
+
+@media (min-width: 720px) {
+  .cols { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (min-width: 1024px) {
+  .top {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.35fr);
+    align-items: start;
+  }
+  .cols { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}

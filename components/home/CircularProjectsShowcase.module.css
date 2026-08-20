@@ -1,0 +1,308 @@
+/* =========================================================================
+   NUOVE REALIZZAZIONI — scroll-driven radial reveal.
+
+   The section is taller than the viewport; its inner frame is sticky. Scroll
+   progress through the extra height drives one angle, and that angle both
+   paints the next photograph into the circle (conic-gradient mask) and turns
+   the needle that appears to draw it.
+   ========================================================================= */
+
+.section {
+  position: relative;
+  background: var(--surface);
+  color: var(--ink);
+  /* One viewport to read, plus one screen of travel per transition. */
+  height: calc(100svh + var(--segments, 2) * 150svh);
+}
+
+.pin {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ----------------------------------------------------------------- head - */
+.head {
+  padding: calc(var(--header-h) + clamp(1rem, 2.5vw, 2rem)) var(--gutter) 0;
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.headTitle {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 2.6vw, 2.5rem);
+  line-height: 0.96;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.headTitle em { font-style: normal; color: var(--sand); }
+
+.intro {
+  font-size: var(--fs-small);
+  color: var(--ink-muted);
+  max-width: 46ch;
+}
+
+/* ---------------------------------------------------------------- stage - */
+.stage {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: clamp(1rem, 3vw, 2rem);
+}
+
+/* ---- index ---- */
+.index {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 0.9rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.indexItem {
+  font-family: var(--font-cond);
+  font-variation-settings: 'wdth' 78;
+  font-weight: 600;
+  font-size: clamp(1.1rem, 2.1vw, 2rem);
+  line-height: 1;
+  color: var(--ink);
+  opacity: 0.28;
+  transform: translateY(0);
+  transition: opacity 520ms var(--ease), transform 520ms var(--ease);
+}
+
+.indexActive { opacity: 1; }
+.indexTotal { font-size: var(--fs-small); color: var(--ink-faint); letter-spacing: 0.06em; }
+
+/* ---- circle ---- */
+.circle {
+  --a: 0deg;
+  position: relative;
+  width: min(74vw, 340px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: visible;
+}
+
+.disc {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--surface-3);
+  transform: translateZ(0);
+}
+
+.layer {
+  position: absolute;
+  inset: 0;
+  will-change: mask-image;
+  backface-visibility: hidden;
+}
+
+/* The slice grows clockwise from twelve o'clock. A hard stop at the same
+   angle keeps the edge crisp rather than feathered. */
+.layer[data-masked='true'] {
+  -webkit-mask-image: conic-gradient(from -90deg, #000 var(--a), rgba(0, 0, 0, 0) var(--a));
+  mask-image: conic-gradient(from -90deg, #000 var(--a), rgba(0, 0, 0, 0) var(--a));
+}
+
+.layer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(var(--imgScale, 1));
+  transition: transform 900ms var(--ease);
+}
+
+/* ---- needle ---- */
+/* Pivots exactly on the circle's centre, so it reads as the instrument
+   drawing the new photograph in. */
+.needle {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  width: 1px;
+  height: 56%;
+  background: var(--brown);
+  opacity: 0.55;
+  transform-origin: 50% 100%;
+  transform: translateX(-50%) rotate(var(--a));
+  pointer-events: none;
+}
+
+.needle::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -5px;
+  width: 5px;
+  height: 5px;
+  margin-left: -2.5px;
+  border-radius: 50%;
+  background: var(--brown);
+}
+
+.expand {
+  position: absolute;
+  right: -2%;
+  bottom: 4%;
+  width: clamp(48px, 5vw, 62px);
+  height: clamp(48px, 5vw, 62px);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  color: var(--ink);
+  transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+
+.expand:hover { background: var(--ink); color: var(--surface); }
+
+/* ---- record ---- */
+.record { display: grid; gap: 0.4rem; justify-items: center; text-align: center; max-width: 34ch; }
+
+/* Old copy leaves upward, new copy arrives from below. */
+.recordInner {
+  display: grid;
+  gap: 0.4rem;
+  justify-items: inherit;
+  animation: recordIn 520ms var(--ease) both;
+}
+
+@keyframes recordIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.recordLabel {
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.projectName {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  line-height: 0.96;
+  letter-spacing: -0.034em;
+  text-transform: uppercase;
+}
+
+.place { font-size: var(--fs-small); color: var(--ink-muted); }
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.25rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+  font-size: var(--fs-label);
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.cta { margin-top: 1rem; }
+
+/* ---- foot ---- */
+.foot {
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding: 0 var(--gutter) clamp(1.25rem, 3vw, 2.25rem);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.counter {
+  font-family: var(--font-cond);
+  font-variation-settings: 'wdth' 74;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+.status {
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.track {
+  position: absolute;
+  left: var(--gutter);
+  right: var(--gutter);
+  bottom: 0;
+  height: 1px;
+  background: var(--line);
+}
+
+.trackBar {
+  display: block;
+  height: 100%;
+  background: var(--ink);
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+/* ----------------------------------------------------------- breakpoints */
+@media (min-width: 768px) {
+  .circle { width: min(48vw, 420px); }
+  .stage { gap: clamp(1.5rem, 4vw, 3rem); }
+}
+
+@media (min-width: 1024px) {
+  .stage {
+    grid-template-columns: auto minmax(0, auto) minmax(0, 1fr);
+    justify-items: start;
+    gap: clamp(2rem, 5vw, 6rem);
+  }
+  .index { flex-direction: column; align-items: flex-start; gap: 0.55rem; }
+  .circle { width: clamp(340px, 34vw, 560px); }
+  .record { justify-items: start; text-align: left; }
+  .meta { justify-content: flex-start; }
+}
+
+/* --------------------------------------------------- reduced motion ----- */
+/* No pinning, no wipe: the projects simply stack and read in order. */
+@media (prefers-reduced-motion: reduce) {
+  .section { height: auto; }
+  .pin { position: relative; height: auto; overflow: visible; }
+  .needle, .track { display: none; }
+  .layer[data-masked='true'] { -webkit-mask-image: none; mask-image: none; }
+  .recordInner { animation: none; }
+}

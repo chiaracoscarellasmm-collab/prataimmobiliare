@@ -1,0 +1,65 @@
+/* Three columns at most, so the photographs stay large. */
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  column-gap: clamp(1.25rem, 2.2vw, 2rem);
+  row-gap: clamp(2.5rem, 4vw, 3.5rem);
+}
+
+@media (min-width: 768px) {
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (min-width: 1200px) {
+  .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* ---------------------------------------------------------------- empty -- */
+.empty {
+  padding-block: clamp(3.5rem, 8vw, 6rem);
+  display: grid;
+  gap: 1rem;
+  justify-items: start;
+  max-width: 46ch;
+}
+
+.emptyTitle {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 2.6vw, 2.25rem);
+  line-height: 1.05;
+  letter-spacing: -0.028em;
+  text-transform: uppercase;
+}
+
+.emptyBody { font-size: var(--fs-body); color: var(--ink-muted); }
+.emptyActions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.75rem; }
+
+/* -------------------------------------------------------------- skeleton - */
+.skeleton { display: grid; gap: 0.75rem; }
+
+.skeletonMedia {
+  aspect-ratio: 4 / 3;
+  border-radius: 14px;
+  background: var(--surface-3);
+}
+
+.skeletonLine {
+  height: 12px;
+  border-radius: 6px;
+  background: var(--surface-3);
+}
+
+.skeletonLine:nth-child(2) { width: 45%; }
+.skeletonLine:nth-child(4) { width: 70%; }
+
+.skeleton > * { animation: pulse 1.6s var(--ease-soft) infinite; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 0.9; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton > * { animation: none; }
+}

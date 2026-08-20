@@ -1,0 +1,795 @@
+[
+  {
+    "id": "p-001",
+    "slug": "casa-indipendente-prata-di-pordenone",
+    "title": "Casa indipendente con corte",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Casa indipendente",
+    "publicationDate": "2026-01-15",
+    "featuredHome": true,
+    "homeOrder": 1,
+    "usafEligible": false,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Prata di Pordenone",
+      "provincia": "PN",
+      "zona": null,
+      "address": null,
+      "showAddress": false
+    },
+    "price": 320000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 180,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "floor": null,
+    "buildingFloors": 2,
+    "constructionYear": null,
+    "energy": null,
+    "garage": true,
+    "garageType": "Doppio",
+    "parkingSpot": false,
+    "parkingSpotCovered": false,
+    "garden": true,
+    "gardenSurface": null,
+    "terrace": false,
+    "terraceSurface": null,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": false,
+    "cellar": true,
+    "airConditioning": false,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": "Autonomo",
+    "otherFeatures": [
+      "Doppia esposizione",
+      "Corte privata"
+    ],
+    "shortDescription": "Casa indipendente su due livelli, con corte privata e accesso carraio indipendente.",
+    "description": "Casa indipendente disposta su due livelli, con corte privata e accesso carraio indipendente. Gli spazi del piano terra si aprono verso il giardino attraverso ampie aperture.\nAl primo piano la zona notte è composta da tre camere e due bagni. Completano la proprietà un locale accessorio e un posto auto coperto.",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://picsum.photos/id/308/1600/1100",
+      "alt": "casa-indipendente-prata-di-pordenone — fotografia segnaposto",
+      "width": 1600,
+      "height": 1100
+    },
+    "images": [
+      {
+        "src": "https://picsum.photos/id/308/1600/1100",
+        "alt": "casa-indipendente-prata-di-pordenone — fotografia segnaposto",
+        "width": 1600,
+        "height": 1100
+      },
+      {
+        "src": "https://picsum.photos/id/942/1400/1000",
+        "alt": "casa-indipendente-prata-di-pordenone — fotografia segnaposto",
+        "width": 1400,
+        "height": 1000
+      },
+      {
+        "src": "https://picsum.photos/id/945/1400/1000",
+        "alt": "casa-indipendente-prata-di-pordenone — fotografia segnaposto",
+        "width": 1400,
+        "height": 1000
+      }
+    ]
+  },
+  {
+    "id": "p-002",
+    "slug": "attico-panoramico-pordenone",
+    "title": "Attico con terrazzo panoramico",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Appartamento",
+    "publicationDate": "2026-02-01",
+    "featuredHome": true,
+    "homeOrder": 2,
+    "usafEligible": false,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Pordenone",
+      "provincia": "PN",
+      "zona": "Centro",
+      "address": null,
+      "showAddress": false
+    },
+    "price": 465000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 145,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "floor": "Ultimo piano",
+    "buildingFloors": 5,
+    "constructionYear": null,
+    "energy": {
+      "class": "A4",
+      "ipe": null
+    },
+    "garage": false,
+    "garageType": null,
+    "parkingSpot": true,
+    "parkingSpotCovered": true,
+    "garden": false,
+    "gardenSurface": null,
+    "terrace": true,
+    "terraceSurface": 60,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": true,
+    "cellar": true,
+    "airConditioning": true,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": "Autonomo",
+    "otherFeatures": [
+      "Doppia esposizione",
+      "Ultimo piano"
+    ],
+    "shortDescription": "Ultimo piano con terrazzo perimetrale e vista aperta.",
+    "description": "Ultimo piano con terrazzo perimetrale e vista aperta. La zona giorno è un unico ambiente continuo, servito da una cucina separata.\nLa proprietà comprende due posti auto e una cantina al piano interrato.",
+    "videoUrl": "https://www.youtube.com/watch?v=example",
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://picsum.photos/id/622/1600/1100",
+      "alt": "attico-panoramico-pordenone — fotografia segnaposto",
+      "width": 1600,
+      "height": 1100
+    },
+    "images": [
+      {
+        "src": "https://picsum.photos/id/622/1600/1100",
+        "alt": "attico-panoramico-pordenone — fotografia segnaposto",
+        "width": 1600,
+        "height": 1100
+      },
+      {
+        "src": "https://picsum.photos/id/444/1400/1000",
+        "alt": "attico-panoramico-pordenone — fotografia segnaposto",
+        "width": 1400,
+        "height": 1000
+      },
+      {
+        "src": "https://picsum.photos/id/936/1400/1000",
+        "alt": "attico-panoramico-pordenone — fotografia segnaposto",
+        "width": 1400,
+        "height": 1000
+      }
+    ]
+  },
+  {
+    "id": "p-003",
+    "slug": "villa-con-parco-pedemontana",
+    "title": "Villa con parco",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Villa",
+    "publicationDate": null,
+    "featuredHome": true,
+    "homeOrder": 3,
+    "usafEligible": false,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Polcenigo",
+      "provincia": "PN",
+      "zona": "Pedemontana",
+      "address": null,
+      "showAddress": false
+    },
+    "price": null,
+    "priceOnRequest": true,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 310,
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "floor": null,
+    "buildingFloors": null,
+    "constructionYear": null,
+    "energy": {
+      "class": "A3",
+      "ipe": 18.2
+    },
+    "garage": true,
+    "garageType": "Doppio",
+    "parkingSpot": false,
+    "parkingSpotCovered": false,
+    "garden": true,
+    "gardenSurface": null,
+    "terrace": false,
+    "terraceSurface": null,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": false,
+    "cellar": false,
+    "airConditioning": false,
+    "furnished": false,
+    "photovoltaic": true,
+    "pool": true,
+    "heating": "Pompa di calore",
+    "otherFeatures": [
+      "Domotica",
+      "Parco privato"
+    ],
+    "shortDescription": "Villa singola immersa in un parco privato. Trattativa riservata.",
+    "description": "Villa singola immersa in un parco privato, con orientamento studiato per accompagnare la luce lungo tutta la giornata.\nTrattativa riservata. Visite su appuntamento.",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://picsum.photos/id/622/1600/1100",
+      "alt": "villa-con-parco-pedemontana — fotografia segnaposto",
+      "width": 1600,
+      "height": 1100
+    },
+    "images": [
+      {
+        "src": "https://picsum.photos/id/622/1600/1100",
+        "alt": "villa-con-parco-pedemontana — fotografia segnaposto",
+        "width": 1600,
+        "height": 1100
+      },
+      {
+        "src": "https://picsum.photos/id/444/1400/1000",
+        "alt": "villa-con-parco-pedemontana — fotografia segnaposto",
+        "width": 1400,
+        "height": 1000
+      },
+      {
+        "src": "https://picsum.photos/id/936/1400/1000",
+        "alt": "villa-con-parco-pedemontana — fotografia segnaposto",
+        "width": 1400,
+        "height": 1000
+      }
+    ]
+  },
+  {
+    "id": "p-004",
+    "slug": "appartamento-arredato-aviano",
+    "title": "Appartamento arredato",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "affitto",
+    "propertyType": "Appartamento",
+    "publicationDate": null,
+    "featuredHome": true,
+    "homeOrder": 4,
+    "usafEligible": true,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Aviano",
+      "provincia": "PN",
+      "zona": null,
+      "address": null,
+      "showAddress": false
+    },
+    "price": null,
+    "priceOnRequest": false,
+    "monthlyRent": 1150,
+    "monthlyCondoFees": 80,
+    "surface": 95,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "floor": null,
+    "buildingFloors": null,
+    "constructionYear": null,
+    "energy": null,
+    "garage": false,
+    "garageType": null,
+    "parkingSpot": true,
+    "parkingSpotCovered": false,
+    "garden": false,
+    "gardenSurface": null,
+    "terrace": true,
+    "terraceSurface": null,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": false,
+    "cellar": false,
+    "airConditioning": true,
+    "furnished": true,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": "Autonomo",
+    "otherFeatures": [],
+    "shortDescription": "Appartamento completamente arredato, pronto all'uso.",
+    "description": "Appartamento completamente arredato, pronto all'uso, con doppio servizio e terrazzo abitabile. Adatto al personale in servizio presso la base di Aviano.",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://picsum.photos/id/946/1600/1100",
+      "alt": "appartamento-arredato-aviano — fotografia segnaposto",
+      "width": 1600,
+      "height": 1100
+    },
+    "images": [
+      {
+        "src": "https://picsum.photos/id/946/1600/1100",
+        "alt": "appartamento-arredato-aviano — fotografia segnaposto",
+        "width": 1600,
+        "height": 1100
+      },
+      {
+        "src": "https://picsum.photos/id/625/1400/1000",
+        "alt": "appartamento-arredato-aviano — fotografia segnaposto",
+        "width": 1400,
+        "height": 1000
+      },
+      {
+        "src": "https://picsum.photos/id/307/1400/1000",
+        "alt": "appartamento-arredato-aviano — fotografia segnaposto",
+        "width": 1400,
+        "height": 1000
+      }
+    ]
+  },
+  {
+    "id": "p-006",
+    "slug": "casa-a-schiera-fontanafredda",
+    "title": "Casa a schiera con giardino",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Casa a schiera",
+    "publicationDate": null,
+    "featuredHome": true,
+    "homeOrder": 5,
+    "usafEligible": false,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Fontanafredda",
+      "provincia": "PN",
+      "zona": null,
+      "address": null,
+      "showAddress": false
+    },
+    "price": 245000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 130,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "floor": null,
+    "buildingFloors": null,
+    "constructionYear": null,
+    "energy": null,
+    "garage": true,
+    "garageType": null,
+    "parkingSpot": false,
+    "parkingSpotCovered": false,
+    "garden": true,
+    "gardenSurface": 136,
+    "terrace": false,
+    "terraceSurface": null,
+    "balcony": true,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": false,
+    "cellar": true,
+    "airConditioning": false,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": "Autonomo",
+    "otherFeatures": [
+      "Soffitta recuperabile",
+      "Unità di testa"
+    ],
+    "shortDescription": "Casa a schiera di testa con giardino su tre lati.",
+    "description": "Casa a schiera di testa con giardino su tre lati, garage al piano interrato e soffitta recuperabile.",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://picsum.photos/id/942/1600/1100",
+      "alt": "casa-a-schiera-fontanafredda — fotografia segnaposto",
+      "width": 1600,
+      "height": 1100
+    },
+    "images": [
+      {
+        "src": "https://picsum.photos/id/942/1600/1100",
+        "alt": "casa-a-schiera-fontanafredda — fotografia segnaposto",
+        "width": 1600,
+        "height": 1100
+      },
+      {
+        "src": "https://picsum.photos/id/945/1400/1000",
+        "alt": "casa-a-schiera-fontanafredda — fotografia segnaposto",
+        "width": 1400,
+        "height": 1000
+      },
+      {
+        "src": "https://picsum.photos/id/946/1400/1000",
+        "alt": "casa-a-schiera-fontanafredda — fotografia segnaposto",
+        "width": 1400,
+        "height": 1000
+      }
+    ]
+  },
+  {
+    "id": "p-005",
+    "slug": "rustico-da-ristrutturare-polcenigo",
+    "title": "Rustico da ristrutturare",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Rustico",
+    "publicationDate": null,
+    "featuredHome": false,
+    "homeOrder": null,
+    "usafEligible": false,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Polcenigo",
+      "provincia": "PN",
+      "zona": null,
+      "address": null,
+      "showAddress": false
+    },
+    "price": 185000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 240,
+    "bedrooms": 4,
+    "bathrooms": 1,
+    "floor": null,
+    "buildingFloors": null,
+    "constructionYear": null,
+    "energy": {
+      "class": "G",
+      "ipe": null
+    },
+    "garage": false,
+    "garageType": null,
+    "parkingSpot": false,
+    "parkingSpotCovered": false,
+    "garden": false,
+    "gardenSurface": null,
+    "terrace": false,
+    "terraceSurface": null,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": false,
+    "cellar": false,
+    "airConditioning": false,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": null,
+    "otherFeatures": [
+      "Da ristrutturare",
+      "Struttura in muratura",
+      "Terreno di pertinenza"
+    ],
+    "shortDescription": "Corpo rurale con struttura in muratura portante e ampio sedime esterno.",
+    "description": "Corpo rurale con struttura in muratura portante e ampio sedime esterno. Un progetto di recupero con volumetria già esistente.",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://picsum.photos/id/322/1600/1100",
+      "alt": "rustico-da-ristrutturare-polcenigo — fotografia segnaposto",
+      "width": 1600,
+      "height": 1100
+    },
+    "images": [
+      {
+        "src": "https://picsum.photos/id/322/1600/1100",
+        "alt": "rustico-da-ristrutturare-polcenigo — fotografia segnaposto",
+        "width": 1600,
+        "height": 1100
+      },
+      {
+        "src": "https://picsum.photos/id/308/1400/1000",
+        "alt": "rustico-da-ristrutturare-polcenigo — fotografia segnaposto",
+        "width": 1400,
+        "height": 1000
+      },
+      {
+        "src": "https://picsum.photos/id/942/1400/1000",
+        "alt": "rustico-da-ristrutturare-polcenigo — fotografia segnaposto",
+        "width": 1400,
+        "height": 1000
+      }
+    ]
+  },
+  {
+    "id": "p-007",
+    "slug": "terreno-edificabile-porcia",
+    "title": "Terreno edificabile",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Terreno",
+    "publicationDate": null,
+    "featuredHome": false,
+    "homeOrder": null,
+    "usafEligible": false,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Porcia",
+      "provincia": "PN",
+      "zona": null,
+      "address": null,
+      "showAddress": false
+    },
+    "price": 95000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 800,
+    "bedrooms": null,
+    "bathrooms": null,
+    "floor": null,
+    "buildingFloors": null,
+    "constructionYear": null,
+    "energy": null,
+    "garage": false,
+    "garageType": null,
+    "parkingSpot": false,
+    "parkingSpotCovered": false,
+    "garden": false,
+    "gardenSurface": null,
+    "terrace": false,
+    "terraceSurface": null,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": false,
+    "cellar": false,
+    "airConditioning": false,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": null,
+    "otherFeatures": [],
+    "shortDescription": "Lotto edificabile in zona residenziale, pronto per la progettazione.",
+    "description": "Lotto edificabile in zona residenziale, pronto per la progettazione. Indici e vincoli urbanistici disponibili su richiesta.",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://picsum.photos/id/625/1600/1100",
+      "alt": "terreno-edificabile-porcia — fotografia segnaposto",
+      "width": 1600,
+      "height": 1100
+    },
+    "images": [
+      {
+        "src": "https://picsum.photos/id/625/1600/1100",
+        "alt": "terreno-edificabile-porcia — fotografia segnaposto",
+        "width": 1600,
+        "height": 1100
+      },
+      {
+        "src": "https://picsum.photos/id/307/1400/1000",
+        "alt": "terreno-edificabile-porcia — fotografia segnaposto",
+        "width": 1400,
+        "height": 1000
+      },
+      {
+        "src": "https://picsum.photos/id/622/1400/1000",
+        "alt": "terreno-edificabile-porcia — fotografia segnaposto",
+        "width": 1400,
+        "height": 1000
+      }
+    ]
+  },
+  {
+    "id": "p-008",
+    "slug": "bifamiliare-con-giardino-porcia",
+    "title": "Porzione di bifamiliare",
+    "visible": true,
+    "status": "Affittato",
+    "transactionType": "affitto",
+    "propertyType": "Bifamiliare",
+    "publicationDate": null,
+    "featuredHome": false,
+    "homeOrder": null,
+    "usafEligible": true,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Porcia",
+      "provincia": "PN",
+      "zona": null,
+      "address": null,
+      "showAddress": false
+    },
+    "price": null,
+    "priceOnRequest": false,
+    "monthlyRent": 1400,
+    "monthlyCondoFees": null,
+    "surface": 160,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "floor": null,
+    "buildingFloors": null,
+    "constructionYear": null,
+    "energy": null,
+    "garage": true,
+    "garageType": null,
+    "parkingSpot": false,
+    "parkingSpotCovered": false,
+    "garden": true,
+    "gardenSurface": null,
+    "terrace": false,
+    "terraceSurface": null,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": false,
+    "cellar": false,
+    "airConditioning": false,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": null,
+    "otherFeatures": [
+      "Parzialmente arredato",
+      "Ingresso indipendente"
+    ],
+    "shortDescription": "Porzione di bifamiliare con giardino privato e ingresso indipendente.",
+    "description": "Porzione di bifamiliare con giardino privato e ingresso indipendente. Attualmente locata.",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://picsum.photos/id/942/1600/1100",
+      "alt": "bifamiliare-con-giardino-porcia — fotografia segnaposto",
+      "width": 1600,
+      "height": 1100
+    },
+    "images": [
+      {
+        "src": "https://picsum.photos/id/942/1600/1100",
+        "alt": "bifamiliare-con-giardino-porcia — fotografia segnaposto",
+        "width": 1600,
+        "height": 1100
+      },
+      {
+        "src": "https://picsum.photos/id/945/1400/1000",
+        "alt": "bifamiliare-con-giardino-porcia — fotografia segnaposto",
+        "width": 1400,
+        "height": 1000
+      },
+      {
+        "src": "https://picsum.photos/id/946/1400/1000",
+        "alt": "bifamiliare-con-giardino-porcia — fotografia segnaposto",
+        "width": 1400,
+        "height": 1000
+      }
+    ]
+  },
+  {
+    "id": "p-010",
+    "slug": "unita-a1-borgo-rose",
+    "title": "Unità A1 — Borgo Rose",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Appartamento",
+    "publicationDate": null,
+    "featuredHome": false,
+    "homeOrder": null,
+    "usafEligible": false,
+    "newDevelopment": true,
+    "projectName": "Borgo Rose",
+    "location": {
+      "comune": "Brugnera",
+      "provincia": "PN",
+      "zona": null,
+      "address": null,
+      "showAddress": false
+    },
+    "price": null,
+    "priceOnRequest": true,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 85,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "floor": null,
+    "buildingFloors": null,
+    "constructionYear": null,
+    "energy": null,
+    "garage": false,
+    "garageType": null,
+    "parkingSpot": false,
+    "parkingSpotCovered": false,
+    "garden": false,
+    "gardenSurface": null,
+    "terrace": false,
+    "terraceSurface": null,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": false,
+    "cellar": false,
+    "airConditioning": false,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": null,
+    "otherFeatures": [],
+    "shortDescription": "Unità in un intervento residenziale di nuova costruzione.",
+    "description": "Unità in un intervento residenziale di nuova costruzione, pensato attorno a una corte comune.",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://picsum.photos/id/290/1600/1100",
+      "alt": "unita-a1-borgo-rose — fotografia segnaposto",
+      "width": 1600,
+      "height": 1100
+    },
+    "images": [
+      {
+        "src": "https://picsum.photos/id/290/1600/1100",
+        "alt": "unita-a1-borgo-rose — fotografia segnaposto",
+        "width": 1600,
+        "height": 1100
+      },
+      {
+        "src": "https://picsum.photos/id/322/1400/1000",
+        "alt": "unita-a1-borgo-rose — fotografia segnaposto",
+        "width": 1400,
+        "height": 1000
+      },
+      {
+        "src": "https://picsum.photos/id/308/1400/1000",
+        "alt": "unita-a1-borgo-rose — fotografia segnaposto",
+        "width": 1400,
+        "height": 1000
+      }
+    ]
+  }
+]
