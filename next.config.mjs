@@ -13,6 +13,13 @@ const r2PublicHostname = (() => {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  async redirects() {
+    return [
+      // La pagina USAF Housing è diventata "Locazioni Americani" — redirect
+      // permanente per non rompere eventuali link o segnalibri esistenti.
+      { source: '/locazioni-base-usaf', destination: '/locazioni-americani', permanent: true },
+    ];
+  },
   images: {
     formats: ['image/avif', 'image/webp'],
     qualities: [70, 75, 80, 82, 85, 90],

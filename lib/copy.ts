@@ -52,6 +52,10 @@ export function featureFacetLabel(t: Dictionary, code: string): string {
     : propertyFeatureLabel(t, code);
 }
 
+export function valuationLabel(t: Dictionary, key: string): string {
+  return labelOf(t.valuation.labels as Record<string, string>, key);
+}
+
 export function hourLabel(t: Dictionary, key: string): string {
   return labelOf(t.hours as unknown as Record<string, string>, key);
 }

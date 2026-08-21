@@ -34,39 +34,39 @@ type Service = {
  * and a photograph at the matching path.
  */
 const SERVICES: Service[] = [
-  { key: 'sales', href: '/immobili', image: '/images/services/sales.jpg', area: 'a', enabled: true },
+  { key: 'sales', href: '/immobili', image: '/images/services/sales.webp', area: 'a', enabled: true },
   {
     key: 'valuation',
     href: '/vendi-affitta#questionario',
-    image: '/images/services/valuation.jpg',
+    image: '/images/services/valuation.webp',
     area: 'b',
     enabled: true,
   },
   {
     key: 'rentals',
-    href: '/locazioni-base-usaf',
-    image: '/images/services/rentals-usaf.jpg',
+    href: '/locazioni-americani',
+    image: '/images/services/rentals-usaf.webp',
     area: 'c',
     enabled: true,
   },
   {
     key: 'developments',
-    href: '/#developments-title',
-    image: '/images/services/developments.jpg',
+    href: '/',
+    image: '/images/services/developments.webp',
     area: 'd',
     enabled: true,
   },
   {
     key: 'mortgages',
     href: '/contatti',
-    image: '/images/services/mortgages.jpg',
+    image: '/images/services/mortgages.webp',
     area: 'e',
     enabled: true,
   },
   {
     key: 'advisory',
     href: '/contatti',
-    image: '/images/services/advisory.jpg',
+    image: '/images/services/advisory.webp',
     area: 'f',
     enabled: true,
   },
@@ -74,7 +74,7 @@ const SERVICES: Service[] = [
   {
     key: 'holiday',
     href: '/immobili',
-    image: '/images/services/holiday.jpg',
+    image: '/images/services/holiday.webp',
     area: 'g',
     enabled: false,
   },

@@ -50,7 +50,7 @@ export default async function ProjectPage({ params }: Params) {
       <header className={styles.top}>
         <div className="container">
           <nav className={styles.breadcrumb} aria-label={t.property.breadcrumb}>
-            <Link href="/#developments-title">{t.developments.label}</Link>
+            <Link href="/">{t.developments.label}</Link>
             <span aria-hidden="true">/</span>
             <span>{status}</span>
           </nav>

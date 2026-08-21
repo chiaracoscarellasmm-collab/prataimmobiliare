@@ -147,7 +147,7 @@ export default async function ContattiPage() {
               <div style={{ display: 'grid', gap: '0.25rem', justifyItems: 'start' }}>
                 <ArrowLink href="/vendi-affitta#questionario">{t.contactsPage.valuation}</ArrowLink>
                 <ArrowLink href="/immobili">{t.contactsPage.seeProperties}</ArrowLink>
-                <ArrowLink href="/locazioni-base-usaf">{t.contactsPage.usaf}</ArrowLink>
+                <ArrowLink href="/locazioni-americani">{t.contactsPage.usaf}</ArrowLink>
               </div>
             </Reveal>
           </div>

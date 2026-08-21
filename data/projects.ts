@@ -26,6 +26,15 @@ export interface ProjectUnit {
   availability: 'Disponibile' | 'Opzionato' | 'Venduto';
 }
 
+/** Una tipologia di appartamento disponibile nel progetto, con la propria planimetria. */
+export interface ApartmentType {
+  id: string;
+  name: string;
+  area: string;
+  description: string;
+  image: ProjectImage;
+}
+
 export interface Project {
   id: string;
   slug: string;
@@ -42,6 +51,8 @@ export interface Project {
   floorPlans: ProjectImage[];
   features: string[];
   availability: ProjectUnit[];
+  /** Tipologie di appartamento mostrate nella scheda tecnica in homepage. */
+  apartmentTypes?: ApartmentType[];
 }
 
 export const projects: Project[] = [
@@ -52,7 +63,7 @@ export const projects: Project[] = [
     location: 'Brugnera',
     status: 'In costruzione',
     delivery: '2027',
-    numberOfUnits: 8,
+    numberOfUnits: 7,
     intro:
       '[PLACEHOLDER] Un intervento residenziale di otto unità, pensato attorno a una corte comune e a un rapporto diretto tra interno ed esterno.',
     description: [
@@ -60,17 +71,58 @@ export const projects: Project[] = [
       '[DESCRIZIONE PLACEHOLDER] Le finiture, i materiali e i capitolati verranno pubblicati non appena definiti insieme alla proprietà.',
     ],
     heroImage: {
-      src: '/images/projects/residenze-a-hero.jpg',
+      src: '/images/projects/residenze-a-hero.webp',
       alt: 'Render del progetto residenziale — immagine placeholder',
-      width: 2400,
-      height: 1450,
+      width: 2200,
+      height: 1329,
     },
     gallery: [
-      { src: '/images/projects/residenze-a-01.jpg', alt: 'Dettaglio di facciata — immagine placeholder', width: 1600, height: 1100 },
-      { src: '/images/projects/residenze-a-02.jpg', alt: 'Interno tipo — immagine placeholder', width: 1200, height: 1500 },
+      { src: '/images/projects/residenze-a-01.webp', alt: 'Dettaglio di facciata — immagine placeholder', width: 1200, height: 825 },
+      { src: '/images/projects/residenze-a-02.webp', alt: 'Interno tipo — immagine placeholder', width: 1200, height: 1500 },
     ],
     floorPlans: [
-      { src: '/images/plans/plan-a.jpg', alt: 'Planimetria tipo — placeholder', width: 1600, height: 1100 },
+      { src: '/images/plans/borgo-rose-01.webp', alt: 'Planimetria Borgo Rose', width: 1086, height: 1448 },
+    ],
+    apartmentTypes: [
+      {
+        id: '01',
+        name: 'Tricamere piano terra con giardino',
+        area: '139 mq',
+        description:
+          'Soluzione al piano terra con tre camere e giardino privato, pensata per chi cerca spazi generosi e continuità tra interno ed esterno.',
+        image: {
+          src: '/images/plans/borgo-rose-01.webp',
+          alt: 'Planimetria — Tricamere piano terra con giardino',
+          width: 1086,
+          height: 1448,
+        },
+      },
+      {
+        id: '02',
+        name: 'Bicamere piano terra con giardino',
+        area: '92 mq',
+        description:
+          'Appartamento al piano terra con due camere e giardino, ideale per chi desidera comfort, praticità e uno spazio esterno vivibile.',
+        image: {
+          src: '/images/plans/borgo-rose-02.webp',
+          alt: 'Planimetria — Bicamere piano terra con giardino',
+          width: 1086,
+          height: 1448,
+        },
+      },
+      {
+        id: '03',
+        name: '3 camere piano primo con terrazzo',
+        area: '136 mq',
+        description:
+          'Abitazione al primo piano con tre camere e terrazzo, caratterizzata da ambienti ampi e da una distribuzione funzionale degli spazi.',
+        image: {
+          src: '/images/plans/borgo-rose-03.webp',
+          alt: 'Planimetria — 3 camere piano primo con terrazzo',
+          width: 1024,
+          height: 1536,
+        },
+      },
     ],
     features: ['Classe energetica [CLASSE]', 'Corte comune', 'Garage privati', 'Impianti [DA DEFINIRE]'],
     availability: [
@@ -93,17 +145,17 @@ export const projects: Project[] = [
       '[DESCRIZIONE PLACEHOLDER] Un intervento seguito fin dalle prime fasi progettuali, in collaborazione con la proprietà e la direzione lavori.',
     ],
     heroImage: {
-      src: '/images/projects/residenze-b-hero.jpg',
+      src: '/images/projects/residenze-b-hero.webp',
       alt: 'Render del secondo progetto residenziale — immagine placeholder',
-      width: 2400,
-      height: 1450,
+      width: 2200,
+      height: 1329,
     },
     gallery: [
-      { src: '/images/projects/residenze-b-01.jpg', alt: 'Vista d’insieme — immagine placeholder', width: 1600, height: 1100 },
-      { src: '/images/projects/residenze-b-02.jpg', alt: 'Dettaglio materico — immagine placeholder', width: 1200, height: 1500 },
+      { src: '/images/projects/residenze-b-01.webp', alt: 'Vista d’insieme — immagine placeholder', width: 1200, height: 825 },
+      { src: '/images/projects/residenze-b-02.webp', alt: 'Dettaglio materico — immagine placeholder', width: 1200, height: 1500 },
     ],
     floorPlans: [
-      { src: '/images/plans/plan-b.jpg', alt: 'Planimetria generale — placeholder', width: 1600, height: 1100 },
+      { src: '/images/plans/plan-b.webp', alt: 'Planimetria generale — placeholder', width: 1600, height: 1100 },
     ],
     features: ['Autorimesse interrate', 'Aree verdi di pertinenza', 'Capitolato [DA DEFINIRE]'],
     availability: [
@@ -125,14 +177,14 @@ export const projects: Project[] = [
       '[DESCRIZIONE PLACEHOLDER] Le unità sono in fase di completamento. Le visite in cantiere si svolgono su appuntamento.',
     ],
     heroImage: {
-      src: '/images/projects/residenze-c-hero.jpg',
+      src: '/images/projects/residenze-c-hero.webp',
       alt: 'Interno di una delle unità — immagine placeholder',
-      width: 2400,
-      height: 1450,
+      width: 2200,
+      height: 1329,
     },
     gallery: [
-      { src: '/images/projects/residenze-c-01.jpg', alt: 'Affaccio sul verde interno — immagine placeholder', width: 1600, height: 1100 },
-      { src: '/images/projects/residenze-c-02.jpg', alt: 'Fronte principale — immagine placeholder', width: 1200, height: 1500 },
+      { src: '/images/projects/residenze-c-01.webp', alt: 'Affaccio sul verde interno — immagine placeholder', width: 1200, height: 825 },
+      { src: '/images/projects/residenze-c-02.webp', alt: 'Fronte principale — immagine placeholder', width: 1200, height: 1500 },
     ],
     floorPlans: [],
     features: ['Logge abitabili', 'Cantine di pertinenza', 'Consegna [ANNO]'],

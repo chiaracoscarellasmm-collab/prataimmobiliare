@@ -5,31 +5,42 @@ import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 
 import { useI18n } from '@/components/i18n/LanguageProvider';
-import { projects } from '@/data/projects';
+import type { Property } from '@/data/properties';
+import { getFeaturedProperties } from '@/data/properties';
+import { propertyStatusLabel } from '@/lib/copy';
+import { formatPrice, formatSurface } from '@/lib/format';
 import styles from './CircularProjectsShowcase.module.css';
 
 export type ShowcaseItem = {
   id: string;
   title: string;
   location: string;
-  status: string;
-  delivery: string;
-  units: number;
+  status: Property['status'];
+  surface: number | null;
+  price: number | null;
+  transactionType: 'vendita' | 'affitto';
   image: { src: string; alt: string; width: number; height: number };
   href: string;
 };
 
-/** Built from the project dataset — replace the data, not the component. */
-const ITEMS: ShowcaseItem[] = projects.map((project, i) => ({
-  id: String(i + 1).padStart(2, '0'),
-  title: project.projectName,
-  location: project.location,
-  status: project.status,
-  delivery: project.delivery,
-  units: project.numberOfUnits,
-  image: project.heroImage,
-  href: `/progetti/${project.slug}`,
-}));
+/** Built from the featured-properties dataset — replace the data, not the component. */
+const ITEMS: ShowcaseItem[] = getFeaturedProperties(3)
+  .map((property, i) => {
+    const image = property.coverImage ?? property.images[0];
+    if (!image) return null;
+    return {
+      id: String(i + 1).padStart(2, '0'),
+      title: property.title,
+      location: property.location.comune,
+      status: property.status,
+      surface: property.surface,
+      price: property.transactionType === 'affitto' ? property.monthlyRent : property.price,
+      transactionType: property.transactionType,
+      image,
+      href: `/immobili/${property.slug}`,
+    };
+  })
+  .filter((item): item is ShowcaseItem => item !== null);
 
 /** Each transition holds the record still before the wipe begins. */
 const HOLD = 0.42;
@@ -50,7 +61,7 @@ export default function CircularProjectsShowcase({
 }: {
   items?: ShowcaseItem[];
 }) {
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
   const sectionRef = useRef<HTMLElement>(null);
   const layerRefs = useRef<(HTMLDivElement | null)[]>([]);
   const needleRef = useRef<HTMLSpanElement>(null);
@@ -147,15 +158,15 @@ export default function CircularProjectsShowcase({
       ref={sectionRef}
       className={`${styles.section} surface-light`}
       style={{ '--segments': transitions } as React.CSSProperties}
-      aria-labelledby="developments-title"
+      aria-labelledby="featured-title"
     >
       <div className={styles.pin}>
         <div className={styles.head}>
-          <p className={styles.label}>{t.developments.label}</p>
-          <h2 id="developments-title" className={styles.headTitle}>
-            {t.developments.title} <em>{t.developments.titleEm}</em>
+          <p className={styles.label}>{t.featured.label}</p>
+          <h2 id="featured-title" className={styles.headTitle}>
+            {t.featured.title} <em>{t.featured.titleEm}</em>
           </h2>
-          <p className={styles.intro}>{t.developments.intro}</p>
+          <p className={styles.intro}>{t.featured.intro}</p>
         </div>
 
         <div className={styles.stage}>
@@ -196,7 +207,6 @@ export default function CircularProjectsShowcase({
                     width={item.image.width}
                     height={item.image.height}
                     sizes="(min-width: 1024px) 34vw, 74vw"
-                    priority={i < 2}
                     quality={82}
                   />
                 </div>
@@ -205,27 +215,30 @@ export default function CircularProjectsShowcase({
 
             <span ref={needleRef} className={styles.needle} aria-hidden="true" />
 
-            <Link href={current.href} className={styles.expand} aria-label={t.developments.cta}>
+            <Link href={current.href} className={styles.expand} aria-label={t.results.cardCta}>
               <span aria-hidden="true">↗</span>
             </Link>
           </div>
 
           <div className={styles.record}>
-            {/* Keyed on the active project so the copy re-enters on change. */}
+            {/* Keyed on the active property so the copy re-enters on change. */}
             <div key={current.id} className={styles.recordInner}>
-              <p className={styles.recordLabel}>{t.developments.index}</p>
+              <p className={styles.recordLabel}>{t.featured.itemLabel}</p>
               <h3 className={styles.projectName}>{current.title}</h3>
               <p className={styles.place}>{current.location}</p>
               <p className={styles.meta}>
+                {current.surface !== null && (
+                  <span>
+                    {t.featured.surfaceLabel} {formatSurface(current.surface, locale)}
+                  </span>
+                )}
                 <span>
-                  {t.developments.units} {String(current.units).padStart(2, '0')}
-                </span>
-                <span>
-                  {t.developments.delivery} {current.delivery}
+                  {current.price !== null && `${t.featured.priceLabel} `}
+                  {formatPrice(current.price, current.transactionType, t.property, locale)}
                 </span>
               </p>
               <Link href={current.href} className={`arrow-link ${styles.cta}`}>
-                <span>{t.developments.cta}</span>
+                <span>{t.results.cardCta}</span>
                 <span className="arrow" aria-hidden="true">
                   →
                 </span>
@@ -238,7 +251,7 @@ export default function CircularProjectsShowcase({
           <p className={styles.counter}>
             {current.id} / {String(items.length).padStart(2, '0')}
           </p>
-          <p className={styles.status}>{current.status}</p>
+          <p className={styles.status}>{propertyStatusLabel(t, current.status)}</p>
         </div>
 
         <span className={styles.track} aria-hidden="true">

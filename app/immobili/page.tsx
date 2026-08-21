@@ -31,7 +31,7 @@ export default async function ImmobiliPage() {
       <section className={styles.hero} aria-labelledby="properties-title">
         <div className={styles.heroBg}>
           <Image
-            src="/hero_immobili_prata_immobiliare.png"
+            src="/hero_immobili_prata_immobiliare.webp"
             alt={t.propertiesPage.heroAlt}
             fill
             priority

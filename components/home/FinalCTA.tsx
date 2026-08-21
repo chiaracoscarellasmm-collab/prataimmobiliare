@@ -9,14 +9,14 @@ export default async function FinalCTA() {
   const routes = [
     { label: t.finalCta.looking, href: '/immobili' },
     { label: t.finalCta.selling, href: '/vendi-affitta' },
-    { label: t.finalCta.usaf, href: '/locazioni-base-usaf' },
+    { label: t.finalCta.usaf, href: '/locazioni-americani' },
   ];
 
   return (
     <section className={styles.section} aria-labelledby="final-cta-title">
       <div className={styles.bg}>
         <Image
-          src="/municipio_pordenone_foto_agenziaimmobiliare.jpg"
+          src="/municipio_pordenone_foto_agenziaimmobiliare.webp"
           alt={t.finalCta.imageAlt}
           fill
           sizes="100vw"

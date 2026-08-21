@@ -92,7 +92,9 @@
 }
 
 .plans { display: grid; gap: clamp(1.25rem, 3vw, 2rem); }
-.plan { border: 1px solid var(--line); padding: clamp(1.25rem, 3vw, 2.5rem); background: var(--warm-white); border-radius: var(--radius); }
+/* Le planimetrie sono spesso tracciati bianchi su fondo trasparente: un
+   fondo chiaro le renderebbe illeggibili. */
+.plan { border: 1px solid rgba(244, 239, 230, 0.14); padding: clamp(1.25rem, 3vw, 2.5rem); background: var(--ink-900); border-radius: var(--radius); }
 .plan img { width: 100%; height: auto; }
 
 .cta { background: var(--dark); color: var(--on-dark); padding-block: var(--section-y-sm); }

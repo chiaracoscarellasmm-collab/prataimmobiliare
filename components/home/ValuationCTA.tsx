@@ -63,10 +63,10 @@ export default async function ValuationCTA() {
           <Reveal className={styles.figure}>
             {/* Sostituibile: fotografia residenziale, non finanziaria. */}
             <Image
-              src="/images/home/valutazione.jpg"
+              src="/images/home/valutazione.webp"
               alt={t.valuationCta.imageAlt}
-              width={2000}
-              height={1330}
+              width={1800}
+              height={1197}
               sizes="(min-width: 900px) 58vw, 100vw"
             />
           </Reveal>

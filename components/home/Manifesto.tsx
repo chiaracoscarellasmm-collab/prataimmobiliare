@@ -37,7 +37,7 @@ export default async function Manifesto() {
           <figure className={styles.figure}>
             <Reveal media className={styles.frame}>
               <Image
-                src="/images/home/manifesto.jpg"
+                src="/images/home/manifesto.webp"
                 alt={t.manifesto.imageAlt}
                 width={1000}
                 height={1400}

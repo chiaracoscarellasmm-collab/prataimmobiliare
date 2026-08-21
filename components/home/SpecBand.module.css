@@ -1,5 +1,6 @@
-/* The specification band under the hero: a drawing on paper beside a dark
-   data panel, the way the reference layout presents a development. */
+/* The specification band under the hero: an architectural plate beside a
+   dark data panel — three unit types of the same development, not a
+   carousel across unrelated projects. */
 .band {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -8,14 +9,56 @@
 }
 
 /* ---- left: the drawing ---- */
-.plate {
-  position: relative;
-  background: var(--cream);
-  aspect-ratio: 16 / 11;
-  overflow: hidden;
+.stage {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+  padding: clamp(1.75rem, 3.4vw, 3.25rem);
+  /* Distance for the pseudo-3D read on .plate's rotateX/rotateY below. */
+  perspective: 1600px;
 }
 
-.plate img { width: 100%; height: 100%; object-fit: cover; }
+.plate {
+  --rx: 0deg;
+  --ry: 0deg;
+  position: relative;
+  transform: rotateX(var(--rx)) rotateY(var(--ry));
+  transition: transform 480ms var(--ease), box-shadow 480ms var(--ease);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 34px 60px -28px rgba(0, 0, 0, 0.55), 0 12px 26px -16px rgba(0, 0, 0, 0.4);
+  will-change: transform;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .plate:hover {
+    transform: translateY(-4px) scale(1.015) rotateX(var(--rx)) rotateY(var(--ry));
+    box-shadow: 0 44px 76px -30px rgba(0, 0, 0, 0.6), 0 16px 32px -16px rgba(0, 0, 0, 0.44);
+  }
+}
+
+/* Belt and braces: the JS tilt handler already no-ops off fine pointers,
+   this guarantees no leftover transform on a device that never fires it. */
+@media (hover: none), (pointer: coarse) {
+  .plate { transform: none; }
+}
+
+.plateFrame {
+  position: relative;
+  /* Fisso a tutte le larghezze: le planimetrie reali sono verticali (ritratto)
+     — con `auto` la riga della griglia seguiva l'altezza naturale
+     dell'immagine ed esplodeva, staccando il pannello di testo dal titolo. */
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: inherit;
+  /* Plans are often white line-work on a transparent ground: a light
+     background would make them unreadable. */
+  background: var(--ink-900);
+}
+
+/* `contain`, non `cover`: una planimetria non va mai ritagliata. */
+.plateFrame img { width: 100%; height: 100%; object-fit: contain; }
+
+.plateImage { width: 100%; height: 100%; animation: fadeUp 520ms var(--ease) both; }
 
 .plateTag {
   position: absolute;
@@ -25,8 +68,42 @@
   font-weight: 600;
   letter-spacing: var(--ls-label);
   text-transform: uppercase;
-  color: rgba(26, 23, 19, 0.55);
+  color: rgba(244, 239, 230, 0.6);
 }
+
+/* ---- the 01 / 02 / 03 selector — the only control, deliberately quiet. */
+.typeTabs {
+  display: flex;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.typeTab {
+  position: relative;
+  padding-bottom: 0.5rem;
+  font-family: var(--font-serif);
+  font-size: clamp(1.05rem, 1.6vw, 1.375rem);
+  font-variant-numeric: lining-nums tabular-nums;
+  color: var(--ink-faint);
+  transition: color var(--dur-fast) var(--ease);
+}
+
+.typeTab::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: var(--sand);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--dur) var(--ease);
+}
+
+.typeTab:hover { color: var(--ink-muted); }
+
+.typeTabActive { color: var(--cream); }
+.typeTabActive::after { transform: scaleX(1); }
 
 /* ---- right: the data ---- */
 .panel {
@@ -34,32 +111,8 @@
   flex-direction: column;
   gap: clamp(1.5rem, 3vw, 2.5rem);
   padding: clamp(1.75rem, 3.4vw, 3.25rem);
+  padding-top: 0;
   color: var(--ink);
-}
-
-.head {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 1.5rem;
-}
-
-.label {
-  font-size: var(--fs-label);
-  font-weight: 600;
-  letter-spacing: var(--ls-label);
-  text-transform: uppercase;
-  color: var(--ink-faint);
-}
-
-.counter {
-  font-family: var(--font-cond);
-  font-variation-settings: 'wdth' 78;
-  font-weight: 600;
-  font-size: var(--fs-small);
-  letter-spacing: 0.04em;
-  color: var(--ink-faint);
-  font-variant-numeric: tabular-nums;
 }
 
 .name {
@@ -74,15 +127,27 @@
 
 .location { font-size: var(--fs-small); color: var(--ink-muted); margin-top: 0.5rem; }
 
-/* Three big condensed figures — the register of a spec sheet. */
-.stats {
+/* Re-enters on every type change — the fade + slight slide the brief asks
+   for, never a hard cut. Segue il nome del progetto senza staccarsene: prima
+   `margin-top: auto` lo spingeva in fondo al pannello, lontano dal titolo. */
+.typeBlock {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(1rem, 2vw, 2rem);
+  gap: clamp(1rem, 2vw, 1.5rem);
+  margin-top: clamp(1.5rem, 3vw, 2.25rem);
   padding-top: clamp(1.25rem, 2.5vw, 2rem);
   border-top: 1px solid var(--line);
-  margin-top: auto;
+  animation: fadeUp 520ms var(--ease) both;
 }
+
+.typeName {
+  font-family: var(--font-serif);
+  font-size: clamp(1.25rem, 2.1vw, 1.75rem);
+  letter-spacing: -0.014em;
+  line-height: 1.2;
+  max-width: 24ch;
+}
+
+.stats { display: grid; grid-template-columns: max-content; }
 
 .statKey {
   display: flex;
@@ -102,64 +167,37 @@
   font-family: var(--font-cond);
   font-variation-settings: 'wdth' 74;
   font-weight: 600;
-  font-size: clamp(1.5rem, 2.6vw, 2.75rem);
+  font-size: clamp(1.5rem, 2.6vw, 2.25rem);
   line-height: 0.92;
   letter-spacing: -0.02em;
   font-variant-numeric: lining-nums tabular-nums;
-  text-transform: uppercase;
 }
 
+.description { max-width: 42ch; color: var(--ink-muted); }
+
 .foot {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
   padding-top: clamp(1rem, 2vw, 1.5rem);
   border-top: 1px solid var(--line);
 }
 
-.nav { display: flex; gap: 0.5rem; }
+.cta { color: var(--cream); }
 
-.navBtn {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: 1px solid var(--line-strong);
-  display: grid;
-  place-items: center;
-  color: var(--ink);
-  font-size: 0.95rem;
-  transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease),
-    border-color var(--dur) var(--ease);
+@keyframes fadeUp {
+  from { opacity: 0; transform: translate3d(0, 14px, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
 }
-
-.navBtn:hover { background: var(--ink); color: var(--ink-900); border-color: var(--ink); }
-
-.typeTag { text-align: right; }
-
-.typeLabel {
-  font-size: var(--fs-label);
-  letter-spacing: var(--ls-label);
-  text-transform: uppercase;
-  color: var(--ink-faint);
-}
-
-.typeValue { font-size: var(--fs-small); margin-top: 0.2rem; }
-
-.thumbs { display: flex; gap: 0.4rem; }
-
-.thumb {
-  width: 54px;
-  height: 40px;
-  border-radius: 8px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  background: var(--ink-700);
-}
-
-.thumb img { width: 100%; height: 100%; object-fit: cover; }
 
 @media (min-width: 900px) {
   .band { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); }
-  .plate { aspect-ratio: auto; }
+
+  /* -15%: l'intera sezione deve stare in una schermata desktop senza scroll. */
+  .plate { width: 85%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plate { transition: none; transform: none; }
+  .plateImage,
+  .typeBlock { animation: none; }
+  .typeTab { transition: none; }
+  .typeTab::after { transition: none; }
 }

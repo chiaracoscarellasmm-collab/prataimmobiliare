@@ -105,7 +105,7 @@ export default function ScrollZoomHero() {
         {/* Sostituire con la fotografia definitiva dell'agenzia. */}
         <div className={styles.frame}>
           <Image
-            src="/images/home/hero.jpg"
+            src="/images/home/hero.webp"
             alt={t.hero.imageAlt}
             fill
             priority

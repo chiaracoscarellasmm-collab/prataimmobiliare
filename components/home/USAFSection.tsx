@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import ArrowLink from '@/components/ui/ArrowLink';
 import Reveal from '@/components/ui/Reveal';
 import SectionLabel from '@/components/ui/SectionLabel';
@@ -21,10 +19,6 @@ function FlagMark() {
 
 export default async function USAFSection() {
   const { t } = await getI18n();
-  const routes = [
-    { label: t.usafHome.looking, href: '/locazioni-base-usaf#available' },
-    { label: t.usafHome.renting, href: '/vendi-affitta?intent=affittare&target=usaf' },
-  ];
 
   return (
     <section className={styles.section} aria-labelledby="usaf-title">
@@ -54,19 +48,6 @@ export default async function USAFSection() {
             </Reveal>
 
             <Reveal delay={220}>
-              <div className={styles.routes}>
-                {routes.map((route) => (
-                  <Link key={route.href} href={route.href} className={styles.route}>
-                    <span>{route.label}</span>
-                    <span className={`arrow ${styles.arrow}`} aria-hidden="true">
-                      →
-                    </span>
-                  </Link>
-                ))}
-              </div>
-            </Reveal>
-
-            <Reveal delay={280}>
               <p className={styles.badge}>
                 <FlagMark />
                 {t.usafHome.badge}
@@ -76,7 +57,7 @@ export default async function USAFSection() {
         </div>
 
         <div className={styles.foot}>
-          <ArrowLink href="/locazioni-base-usaf">{t.usafHome.cta}</ArrowLink>
+          <ArrowLink href="/locazioni-americani">{t.usafHome.cta}</ArrowLink>
         </div>
       </div>
     </section>

@@ -10,7 +10,8 @@
     "typecheck": "tsc --noEmit",
     "sync:properties": "node scripts/sync-properties.mjs",
     "sheets:test": "node --env-file=.env.local scripts/sheets-test.mjs",
-    "import:idealista": "node --env-file=.env.local scripts/import-idealista.mjs"
+    "import:idealista": "node --env-file=.env.local scripts/import-idealista.mjs",
+    "images:optimize": "node scripts/images/optimize-images.mjs"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1114.0",

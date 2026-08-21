@@ -1,14 +1,10 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import { Suspense } from 'react';
 
 import PageHero from '@/components/ui/PageHero';
-import Reveal from '@/components/ui/Reveal';
 import ScrollToLink from '@/components/ui/ScrollToLink';
-import MultiStepValuationForm from '@/components/valuation/MultiStepValuationForm';
+import ValuationForm from '@/components/valuation/ValuationForm';
 import { getI18n } from '@/lib/i18n';
-import styles from './routes.module.css';
-import ValuationFlow from './ValuationFlow';
 
 export async function generateMetadata(): Promise<Metadata> {
   const { t } = await getI18n();
@@ -35,28 +31,20 @@ export default async function VendiAffittaPage() {
           <>
             {t.sellPage.title}
             <br />
-            {t.sellPage.titleEm}
+            <em className="em">{t.sellPage.titleEm}</em>
           </>
         }
         intro={t.sellPage.intro}
-        actions={<ScrollToLink targetId="questionario">{t.sellPage.cta}</ScrollToLink>}
+        actions={
+          <div style={{ display: 'grid', gap: '0.6rem' }}>
+            <ScrollToLink targetId="questionario">{t.sellPage.cta}</ScrollToLink>
+            <p className="meta">{t.sellPage.microcopy}</p>
+          </div>
+        }
       />
 
-      <div className="container" style={{ paddingBottom: 'clamp(2rem, 5vw, 4rem)' }}>
-        <Reveal media className={styles.figure}>
-          <Image
-            src="/images/about/vendi-wide.jpg"
-            alt={t.sellPage.imageAlt}
-            width={2400}
-            height={1030}
-            priority
-            sizes="100vw"
-          />
-        </Reveal>
-      </div>
-
-      <Suspense fallback={<MultiStepValuationForm />}>
-        <ValuationFlow />
+      <Suspense fallback={null}>
+        <ValuationForm />
       </Suspense>
     </>
   );

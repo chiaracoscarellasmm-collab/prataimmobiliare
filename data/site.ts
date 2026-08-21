@@ -45,6 +45,16 @@ export const contact = {
   },
 } as const;
 
+/**
+ * Referente dedicata al servizio Locazioni Americani — un canale WhatsApp
+ * separato dal numero generale dell'agenzia, mai usato per altri servizi.
+ */
+export const elisa = {
+  name: 'Elisa',
+  phone: { label: '345 821 2203', href: 'tel:+393458212203' },
+  whatsapp: { href: 'https://wa.me/393458212203' },
+} as const;
+
 export const socials = [
   { label: 'Instagram', href: 'https://www.instagram.com/prata_immobiliare/' },
   { label: 'Facebook', href: 'https://www.facebook.com/prataimmobiliare/' },
@@ -53,8 +63,8 @@ export const socials = [
 export const nav = [
   { key: 'about', href: '/chi-siamo' },
   { key: 'properties', href: '/immobili' },
-  { key: 'sellRent', href: '/vendi-affitta', emphasis: true },
-  { key: 'usaf', href: '/locazioni-base-usaf' },
+  { key: 'sellRent', href: '/vendi-affitta' },
+  { key: 'usaf', href: '/locazioni-americani' },
 ] as const;
 
 export const legalNav = [

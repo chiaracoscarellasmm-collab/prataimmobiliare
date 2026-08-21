@@ -13,7 +13,7 @@ type Props = {
 /** The quiet opening used by every page that is not the homepage. */
 export default function PageHero({ label, title, intro, actions, id = 'page-title' }: Props) {
   return (
-    <section className={styles.hero} aria-labelledby={id}>
+    <section className={`${styles.hero} surface-light`} aria-labelledby={id}>
       <div className="container">
         <div className={styles.grid}>
           <div>

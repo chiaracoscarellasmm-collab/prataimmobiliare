@@ -51,10 +51,10 @@ export default async function ChiSiamoPage() {
       <div className="container" style={{ paddingBottom: 'clamp(2.5rem, 6vw, 5rem)' }}>
         <Reveal media className={styles.figure}>
           <Image
-            src="/images/about/hero.jpg"
+            src="/images/about/hero.webp"
             alt={t.about.heroAlt}
-            width={2400}
-            height={1400}
+            width={2200}
+            height={1283}
             priority
             sizes="100vw"
           />
@@ -80,7 +80,7 @@ export default async function ChiSiamoPage() {
 
           <Reveal media className={styles.portrait}>
             <Image
-              src="/images/about/studio.jpg"
+              src="/images/about/studio.webp"
               alt={t.about.studioAlt}
               width={1300}
               height={1650}
@@ -115,10 +115,10 @@ export default async function ChiSiamoPage() {
         <div className={`${styles.split} ${styles.splitReverse}`}>
           <Reveal media className={styles.figure} style={{ aspectRatio: '3 / 2' }}>
             <Image
-              src="/images/about/territorio.jpg"
+              src="/images/about/territorio.webp"
               alt={t.about.territoryAlt}
-              width={2000}
-              height={1200}
+              width={1800}
+              height={1080}
               sizes="(min-width: 900px) 60vw, 100vw"
             />
           </Reveal>

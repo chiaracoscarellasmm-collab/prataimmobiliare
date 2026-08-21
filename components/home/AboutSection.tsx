@@ -16,12 +16,12 @@ export default function AboutSection() {
     <section className={styles.section} aria-labelledby="about-title">
       <div className="container">
         <Reveal media className={styles.figure}>
-          {/* Sostituire con fotografia definitiva: /images/home/territorio.jpg */}
+          {/* Sostituire con fotografia definitiva: /images/home/territorio.webp */}
           <Image
-            src="/images/home/territorio.jpg"
+            src="/images/home/territorio.webp"
             alt="Paesaggio del territorio in cui operiamo — immagine placeholder"
-            width={2400}
-            height={1350}
+            width={1800}
+            height={1013}
             sizes="100vw"
           />
         </Reveal>

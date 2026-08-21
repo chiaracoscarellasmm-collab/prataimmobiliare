@@ -1,175 +1,243 @@
-/** Shape of a valuation request. Mirrors the fields the form collects. */
+/**
+ * Schema e validazione del questionario di valutazione.
+ *
+ * Un solo oggetto di stato, come richiesto: nessuno step ha uno stato
+ * proprio, tutto vive qui e il form si limita a leggerlo/scriverlo. I valori
+ * dei campi a scelta sono slug stabili (mai il testo visibile): le etichette
+ * si traducono altrove (vedi lib/copy.ts → valuationLabel), così lo stato
+ * resta indipendente dalla lingua.
+ */
+
 export interface ValuationData {
-  intent: '' | 'vendere' | 'affittare';
-  /** Set when the request arrives from the USAF rental route. */
-  target: '' | 'usaf';
+  address: string;
 
   propertyType: string;
-  location: string;
-  address: string;
+  propertyTypeOther: string;
+
+  floor: string;
+  context: string;
+  contextOther: string;
+  condominium: '' | 'si' | 'no';
+
   surface: string;
-  bedrooms: string;
-  bathrooms: string;
-  features: string[];
+  constructionYear: string;
+  constructionYearUnknown: boolean;
+  rooms: string;
+
+  externalFeatures: string[];
+  garden: '' | 'no' | 'privato' | 'condominiale';
+  gardenSurface: string;
+  gardenSurfaceUnknown: boolean;
 
   condition: string;
-  constructionYear: string;
-  renovationYear: string;
   energyClass: string;
-  occupancy: string;
+  heating: string;
+  heatingOther: string;
 
-  timeline: string;
-  photos: File[];
+  occupancyStatus: string;
+  condominiumFees: string;
+  condominiumFeesUnknown: boolean;
 
-  name: string;
+  objective: '' | 'vendere' | 'affittare' | 'entrambe';
+
+  firstName: string;
+  lastName: string;
   phone: string;
-  email: string;
-  contactPreference: string;
-  notes: string;
-  privacyConsent: boolean;
+
+  privacyAccepted: boolean;
 }
 
 export const INITIAL_VALUATION: ValuationData = {
-  intent: '',
-  target: '',
-  propertyType: '',
-  location: '',
   address: '',
+  propertyType: '',
+  propertyTypeOther: '',
+  floor: '',
+  context: '',
+  contextOther: '',
+  condominium: '',
   surface: '',
-  bedrooms: '',
-  bathrooms: '',
-  features: [],
-  condition: '',
   constructionYear: '',
-  renovationYear: '',
+  constructionYearUnknown: false,
+  rooms: '',
+  externalFeatures: [],
+  garden: '',
+  gardenSurface: '',
+  gardenSurfaceUnknown: false,
+  condition: '',
   energyClass: '',
-  occupancy: '',
-  timeline: '',
-  photos: [],
-  name: '',
+  heating: '',
+  heatingOther: '',
+  occupancyStatus: '',
+  condominiumFees: '',
+  condominiumFeesUnknown: false,
+  objective: '',
+  firstName: '',
+  lastName: '',
   phone: '',
-  email: '',
-  contactPreference: '',
-  notes: '',
-  privacyConsent: false,
+  privacyAccepted: false,
 };
 
-export const PROPERTY_TYPES = [
-  'Appartamento',
-  'Casa indipendente',
-  'Villa',
-  'Casa a schiera',
-  'Rustico',
-  'Terreno',
-  'Locale commerciale',
-  'Altro',
+/** Ogni option-list è { value: slug stabile, key: chiave di traduzione in t.valuation.labels }. */
+export type Option = { value: string; key: string };
+
+export const PROPERTY_TYPES: Option[] = [
+  { value: 'appartamento', key: 'appartamento' },
+  { value: 'casa-indipendente', key: 'casaIndipendente' },
+  { value: 'villa', key: 'villa' },
+  { value: 'casa-a-schiera', key: 'casaASchiera' },
+  { value: 'bifamiliare', key: 'bifamiliare' },
+  { value: 'rustico', key: 'rustico' },
+  { value: 'locale-commerciale', key: 'localeCommerciale' },
+  { value: 'ufficio', key: 'ufficio' },
+  { value: 'terreno', key: 'terreno' },
+  { value: 'altro', key: 'altro' },
 ];
 
-export const FEATURES = [
-  'Garage',
-  'Posto auto',
-  'Terrazzo',
-  'Giardino',
-  'Ascensore',
+export const FLOORS: Option[] = [
+  { value: 'terra', key: 'floorTerra' },
+  { value: '1', key: 'floor1' },
+  { value: '2', key: 'floor2' },
+  { value: '3', key: 'floor3' },
+  { value: '4-piu', key: 'floor4Piu' },
+  { value: 'ultimo', key: 'floorUltimo' },
+  { value: 'piu-livelli', key: 'floorPiuLivelli' },
 ];
 
-export const CONDITIONS = [
-  'Nuovo / recente',
-  'Ottimo stato',
-  'Buono stato',
-  'Da ristrutturare',
-  'In costruzione',
-  'Non saprei',
+export const CONTEXTS: Option[] = [
+  { value: 'indipendente', key: 'contextIndipendente' },
+  { value: 'piccolo-condominio', key: 'contextPiccoloCondominio' },
+  { value: 'condominio', key: 'contextCondominio' },
+  { value: 'residence', key: 'contextResidence' },
+  { value: 'corte-borgo', key: 'contextCorteBorgo' },
+  { value: 'complesso-residenziale', key: 'contextComplessoResidenziale' },
+  { value: 'altro', key: 'altro' },
 ];
 
-export const ENERGY_CLASSES = [
-  'A4', 'A3', 'A2', 'A1', 'B', 'C', 'D', 'E', 'F', 'G', 'Non lo so',
+export const ROOMS: Option[] = [
+  { value: '1', key: 'rooms1' },
+  { value: '2', key: 'rooms2' },
+  { value: '3', key: 'rooms3' },
+  { value: '4', key: 'rooms4' },
+  { value: '5', key: 'rooms5' },
+  { value: '6+', key: 'rooms6Piu' },
+  { value: 'non-lo-so', key: 'dontKnow' },
 ];
 
-export const OCCUPANCY = ['Libero', 'Occupato', 'Locato', 'Altro', 'Non lo so'];
-
-export const TIMELINES = [
-  'Il prima possibile',
-  'Entro 3 mesi',
-  'Entro 6 mesi',
-  'Non ho ancora deciso',
-  'Voglio prima conoscere il valore',
+export const EXTERNAL_FEATURES: Option[] = [
+  { value: 'garage', key: 'featureGarage' },
+  { value: 'posto-auto', key: 'featurePostoAuto' },
+  { value: 'cantina', key: 'featureCantina' },
+  { value: 'soffitta', key: 'featureSoffitta' },
+  { value: 'taverna', key: 'featureTaverna' },
+  { value: 'terrazzo', key: 'featureTerrazzo' },
+  { value: 'balcone', key: 'featureBalcone' },
+  { value: 'porticato', key: 'featurePorticato' },
+  { value: 'deposito', key: 'featureDeposito' },
+  { value: 'nessuna', key: 'featureNessuna' },
+  { value: 'altro', key: 'altro' },
 ];
 
-export const CONTACT_PREFERENCES = ['Telefono', 'WhatsApp', 'Email'];
-
-export const STEP_TITLES = [
-  'Il tuo obiettivo',
-  'L’immobile',
-  'Lo stato',
-  'Le tempistiche',
-  'I tuoi contatti',
+export const CONDOMINIUM_OPTIONS: Option[] = [
+  { value: 'si', key: 'yes' },
+  { value: 'no', key: 'no' },
 ];
+
+export const GARDEN_OPTIONS: Option[] = [
+  { value: 'no', key: 'gardenNo' },
+  { value: 'privato', key: 'gardenPrivato' },
+  { value: 'condominiale', key: 'gardenCondominiale' },
+];
+
+export const CONDITIONS: Option[] = [
+  { value: 'nuova-costruzione', key: 'conditionNuovaCostruzione' },
+  { value: 'nuovo-mai-abitato', key: 'conditionNuovoMaiAbitato' },
+  { value: 'ristrutturato', key: 'conditionRistrutturato' },
+  { value: 'ottimo-stato', key: 'conditionOttimoStato' },
+  { value: 'buono-stato', key: 'conditionBuonoStato' },
+  { value: 'da-ristrutturare', key: 'conditionDaRistrutturare' },
+  { value: 'in-costruzione', key: 'conditionInCostruzione' },
+  { value: 'non-lo-so', key: 'dontKnow' },
+];
+
+export const ENERGY_CLASSES: Option[] = [
+  'A4', 'A3', 'A2', 'A1', 'B', 'C', 'D', 'E', 'F', 'G',
+].map((c) => ({ value: c, key: `energy${c}` }));
+ENERGY_CLASSES.push({ value: 'non-lo-so', key: 'dontKnow' });
+
+export const HEATINGS: Option[] = [
+  { value: 'autonomo', key: 'heatingAutonomo' },
+  { value: 'centralizzato', key: 'heatingCentralizzato' },
+  { value: 'pompa-di-calore', key: 'heatingPompaDiCalore' },
+  { value: 'pavimento', key: 'heatingPavimento' },
+  { value: 'caldaia', key: 'heatingCaldaia' },
+  { value: 'stufa-camino', key: 'heatingStufaCamino' },
+  { value: 'altro', key: 'altro' },
+  { value: 'non-lo-so', key: 'dontKnow' },
+];
+
+export const OCCUPANCY_STATUSES: Option[] = [
+  { value: 'libero', key: 'occupancyLibero' },
+  { value: 'occupato-proprietario', key: 'occupancyOccupatoProprietario' },
+  { value: 'affittato', key: 'occupancyAffittato' },
+  { value: 'occupato-terzi', key: 'occupancyOccupatoTerzi' },
+  { value: 'in-costruzione', key: 'conditionInCostruzione' },
+  { value: 'altro', key: 'altro' },
+];
+
+export const OBJECTIVES: Option[] = [
+  { value: 'vendere', key: 'objectiveVendere' },
+  { value: 'affittare', key: 'objectiveAffittare' },
+  { value: 'entrambe', key: 'objectiveEntrambe' },
+];
+
+/** Sette step numerati; il riepilogo finale non è uno step a sé. */
+export const STEP_COUNT = 7;
 
 export type Errors = Partial<Record<keyof ValuationData, string>>;
 
-export type ValidationMessages = {
-  intent: string;
-  propertyType: string;
-  location: string;
-  surface: string;
-  condition: string;
-  timeline: string;
-  name: string;
-  phone: string;
-  phoneInvalid: string;
-  emailInvalid: string;
-  privacy: string;
-};
-
-const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-/** Permissive on purpose: people write numbers in many shapes. */
 const PHONE = /^[+\d][\d\s().-]{6,}$/;
 
-/** Only the genuinely required fields block progress. */
-export function validateStep(
-  step: number,
-  data: ValuationData,
-  msg: ValidationMessages
-): Errors {
+/** Solo i campi davvero obbligatori bloccano l'avanzamento. */
+export function validateStep(step: number, data: ValuationData, msg: Record<string, string>): Errors {
   const errors: Errors = {};
 
-  if (step === 0 && !data.intent) {
-    errors.intent = msg.intent;
+  if (step === 1) {
+    if (!data.address.trim()) errors.address = msg.address;
+    if (!data.propertyType) errors.propertyType = msg.propertyType;
+    if (data.propertyType === 'altro' && !data.propertyTypeOther.trim()) {
+      errors.propertyTypeOther = msg.propertyTypeOther;
+    }
   }
 
-  if (step === 1) {
-    if (!data.propertyType) errors.propertyType = msg.propertyType;
-    if (!data.location.trim()) errors.location = msg.location;
-    if (data.surface && !/^\d{1,5}$/.test(data.surface.trim())) {
+  if (step === 2) {
+    if (!data.surface.trim() || !/^\d{1,5}$/.test(data.surface.trim())) {
       errors.surface = msg.surface;
     }
   }
 
-  if (step === 2 && !data.condition) {
+  if (step === 4 && !data.condition) {
     errors.condition = msg.condition;
   }
 
-  if (step === 3 && !data.timeline) {
-    errors.timeline = msg.timeline;
+  if (step === 6 && !data.objective) {
+    errors.objective = msg.objective;
   }
 
-  if (step === 4) {
-    if (!data.name.trim()) errors.name = msg.name;
-    if (!data.phone.trim() && !data.email.trim()) {
-      errors.phone = msg.phone;
-    } else {
-      if (data.phone.trim() && !PHONE.test(data.phone.trim())) {
-        errors.phone = msg.phoneInvalid;
-      }
-      if (data.email.trim() && !EMAIL.test(data.email.trim())) {
-        errors.email = msg.emailInvalid;
-      }
-    }
-    if (!data.privacyConsent) {
-      errors.privacyConsent = msg.privacy;
-    }
+  if (step === 7) {
+    if (!data.firstName.trim()) errors.firstName = msg.firstName;
+    if (!data.lastName.trim()) errors.lastName = msg.lastName;
+    if (!data.phone.trim()) errors.phone = msg.phone;
+    else if (!PHONE.test(data.phone.trim())) errors.phone = msg.phoneInvalid;
+    if (!data.privacyAccepted) errors.privacyAccepted = msg.privacy;
   }
 
   return errors;
+}
+
+/** Tutti gli errori del form intero — usata prima dell'invio finale dal riepilogo. */
+export function validateAll(data: ValuationData, msg: Record<string, string>): Errors {
+  return [1, 2, 4, 6, 7].reduce<Errors>(
+    (all, step) => ({ ...all, ...validateStep(step, data, msg) }),
+    {}
+  );
 }

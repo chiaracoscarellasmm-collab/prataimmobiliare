@@ -14,7 +14,7 @@
   position: absolute;
   inset: 0;
   z-index: 0;
-  background-image: url('/USAF_housing_aviano.png');
+  background-image: url('/USAF_housing_aviano.webp');
   background-size: cover;
   /* Ancorata a destra, dove nella sorgente sta il corpo della bandiera. */
   background-position: 100% 52%;
@@ -74,48 +74,11 @@
 
 .body { max-width: 46ch; }
 
-/* Two routes, set as text — not buttons. */
-.routes {
-  display: grid;
-  margin-top: clamp(0.5rem, 1.5vw, 1rem);
-  border-top: 1px solid var(--on-dark-line);
-}
-
-.route {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 1.5rem;
-  padding: clamp(1.05rem, 2.2vw, 1.5rem) 0;
-  border-bottom: 1px solid var(--on-dark-line);
-  font-family: var(--font-sans);
-  font-size: clamp(0.9375rem, 1.35vw, 1.125rem);
-  font-weight: 500;
-  letter-spacing: 0.005em;
-  min-height: 56px;
-  transition: color 620ms var(--ease), padding-left 620ms var(--ease),
-    border-color 620ms var(--ease);
-}
-
-.route .arrow {
-  transition: transform var(--dur) var(--ease);
-  color: rgba(239, 231, 219, 0.55);
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .route:hover,
-  .route:focus-visible { color: var(--beige); padding-left: 4px; border-bottom-color: rgba(239, 231, 219, 0.42); }
-  .route:hover .arrow,
-  .route:focus-visible .arrow { transform: translateX(5px); color: var(--beige); }
-
-  /* The photograph answers whichever route is being considered. */
-  .grid:has(.route:hover) }
-
 .badge {
   display: inline-flex;
   align-items: center;
   gap: 0.65rem;
-  margin-top: 0.5rem;
+  margin-top: clamp(0.75rem, 1.8vw, 1.25rem);
   font-size: var(--fs-label);
   font-weight: 600;
   letter-spacing: var(--ls-label);
