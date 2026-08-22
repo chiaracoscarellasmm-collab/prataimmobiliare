@@ -70,6 +70,10 @@
   height: 100%;
   object-fit: cover;
   transform: scale(1);
+  /* Un'unica palette monocromatica per tutta la sezione: le foto arrivano
+     a colori nel tempo, il filtro le allinea senza dover post-processare
+     ogni file. */
+  filter: grayscale(1);
   transition: transform 900ms var(--ease);
   will-change: transform;
 }

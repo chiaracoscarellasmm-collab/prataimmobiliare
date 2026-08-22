@@ -119,8 +119,8 @@ export const projects: Project[] = [
         image: {
           src: '/images/plans/borgo-rose-03.webp',
           alt: 'Planimetria — 3 camere piano primo con terrazzo',
-          width: 1024,
-          height: 1536,
+          width: 1536,
+          height: 1024,
         },
       },
     ],

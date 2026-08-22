@@ -22,6 +22,9 @@
   --rx: 0deg;
   --ry: 0deg;
   position: relative;
+  /* Cap grows with viewport but never runs away on large desktops — this,
+     not the row height, is what keeps the plan from dominating the band. */
+  max-width: 380px;
   transform: rotateX(var(--rx)) rotateY(var(--ry));
   transition: transform 480ms var(--ease), box-shadow 480ms var(--ease);
   border-radius: var(--radius-sm);
@@ -109,9 +112,11 @@
 .panel {
   display: flex;
   flex-direction: column;
-  gap: clamp(1.5rem, 3vw, 2.5rem);
+  gap: clamp(1.75rem, 3.2vw, 2.75rem);
   padding: clamp(1.75rem, 3.4vw, 3.25rem);
-  padding-top: 0;
+  /* Room above the title so it doesn't sit flush with the plate's top edge
+     — was 0, which read as the column being pinned to the top of the band. */
+  padding-top: clamp(2rem, 4vw, 3rem);
   color: var(--ink);
 }
 
@@ -188,10 +193,21 @@
 }
 
 @media (min-width: 900px) {
-  .band { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); }
+  /* Columns closer to parity so the panel reads as an equal partner, not a
+     narrow strip beside the drawing. */
+  .band { grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); }
 
-  /* -15%: l'intera sezione deve stare in una schermata desktop senza scroll. */
-  .plate { width: 85%; }
+  /* Row height follows the taller column — shrinking the plate (not just
+     capping it) is what closes the dead space under the text on the right. */
+  .stage { align-items: center; }
+  .plate { width: 68%; }
+
+  /* Fit-content instead of the flex default (stretch to full column width),
+     so the 01/02/03 row stays centred under the now-narrower plate rather
+     than pinned to the stage's left edge. */
+  .typeTabs { align-self: center; }
+
+  .panel { padding-top: clamp(3rem, 6vw, 4.5rem); }
 }
 
 @media (prefers-reduced-motion: reduce) {

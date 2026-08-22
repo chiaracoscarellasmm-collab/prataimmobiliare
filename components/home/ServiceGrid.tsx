@@ -23,6 +23,9 @@ type Service = {
   area: string;
   /** Flip to true to publish a service that is prepared but not yet shown. */
   enabled: boolean;
+  /** Some cards point nowhere more specific than the homepage — title and
+      body carry the message on their own, without a CTA that overpromises. */
+  showCta?: boolean;
 };
 
 /**
@@ -55,6 +58,7 @@ const SERVICES: Service[] = [
     image: '/images/services/developments.webp',
     area: 'd',
     enabled: true,
+    showCta: false,
   },
   {
     key: 'mortgages',
@@ -62,6 +66,7 @@ const SERVICES: Service[] = [
     image: '/images/services/mortgages.webp',
     area: 'e',
     enabled: true,
+    showCta: false,
   },
   {
     key: 'advisory',
@@ -69,6 +74,7 @@ const SERVICES: Service[] = [
     image: '/images/services/advisory.webp',
     area: 'f',
     enabled: true,
+    showCta: false,
   },
   // Pronto per il futuro: immobili nelle località turistiche.
   {
@@ -111,7 +117,7 @@ export default function ServiceGrid() {
           </div>
         </div>
 
-        {services.map(({ key, href, image, area }, i) => {
+        {services.map(({ key, href, image, area, showCta = true }, i) => {
           const item = t.services.items[key];
           return (
             <Link
@@ -138,12 +144,14 @@ export default function ServiceGrid() {
 
                 <span className={styles.reveal}>
                   <span className={styles.cardText}>{item.body}</span>
-                  <span className={styles.cardCta}>
-                    {item.cta}
-                    <span className={styles.cardArrow} aria-hidden="true">
-                      →
+                  {showCta && (
+                    <span className={styles.cardCta}>
+                      {item.cta}
+                      <span className={styles.cardArrow} aria-hidden="true">
+                        →
+                      </span>
                     </span>
-                  </span>
+                  )}
                 </span>
               </span>
             </Link>

@@ -65,8 +65,8 @@ export default async function ValuationCTA() {
             <Image
               src="/images/home/valutazione.webp"
               alt={t.valuationCta.imageAlt}
-              width={1800}
-              height={1197}
+              width={1448}
+              height={1086}
               sizes="(min-width: 900px) 58vw, 100vw"
             />
           </Reveal>
