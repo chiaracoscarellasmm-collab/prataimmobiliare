@@ -151,6 +151,9 @@ export default function CircularProjectsShowcase({
     };
   }, [transitions, items.length]);
 
+  // Nessun immobile con Featured home = SI: niente da mostrare, non una card rotta.
+  if (items.length === 0) return null;
+
   const current = items[Math.min(active, items.length - 1)];
 
   return (

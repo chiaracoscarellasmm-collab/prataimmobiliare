@@ -1,5 +1,879 @@
 [
   {
+    "id": "AT-593",
+    "slug": "attico-pordenone-at-593",
+    "title": "Attico esclusivo in vendita a Pordenone",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Attico",
+    "publicationDate": null,
+    "featuredHome": true,
+    "homeOrder": 1,
+    "usafEligible": false,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Pordenone",
+      "provincia": null,
+      "zona": "San Valentino-Ospedale",
+      "address": null,
+      "showAddress": false
+    },
+    "price": 800000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 193,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "floor": "5° piano",
+    "buildingFloors": null,
+    "constructionYear": 2008,
+    "energy": null,
+    "garage": true,
+    "garageType": "Box doppio per complessivi circa 57 mq",
+    "parkingSpot": true,
+    "parkingSpotCovered": true,
+    "garden": false,
+    "gardenSurface": null,
+    "terrace": true,
+    "terraceSurface": 70,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": true,
+    "cellar": true,
+    "airConditioning": true,
+    "furnished": true,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": "Autonomo",
+    "otherFeatures": [
+      "Attico esclusivo",
+      "193 mq commerciali",
+      "Quinto piano con ascensore",
+      "Completamente ristrutturato nel 2025",
+      "Finiture di altissimo livello",
+      "Arredi su misura firmati da designer",
+      "Ampio ingresso con disimpegno",
+      "Luminoso soggiorno",
+      "Cucina separata e abitabile",
+      "3 camere",
+      "2 bagni",
+      "Camera matrimoniale con bagno en-suite",
+      "Cabina armadio",
+      "Lavanderia dedicata",
+      "Centrale termica esterna utilizzata anche come ripostiglio",
+      "Terrazzo panoramico perimetrale di circa 70 mq",
+      "Affacci su più lati",
+      "Vasca idromassaggio sul terrazzo",
+      "Doppio garage di circa 57 mq complessivi",
+      "Cantina di circa 7 mq",
+      "Corte comune",
+      "Armadi a muro",
+      "Climatizzazione",
+      "Accesso e abitazione adattati per persone a mobilità ridotta",
+      "Classe energetica in corso"
+    ],
+    "shortDescription": "Attico esclusivo di 193 mq in vendita a Pordenone, completamente ristrutturato nel 2025, con tre camere, terrazzo panoramico di circa 70 mq, doppio garage e cantina.",
+    "description": "A Pordenone proponiamo in vendita un attico esclusivo di circa 193 mq commerciali, situato al quinto piano di un edificio servito da ascensore.\n\nL'immobile, originariamente realizzato nel 2008, è stato completamente ristrutturato nel 2025 con finiture di alto livello, soluzioni contemporanee e arredi su misura.\n\nLa distribuzione interna comprende un ampio ingresso con disimpegno, un luminoso soggiorno e una cucina separata e abitabile.\n\nLa zona notte è composta da tre camere da letto e due bagni. La camera matrimoniale dispone di bagno padronale en-suite e cabina armadio.\n\nCompletano gli spazi interni una lavanderia dedicata e una centrale termica esterna utilizzabile anche come pratico ripostiglio.\n\nUno degli elementi più rappresentativi della proprietà è il terrazzo panoramico di circa 70 mq, sviluppato lungo il perimetro dell'abitazione e caratterizzato da affacci su più lati. Lo spazio esterno è pensato come una vera estensione della zona living ed è impreziosito dalla presenza di una vasca idromassaggio.\n\nTra le pertinenze sono compresi due garage, rispettivamente di circa 28 e 29 mq, per una superficie complessiva di circa 57 mq, oltre a una cantina di circa 7 mq al piano seminterrato.\n\nL'abitazione è dotata di climatizzazione e riscaldamento autonomo.\n\nLa classe energetica risulta attualmente in corso di definizione.\n\nUna proprietà pensata per chi cerca ampi spazi, finiture ricercate e un importante spazio esterno panoramico nel contesto urbano di Pordenone.",
+    "videoUrl": null,
+    "seo": {
+      "title": "Attico esclusivo in vendita a Pordenone | Prata Immobiliare",
+      "description": "Attico esclusivo di 193 mq in vendita a Pordenone, ristrutturato nel 2025, con 3 camere, terrazzo panoramico di 70 mq, doppio garage e cantina."
+    },
+    "coverImage": {
+      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/01.webp",
+      "alt": "Attico esclusivo in vendita a Pordenone",
+      "width": 1280,
+      "height": 960
+    },
+    "images": [
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/01.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/02.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/03.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/04.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/05.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/06.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/07.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/08.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/09.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/10.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/11.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/12.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/13.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/14.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/15.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/16.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/17.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/18.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/19.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/20.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/21.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/22.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/23.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/24.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/25.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/26.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/27.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/28.webp",
+        "alt": "Attico esclusivo in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      }
+    ]
+  },
+  {
+    "id": "C-369",
+    "slug": "c-369",
+    "title": "Casa indipendente a Brugnera in vendita",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Casa generica",
+    "publicationDate": null,
+    "featuredHome": true,
+    "homeOrder": 2,
+    "usafEligible": false,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Brugnera",
+      "provincia": null,
+      "zona": "Maron",
+      "address": null,
+      "showAddress": false
+    },
+    "price": 350000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 276,
+    "bedrooms": 1,
+    "bathrooms": 4,
+    "floor": "Disposta su 3 livelli",
+    "buildingFloors": 3,
+    "constructionYear": 1990,
+    "energy": {
+      "class": "D",
+      "ipe": 158.55
+    },
+    "garage": true,
+    "garageType": "Box doppio",
+    "parkingSpot": false,
+    "parkingSpotCovered": false,
+    "garden": true,
+    "gardenSurface": 570,
+    "terrace": true,
+    "terraceSurface": null,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": false,
+    "cellar": true,
+    "airConditioning": true,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": "Autonomo a gas naturale",
+    "otherFeatures": [
+      "Casa indipendente",
+      "Zona Maron di Brugnera",
+      "276 mq commerciali",
+      "265 mq calpestabili",
+      "Disposta su 3 livelli",
+      "Giardino privato completamente recintato di circa 570 mq",
+      "Ampio soggiorno con caminetto",
+      "Sala da pranzo",
+      "Cucina separata e abitabile",
+      "Camera matrimoniale",
+      "4 bagni",
+      "Doppio terrazzo",
+      "Ripostiglio",
+      "Piano mansardato versatile",
+      "Possibilità di utilizzare la mansarda come zona notte aggiuntiva, studio o area relax",
+      "Zona guardaroba",
+      "Taverna abitabile",
+      "Predisposizione per seconda cucina in taverna",
+      "Lavanderia",
+      "Centrale termica",
+      "Deposito",
+      "Box doppio",
+      "Cantina",
+      "Climatizzazione",
+      "Buono stato",
+      "Costruzione del 1990",
+      "Posizione residenziale tranquilla"
+    ],
+    "shortDescription": "Casa indipendente di 276 mq in vendita a Maron di Brugnera, sviluppata su tre livelli, con giardino privato di circa 570 mq, terrazzi, taverna e garage doppio.",
+    "description": "A Maron di Brugnera proponiamo in vendita una casa indipendente di generose dimensioni, immersa in un tranquillo contesto residenziale e circondata da un giardino privato completamente recintato di circa 570 mq.\n\nL'abitazione sviluppa circa 276 mq commerciali ed è distribuita su tre livelli.\n\nAl piano rialzato l'ingresso conduce a una luminosa zona giorno composta da ampio soggiorno con caminetto, sala da pranzo e cucina separata e abitabile. Sullo stesso piano sono presenti una camera matrimoniale, un bagno finestrato, un pratico ripostiglio e due terrazzi con affaccio sul verde.\n\nIl piano mansardato offre spazi versatili e personalizzabili, utilizzabili come ulteriore zona notte, studio per il lavoro da casa o area relax. Sono inoltre presenti servizi e una comoda zona guardaroba.\n\nAl piano seminterrato si trova un'ampia taverna predisposta per una seconda cucina, oltre a lavanderia, centrale termica, deposito e garage doppio.\n\nLa proprietà dispone complessivamente di quattro bagni.\n\nIl giardino privato di circa 570 mq rappresenta uno degli elementi distintivi dell'immobile e offre ampi spazi esterni da vivere in totale privacy.\n\nLa casa, costruita nel 1990, si presenta in buono stato ed è dotata di climatizzazione e riscaldamento autonomo a gas naturale.\n\nLa classe energetica è D, con indice di prestazione energetica pari a 158,55 kWh/m² anno.\n\nUna soluzione indicata per chi cerca indipendenza, spazi generosi e una casa versatile in una zona residenziale tranquilla di Brugnera.",
+    "videoUrl": null,
+    "seo": {
+      "title": "Casa indipendente in vendita a Brugnera | Prata Immobiliare",
+      "description": "Casa indipendente di 276 mq in vendita a Maron di Brugnera, con giardino privato di 570 mq, terrazzi, taverna, 4 bagni e garage doppio."
+    },
+    "coverImage": {
+      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/01.webp",
+      "alt": "Casa indipendente a Brugnera in vendita",
+      "width": 1536,
+      "height": 1024
+    },
+    "images": [
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/01.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/02.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/03.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/04.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/05.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/06.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/07.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/08.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/09.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/10.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/11.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/12.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/13.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/14.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/15.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/16.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/17.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/18.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/19.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/20.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/21.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/22.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/23.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/24.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/25.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/26.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/27.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/28.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/29.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/30.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/31.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/32.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/33.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/34.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/35.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/36.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/37.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/38.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/39.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/40.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/41.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/42.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/43.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/44.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/45.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/46.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/47.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/48.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/49.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/50.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/51.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/52.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/53.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/54.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/55.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/56.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/57.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/58.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/59.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/60.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/61.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/62.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/63.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/64.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/65.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/66.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/67.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/68.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/69.webp",
+        "alt": "Casa indipendente a Brugnera in vendita",
+        "width": 960,
+        "height": 1280
+      }
+    ]
+  },
+  {
+    "id": "V-283",
+    "slug": "v-283",
+    "title": "Villa super esclusiva in vendita",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Villa",
+    "publicationDate": null,
+    "featuredHome": true,
+    "homeOrder": 3,
+    "usafEligible": false,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Prata di Pordenone",
+      "provincia": null,
+      "zona": null,
+      "address": null,
+      "showAddress": false
+    },
+    "price": 650000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 190,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "floor": null,
+    "buildingFloors": null,
+    "constructionYear": 2015,
+    "energy": null,
+    "garage": true,
+    "garageType": "Garage di circa 33 mq",
+    "parkingSpot": false,
+    "parkingSpotCovered": false,
+    "garden": true,
+    "gardenSurface": null,
+    "terrace": false,
+    "terraceSurface": null,
+    "balcony": false,
+    "porch": true,
+    "porchSurface": 60,
+    "elevator": false,
+    "cellar": true,
+    "airConditioning": true,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": true,
+    "heating": "Autonomo a gas naturale",
+    "otherFeatures": [
+      "Villa esclusiva",
+      "Residenza di rappresentanza",
+      "190 mq commerciali",
+      "3 camere",
+      "2 camere matrimoniali",
+      "1 camera doppia",
+      "2 bagni",
+      "Ampio soggiorno",
+      "Cucina separata",
+      "Cucinino di servizio",
+      "Lavanderia",
+      "Disimpegno",
+      "Portici di circa 60 mq",
+      "Giardino privato",
+      "Parco privato",
+      "Piscina interrata",
+      "Garage di circa 33 mq",
+      "Cantina",
+      "Climatizzazione",
+      "Armadi a muro",
+      "Buono stato",
+      "Riscaldamento autonomo a gas naturale",
+      "Costruzione del 2015",
+      "Accesso e abitazione adattati per persone a mobilità ridotta",
+      "Finiture di pregio",
+      "Elevata privacy",
+      "Immagini dell'annuncio indicate come illustrative per tutelare la privacy della proprietà"
+    ],
+    "shortDescription": "Villa esclusiva di 190 mq in vendita a Prata di Pordenone, con tre camere, piscina interrata, ampio giardino privato, portici di circa 60 mq, garage e cantina.",
+    "description": "A Prata di Pordenone proponiamo in vendita una villa esclusiva di circa 190 mq, concepita come residenza di rappresentanza e caratterizzata da ampi spazi, privacy e finiture di pregio.\n\nL'abitazione comprende ingresso, ampio e luminoso soggiorno, cucina separata con cucinino di servizio, tre camere da letto — di cui due matrimoniali e una doppia — due bagni, lavanderia e disimpegno.\n\nGli spazi interni dialogano con l'esterno attraverso portici per circa 60 mq, pensati come naturale prosecuzione della zona living.\n\nLa villa è circondata da un ampio giardino privato, curato per garantire riservatezza e continuità con gli spazi abitativi.\n\nElemento distintivo della proprietà è la piscina interrata, inserita nel verde e pensata come vera area relax privata.\n\nCompletano la proprietà un garage di circa 33 mq e una cantina.\n\nL'immobile, costruito nel 2015, si presenta in buono stato ed è dotato di climatizzazione e riscaldamento autonomo a gas naturale.\n\nLa classe energetica è attualmente in corso di definizione.\n\nUna proprietà riservata e di rappresentanza, pensata per chi cerca una villa con piscina, importanti spazi esterni e un elevato livello di privacy a Prata di Pordenone.\n\nNota: la fonte specifica che le immagini pubblicate sono indicative e rappresentative dell'atmosfera generale, a tutela della privacy della proprietà.",
+    "videoUrl": null,
+    "seo": {
+      "title": "Villa esclusiva con piscina in vendita a Prata di Pordenone | Prata Immobiliare",
+      "description": "Villa esclusiva di 190 mq in vendita a Prata di Pordenone, con 3 camere, piscina interrata, ampio giardino, portici, garage e cantina."
+    },
+    "coverImage": {
+      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/v-283/01.webp",
+      "alt": "Villa super esclusiva in vendita",
+      "width": 1448,
+      "height": 1086
+    },
+    "images": [
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/v-283/01.webp",
+        "alt": "Villa super esclusiva in vendita",
+        "width": 1448,
+        "height": 1086
+      }
+    ]
+  },
+  {
     "id": "CSL-380",
     "slug": "villetta-schiera-porcia",
     "title": "Villetta a schiera in affitto a Porcia",
@@ -281,267 +1155,6 @@
         "alt": "Villetta a schiera in affitto a Porcia",
         "width": 1280,
         "height": 960
-      }
-    ]
-  },
-  {
-    "id": "AT-593",
-    "slug": "attico-pordenone-at-593",
-    "title": "Attico esclusivo in vendita a Pordenone",
-    "visible": true,
-    "status": "Disponibile",
-    "transactionType": "vendita",
-    "propertyType": "Attico",
-    "publicationDate": null,
-    "featuredHome": false,
-    "homeOrder": null,
-    "usafEligible": false,
-    "newDevelopment": false,
-    "projectName": null,
-    "location": {
-      "comune": "Pordenone",
-      "provincia": null,
-      "zona": "San Valentino-Ospedale",
-      "address": null,
-      "showAddress": false
-    },
-    "price": 800000,
-    "priceOnRequest": false,
-    "monthlyRent": null,
-    "monthlyCondoFees": null,
-    "surface": 193,
-    "bedrooms": 3,
-    "bathrooms": 2,
-    "floor": "5° piano",
-    "buildingFloors": null,
-    "constructionYear": 2008,
-    "energy": null,
-    "garage": true,
-    "garageType": "Box doppio per complessivi circa 57 mq",
-    "parkingSpot": true,
-    "parkingSpotCovered": true,
-    "garden": false,
-    "gardenSurface": null,
-    "terrace": true,
-    "terraceSurface": 70,
-    "balcony": false,
-    "porch": false,
-    "porchSurface": null,
-    "elevator": true,
-    "cellar": true,
-    "airConditioning": true,
-    "furnished": true,
-    "photovoltaic": false,
-    "pool": false,
-    "heating": "Autonomo",
-    "otherFeatures": [
-      "Attico esclusivo",
-      "193 mq commerciali",
-      "Quinto piano con ascensore",
-      "Completamente ristrutturato nel 2025",
-      "Finiture di altissimo livello",
-      "Arredi su misura firmati da designer",
-      "Ampio ingresso con disimpegno",
-      "Luminoso soggiorno",
-      "Cucina separata e abitabile",
-      "3 camere",
-      "2 bagni",
-      "Camera matrimoniale con bagno en-suite",
-      "Cabina armadio",
-      "Lavanderia dedicata",
-      "Centrale termica esterna utilizzata anche come ripostiglio",
-      "Terrazzo panoramico perimetrale di circa 70 mq",
-      "Affacci su più lati",
-      "Vasca idromassaggio sul terrazzo",
-      "Doppio garage di circa 57 mq complessivi",
-      "Cantina di circa 7 mq",
-      "Corte comune",
-      "Armadi a muro",
-      "Climatizzazione",
-      "Accesso e abitazione adattati per persone a mobilità ridotta",
-      "Classe energetica in corso"
-    ],
-    "shortDescription": "Attico esclusivo di 193 mq in vendita a Pordenone, completamente ristrutturato nel 2025, con tre camere, terrazzo panoramico di circa 70 mq, doppio garage e cantina.",
-    "description": "A Pordenone proponiamo in vendita un attico esclusivo di circa 193 mq commerciali, situato al quinto piano di un edificio servito da ascensore.\n\nL'immobile, originariamente realizzato nel 2008, è stato completamente ristrutturato nel 2025 con finiture di alto livello, soluzioni contemporanee e arredi su misura.\n\nLa distribuzione interna comprende un ampio ingresso con disimpegno, un luminoso soggiorno e una cucina separata e abitabile.\n\nLa zona notte è composta da tre camere da letto e due bagni. La camera matrimoniale dispone di bagno padronale en-suite e cabina armadio.\n\nCompletano gli spazi interni una lavanderia dedicata e una centrale termica esterna utilizzabile anche come pratico ripostiglio.\n\nUno degli elementi più rappresentativi della proprietà è il terrazzo panoramico di circa 70 mq, sviluppato lungo il perimetro dell'abitazione e caratterizzato da affacci su più lati. Lo spazio esterno è pensato come una vera estensione della zona living ed è impreziosito dalla presenza di una vasca idromassaggio.\n\nTra le pertinenze sono compresi due garage, rispettivamente di circa 28 e 29 mq, per una superficie complessiva di circa 57 mq, oltre a una cantina di circa 7 mq al piano seminterrato.\n\nL'abitazione è dotata di climatizzazione e riscaldamento autonomo.\n\nLa classe energetica risulta attualmente in corso di definizione.\n\nUna proprietà pensata per chi cerca ampi spazi, finiture ricercate e un importante spazio esterno panoramico nel contesto urbano di Pordenone.",
-    "videoUrl": null,
-    "seo": {
-      "title": "Attico esclusivo in vendita a Pordenone | Prata Immobiliare",
-      "description": "Attico esclusivo di 193 mq in vendita a Pordenone, ristrutturato nel 2025, con 3 camere, terrazzo panoramico di 70 mq, doppio garage e cantina."
-    },
-    "coverImage": {
-      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/01.webp",
-      "alt": "Attico esclusivo in vendita a Pordenone",
-      "width": 1280,
-      "height": 960
-    },
-    "images": [
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/01.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 1280,
-        "height": 960
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/02.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 1280,
-        "height": 960
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/03.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 1280,
-        "height": 960
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/04.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/05.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/06.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 1280,
-        "height": 960
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/07.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 1280,
-        "height": 960
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/08.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 1280,
-        "height": 960
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/09.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 1280,
-        "height": 960
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/10.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/11.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 1280,
-        "height": 960
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/12.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/13.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/14.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/15.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/16.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 1280,
-        "height": 960
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/17.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/18.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/19.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 1280,
-        "height": 960
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/20.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/21.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/22.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/23.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/24.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/25.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/26.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/27.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/attico-pordenone-at-593/28.webp",
-        "alt": "Attico esclusivo in vendita a Pordenone",
-        "width": 960,
-        "height": 1280
       }
     ]
   },
@@ -3466,518 +4079,6 @@
     ]
   },
   {
-    "id": "C-369",
-    "slug": "c-369",
-    "title": "Casa indipendente a Brugnera in vendita",
-    "visible": true,
-    "status": "Disponibile",
-    "transactionType": "vendita",
-    "propertyType": "Casa generica",
-    "publicationDate": null,
-    "featuredHome": false,
-    "homeOrder": null,
-    "usafEligible": false,
-    "newDevelopment": false,
-    "projectName": null,
-    "location": {
-      "comune": "Brugnera",
-      "provincia": null,
-      "zona": "Maron",
-      "address": null,
-      "showAddress": false
-    },
-    "price": 350000,
-    "priceOnRequest": false,
-    "monthlyRent": null,
-    "monthlyCondoFees": null,
-    "surface": 276,
-    "bedrooms": 1,
-    "bathrooms": 4,
-    "floor": "Disposta su 3 livelli",
-    "buildingFloors": 3,
-    "constructionYear": 1990,
-    "energy": {
-      "class": "D",
-      "ipe": 158.55
-    },
-    "garage": true,
-    "garageType": "Box doppio",
-    "parkingSpot": false,
-    "parkingSpotCovered": false,
-    "garden": true,
-    "gardenSurface": 570,
-    "terrace": true,
-    "terraceSurface": null,
-    "balcony": false,
-    "porch": false,
-    "porchSurface": null,
-    "elevator": false,
-    "cellar": true,
-    "airConditioning": true,
-    "furnished": false,
-    "photovoltaic": false,
-    "pool": false,
-    "heating": "Autonomo a gas naturale",
-    "otherFeatures": [
-      "Casa indipendente",
-      "Zona Maron di Brugnera",
-      "276 mq commerciali",
-      "265 mq calpestabili",
-      "Disposta su 3 livelli",
-      "Giardino privato completamente recintato di circa 570 mq",
-      "Ampio soggiorno con caminetto",
-      "Sala da pranzo",
-      "Cucina separata e abitabile",
-      "Camera matrimoniale",
-      "4 bagni",
-      "Doppio terrazzo",
-      "Ripostiglio",
-      "Piano mansardato versatile",
-      "Possibilità di utilizzare la mansarda come zona notte aggiuntiva, studio o area relax",
-      "Zona guardaroba",
-      "Taverna abitabile",
-      "Predisposizione per seconda cucina in taverna",
-      "Lavanderia",
-      "Centrale termica",
-      "Deposito",
-      "Box doppio",
-      "Cantina",
-      "Climatizzazione",
-      "Buono stato",
-      "Costruzione del 1990",
-      "Posizione residenziale tranquilla"
-    ],
-    "shortDescription": "Casa indipendente di 276 mq in vendita a Maron di Brugnera, sviluppata su tre livelli, con giardino privato di circa 570 mq, terrazzi, taverna e garage doppio.",
-    "description": "A Maron di Brugnera proponiamo in vendita una casa indipendente di generose dimensioni, immersa in un tranquillo contesto residenziale e circondata da un giardino privato completamente recintato di circa 570 mq.\n\nL'abitazione sviluppa circa 276 mq commerciali ed è distribuita su tre livelli.\n\nAl piano rialzato l'ingresso conduce a una luminosa zona giorno composta da ampio soggiorno con caminetto, sala da pranzo e cucina separata e abitabile. Sullo stesso piano sono presenti una camera matrimoniale, un bagno finestrato, un pratico ripostiglio e due terrazzi con affaccio sul verde.\n\nIl piano mansardato offre spazi versatili e personalizzabili, utilizzabili come ulteriore zona notte, studio per il lavoro da casa o area relax. Sono inoltre presenti servizi e una comoda zona guardaroba.\n\nAl piano seminterrato si trova un'ampia taverna predisposta per una seconda cucina, oltre a lavanderia, centrale termica, deposito e garage doppio.\n\nLa proprietà dispone complessivamente di quattro bagni.\n\nIl giardino privato di circa 570 mq rappresenta uno degli elementi distintivi dell'immobile e offre ampi spazi esterni da vivere in totale privacy.\n\nLa casa, costruita nel 1990, si presenta in buono stato ed è dotata di climatizzazione e riscaldamento autonomo a gas naturale.\n\nLa classe energetica è D, con indice di prestazione energetica pari a 158,55 kWh/m² anno.\n\nUna soluzione indicata per chi cerca indipendenza, spazi generosi e una casa versatile in una zona residenziale tranquilla di Brugnera.",
-    "videoUrl": null,
-    "seo": {
-      "title": "Casa indipendente in vendita a Brugnera | Prata Immobiliare",
-      "description": "Casa indipendente di 276 mq in vendita a Maron di Brugnera, con giardino privato di 570 mq, terrazzi, taverna, 4 bagni e garage doppio."
-    },
-    "coverImage": {
-      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/01.webp",
-      "alt": "Casa indipendente a Brugnera in vendita",
-      "width": 1536,
-      "height": 1024
-    },
-    "images": [
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/01.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 1536,
-        "height": 1024
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/02.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 1536,
-        "height": 1024
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/03.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 1536,
-        "height": 1024
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/04.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 1536,
-        "height": 1024
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/05.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 1536,
-        "height": 1024
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/06.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/07.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/08.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 1280,
-        "height": 960
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/09.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/10.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/11.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 1280,
-        "height": 960
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/12.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/13.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/14.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 1280,
-        "height": 960
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/15.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/16.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/17.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 1280,
-        "height": 960
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/18.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/19.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/20.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 1280,
-        "height": 960
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/21.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/22.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 1280,
-        "height": 960
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/23.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/24.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/25.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/26.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 1280,
-        "height": 960
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/27.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/28.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 1280,
-        "height": 960
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/29.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/30.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 1280,
-        "height": 960
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/31.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/32.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/33.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/34.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/35.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/36.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/37.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/38.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/39.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/40.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/41.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/42.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/43.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/44.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/45.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/46.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/47.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/48.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/49.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/50.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/51.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/52.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/53.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/54.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/55.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/56.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/57.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/58.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/59.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 1280,
-        "height": 960
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/60.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/61.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/62.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/63.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 1280,
-        "height": 960
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/64.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/65.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/66.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/67.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 1280,
-        "height": 960
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/68.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      },
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-369/69.webp",
-        "alt": "Casa indipendente a Brugnera in vendita",
-        "width": 960,
-        "height": 1280
-      }
-    ]
-  },
-  {
     "id": "C-484",
     "slug": "c-484",
     "title": "Casa singola con ampio giardino in vendita",
@@ -6457,107 +6558,6 @@
         "alt": "Terreno agricolo in vendita a Prata di Pordenone",
         "width": 759,
         "height": 506
-      }
-    ]
-  },
-  {
-    "id": "V-283",
-    "slug": "v-283",
-    "title": "Villa super esclusiva in vendita",
-    "visible": true,
-    "status": "Disponibile",
-    "transactionType": "vendita",
-    "propertyType": "Villa",
-    "publicationDate": null,
-    "featuredHome": false,
-    "homeOrder": null,
-    "usafEligible": false,
-    "newDevelopment": false,
-    "projectName": null,
-    "location": {
-      "comune": "Prata di Pordenone",
-      "provincia": null,
-      "zona": null,
-      "address": null,
-      "showAddress": false
-    },
-    "price": 650000,
-    "priceOnRequest": false,
-    "monthlyRent": null,
-    "monthlyCondoFees": null,
-    "surface": 190,
-    "bedrooms": 3,
-    "bathrooms": 2,
-    "floor": null,
-    "buildingFloors": null,
-    "constructionYear": 2015,
-    "energy": null,
-    "garage": true,
-    "garageType": "Garage di circa 33 mq",
-    "parkingSpot": false,
-    "parkingSpotCovered": false,
-    "garden": true,
-    "gardenSurface": null,
-    "terrace": false,
-    "terraceSurface": null,
-    "balcony": false,
-    "porch": true,
-    "porchSurface": 60,
-    "elevator": false,
-    "cellar": true,
-    "airConditioning": true,
-    "furnished": false,
-    "photovoltaic": false,
-    "pool": true,
-    "heating": "Autonomo a gas naturale",
-    "otherFeatures": [
-      "Villa esclusiva",
-      "Residenza di rappresentanza",
-      "190 mq commerciali",
-      "3 camere",
-      "2 camere matrimoniali",
-      "1 camera doppia",
-      "2 bagni",
-      "Ampio soggiorno",
-      "Cucina separata",
-      "Cucinino di servizio",
-      "Lavanderia",
-      "Disimpegno",
-      "Portici di circa 60 mq",
-      "Giardino privato",
-      "Parco privato",
-      "Piscina interrata",
-      "Garage di circa 33 mq",
-      "Cantina",
-      "Climatizzazione",
-      "Armadi a muro",
-      "Buono stato",
-      "Riscaldamento autonomo a gas naturale",
-      "Costruzione del 2015",
-      "Accesso e abitazione adattati per persone a mobilità ridotta",
-      "Finiture di pregio",
-      "Elevata privacy",
-      "Immagini dell'annuncio indicate come illustrative per tutelare la privacy della proprietà"
-    ],
-    "shortDescription": "Villa esclusiva di 190 mq in vendita a Prata di Pordenone, con tre camere, piscina interrata, ampio giardino privato, portici di circa 60 mq, garage e cantina.",
-    "description": "A Prata di Pordenone proponiamo in vendita una villa esclusiva di circa 190 mq, concepita come residenza di rappresentanza e caratterizzata da ampi spazi, privacy e finiture di pregio.\n\nL'abitazione comprende ingresso, ampio e luminoso soggiorno, cucina separata con cucinino di servizio, tre camere da letto — di cui due matrimoniali e una doppia — due bagni, lavanderia e disimpegno.\n\nGli spazi interni dialogano con l'esterno attraverso portici per circa 60 mq, pensati come naturale prosecuzione della zona living.\n\nLa villa è circondata da un ampio giardino privato, curato per garantire riservatezza e continuità con gli spazi abitativi.\n\nElemento distintivo della proprietà è la piscina interrata, inserita nel verde e pensata come vera area relax privata.\n\nCompletano la proprietà un garage di circa 33 mq e una cantina.\n\nL'immobile, costruito nel 2015, si presenta in buono stato ed è dotato di climatizzazione e riscaldamento autonomo a gas naturale.\n\nLa classe energetica è attualmente in corso di definizione.\n\nUna proprietà riservata e di rappresentanza, pensata per chi cerca una villa con piscina, importanti spazi esterni e un elevato livello di privacy a Prata di Pordenone.\n\nNota: la fonte specifica che le immagini pubblicate sono indicative e rappresentative dell'atmosfera generale, a tutela della privacy della proprietà.",
-    "videoUrl": null,
-    "seo": {
-      "title": "Villa esclusiva con piscina in vendita a Prata di Pordenone | Prata Immobiliare",
-      "description": "Villa esclusiva di 190 mq in vendita a Prata di Pordenone, con 3 camere, piscina interrata, ampio giardino, portici, garage e cantina."
-    },
-    "coverImage": {
-      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/v-283/01.webp",
-      "alt": "Villa super esclusiva in vendita",
-      "width": 1448,
-      "height": 1086
-    },
-    "images": [
-      {
-        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/v-283/01.webp",
-        "alt": "Villa super esclusiva in vendita",
-        "width": 1448,
-        "height": 1086
       }
     ]
   },

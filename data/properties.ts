@@ -110,11 +110,14 @@ export const properties: Property[] = (generated as Property[]).filter((p) => p.
 
 export const getPropertyBySlug = (slug: string) => properties.find((p) => p.slug === slug);
 
-export const getFeaturedProperties = (limit = 5) =>
-  properties
+/** Se nessun immobile è curato editorialmente (Featured home in Sheet), la
+    homepage mostra comunque qualcosa invece di una sezione vuota. */
+export const getFeaturedProperties = (limit = 5) => {
+  const curated = properties
     .filter((p) => p.featuredHome)
-    .sort((a, b) => (a.homeOrder ?? Infinity) - (b.homeOrder ?? Infinity))
-    .slice(0, limit);
+    .sort((a, b) => (a.homeOrder ?? Infinity) - (b.homeOrder ?? Infinity));
+  return (curated.length > 0 ? curated : properties).slice(0, limit);
+};
 
 export const getUsafProperties = () => properties.filter((p) => p.usafEligible);
 
