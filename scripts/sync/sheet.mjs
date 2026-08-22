@@ -3,39 +3,53 @@ import path from 'node:path';
 
 import Papa from 'papaparse';
 
+import { getAllRecords, getSheetName, getSheetsClient, getSpreadsheetId } from './googleSheetsWrite.mjs';
+
 const FALLBACK_PATH = path.join(process.cwd(), 'data', 'immobili.csv');
 
-/**
- * URL diretto se fornito, altrimenti costruito da ID + nome foglio (così il
- * link punta sempre e solo alla tab "Immobili", mai a Liste/Esempio/Istruzioni).
- */
-function resolveSheetUrl() {
-  if (process.env.GOOGLE_SHEET_CSV_URL) return process.env.GOOGLE_SHEET_CSV_URL;
-  const id = process.env.GOOGLE_SHEET_ID;
-  if (!id) return null;
-  const sheetName = process.env.GOOGLE_SHEET_NAME || 'Immobili';
-  return `https://docs.google.com/spreadsheets/d/${id}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(sheetName)}`;
+/** Mai stampare l'ID per intero: solo i primi/ultimi caratteri, il resto mascherato. */
+export function maskSpreadsheetId(id) {
+  if (!id) return '(non impostato)';
+  if (id.length <= 10) return '*'.repeat(id.length);
+  return `${id.slice(0, 6)}${'*'.repeat(Math.min(id.length - 10, 24))}${id.slice(-4)}`;
 }
 
 /**
- * Carica le righe grezze del foglio "Immobili". Sorgente: Google Sheet (URL
- * diretto o ID+nome) se configurato, altrimenti il CSV locale di fallback —
- * stesso parser, stessa business logic a valle, quale che sia la sorgente.
+ * Carica le righe grezze del foglio "Immobili".
+ *
+ * Sorgente di default: lo stesso Google Sheet reale, letto con lo stesso
+ * Service Account già usato per scriverlo (getSheetsClient/getAllRecords in
+ * googleSheetsWrite.mjs) — nessuna seconda implementazione di autenticazione,
+ * nessun export CSV pubblico, il foglio resta privato.
+ *
+ * Il CSV locale (data/immobili.csv) esiste solo per sviluppo/test e va
+ * richiesto esplicitamente con `{ source: 'csv' }` — non è mai un fallback
+ * automatico: se le credenziali Google mancano o la lettura fallisce, la
+ * funzione lancia e il sync si ferma, invece di scivolare silenziosamente
+ * su dati locali obsoleti.
  */
-export async function loadPropertiesSource() {
-  const url = resolveSheetUrl();
-
-  if (url) {
-    const res = await fetch(url);
-    if (!res.ok) {
-      throw new Error(`Google Sheet ha risposto ${res.status} ${res.statusText}`);
-    }
-    const csv = await res.text();
-    return { rows: parseCsv(csv), source: url };
+export async function loadPropertiesSource({ source } = {}) {
+  if (source === 'csv') {
+    const csv = await readFile(FALLBACK_PATH, 'utf-8');
+    return { rows: parseCsv(csv), sourceType: 'csv', csvPath: FALLBACK_PATH };
   }
 
-  const csv = await readFile(FALLBACK_PATH, 'utf-8');
-  return { rows: parseCsv(csv), source: `fallback locale: ${FALLBACK_PATH}` };
+  const sheets = await getSheetsClient();
+  const spreadsheetId = getSpreadsheetId();
+  const sheetName = getSheetName();
+
+  const { headers, records } = await getAllRecords(sheets, spreadsheetId, sheetName);
+  if (headers.length === 0) {
+    throw new Error(
+      `Foglio "${sheetName}" risulta vuoto o non trovato nello spreadsheet ${maskSpreadsheetId(spreadsheetId)}.`
+    );
+  }
+
+  // Stessa forma (oggetto piatto header→valore) che parseCsv produce, così
+  // normalizeRow a valle non deve sapere da dove arrivano le righe.
+  const rows = records.map((record) => Object.fromEntries(headers.map((h) => [h, record.get(h)])));
+
+  return { rows, sourceType: 'sheets-api', spreadsheetId, sheetName };
 }
 
 function parseCsv(csv) {

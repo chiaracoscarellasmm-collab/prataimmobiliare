@@ -14,10 +14,16 @@ import path from 'node:path';
 
 import { normalizeRow } from './sync/normalize.mjs';
 import { createR2Client, discoverImages, r2ConfigFromEnv } from './sync/r2.mjs';
-import { loadPropertiesSource } from './sync/sheet.mjs';
+import { loadPropertiesSource, maskSpreadsheetId } from './sync/sheet.mjs';
 import { validateDataset, validateImages } from './sync/validate.mjs';
 
 const DRY_RUN = process.argv.includes('--dry-run');
+// --source=csv è l'unico modo di usare il CSV locale: mai un fallback
+// automatico. Qualsiasi altro valore (o nessun flag) legge il vero foglio.
+const SOURCE_FLAG = (() => {
+  const arg = process.argv.find((a) => a.startsWith('--source='));
+  return arg ? arg.slice('--source='.length) : undefined;
+})();
 const OUTPUT_PATH = path.join(process.cwd(), 'data', 'generated', 'properties.json');
 
 function line() {
@@ -32,8 +38,15 @@ async function main() {
   console.log('PROPERTY SYNC');
   line();
 
-  const { rows: rawRows, source } = await loadPropertiesSource();
-  console.log(`✓ sorgente: ${source}`);
+  const sourceResult = await loadPropertiesSource({ source: SOURCE_FLAG });
+  const { rows: rawRows } = sourceResult;
+  if (sourceResult.sourceType === 'sheets-api') {
+    console.log('✓ sorgente: Google Sheets API / Service Account');
+    console.log(`  Spreadsheet: ${maskSpreadsheetId(sourceResult.spreadsheetId)}`);
+    console.log(`  Sheet: ${sourceResult.sheetName}`);
+  } else {
+    console.log(`✓ sorgente: CSV locale (--source=csv): ${sourceResult.csvPath}`);
+  }
 
   const records = rawRows.map((row, i) => normalizeRow(row, i + 2)); // +2: intestazione + 1-based
   const { errors: structuralErrors, warnings, rows } = validateDataset(records);
@@ -50,17 +63,22 @@ async function main() {
 
   if (r2Config) {
     const client = createR2Client(r2Config);
+    let doneCount = 0;
     for (const record of visibleRows) {
       const { property } = record;
+      process.stderr.write(`  [${doneCount + 1}/${visibleRows.length}] ${property.slug}...`);
+      const t0 = Date.now();
       const { coverImage, images } = await discoverImages(
         client,
         r2Config,
         property.slug,
         property.title ?? property.slug
       );
+      process.stderr.write(` ${images.length} foto (${Date.now() - t0}ms)\n`);
       property.coverImage = coverImage;
       property.images = images;
       totalImages += images.length;
+      doneCount += 1;
     }
     console.log(`✓ ${totalImages} immagini trovate su R2`);
     imageErrors = validateImages(visibleRows);
@@ -96,7 +114,16 @@ async function main() {
   console.log(`\n✓ Sync valido: ${visibleRows.length} immobili pubblicabili.`);
 
   if (DRY_RUN) {
-    console.log('— dry-run: dataset non scritto.');
+    if (visibleRows.length > 0) {
+      console.log('\nIMMOBILI VISIBILI');
+      line();
+      visibleRows.forEach(({ property }) => {
+        const featured = property.featuredHome ? `SI (ordine ${property.homeOrder ?? '—'})` : 'NO';
+        console.log(`${property.slug}`);
+        console.log(`  ID: ${property.id}  ·  immagini: ${property.images.length}  ·  Featured home: ${featured}`);
+      });
+    }
+    console.log('\n— dry-run: dataset non scritto.');
     return;
   }
 
