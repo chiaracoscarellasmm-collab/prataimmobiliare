@@ -141,10 +141,6 @@ export default function Header() {
 
           <div className={styles.actions}>
             <LanguageSwitch />
-            <Link href="/contatti" className={styles.contact}>
-              {t.nav.contact}
-              <span className={styles.contactDot} aria-hidden="true" />
-            </Link>
             <button
               type="button"
               className={`${styles.burger} ${open ? styles.burgerOpen : ''}`}
@@ -169,23 +165,21 @@ export default function Header() {
       >
         <nav aria-label={t.nav.mobile}>
           <ul className={styles.menuList}>
-            {[{ href: '/', key: 'home' as const }, ...nav, { href: '/contatti', key: 'contact' as const }].map(
-              (item, i) => (
-                <li key={item.href} className={styles.menuItem}>
-                  <Link
-                    href={item.href}
-                    className={styles.menuLink}
-                    onClick={close}
-                    aria-current={isCurrent(item.href) ? 'page' : undefined}
-                  >
-                    <span>{t.nav[item.key]}</span>
-                    <span className={styles.menuIndex} aria-hidden="true">
-                      {String(i + 1).padStart(2, '0')}
-                    </span>
-                  </Link>
-                </li>
-              )
-            )}
+            {[{ href: '/', key: 'home' as const }, ...nav].map((item, i) => (
+              <li key={item.href} className={styles.menuItem}>
+                <Link
+                  href={item.href}
+                  className={styles.menuLink}
+                  onClick={close}
+                  aria-current={isCurrent(item.href) ? 'page' : undefined}
+                >
+                  <span>{t.nav[item.key]}</span>
+                  <span className={styles.menuIndex} aria-hidden="true">
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
 

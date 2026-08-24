@@ -9,6 +9,7 @@ import PropertySearch from '@/components/property/PropertySearch';
 import { useI18n } from '@/components/i18n/LanguageProvider';
 import { interpolate } from '@/data/i18n';
 import type { Property } from '@/data/properties';
+import { contact } from '@/data/site';
 import {
   buildFacets,
   filterProperties,
@@ -99,7 +100,11 @@ export default function PropertyBrowser({ properties }: { properties: Property[]
 
         <PropertyGrid
           properties={shown}
-          emptyAction={<ArrowLink href="/contatti">{t.propertiesPage.emptyCta}</ArrowLink>}
+          emptyAction={
+            <ArrowLink href={contact.whatsapp.href} target="_blank" rel="noopener noreferrer">
+              {t.propertiesPage.emptyCta}
+            </ArrowLink>
+          }
         />
 
         {visible < results.length && (

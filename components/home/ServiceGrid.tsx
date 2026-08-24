@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { useI18n } from '@/components/i18n/LanguageProvider';
+import { contact } from '@/data/site';
 import styles from './ServiceGrid.module.css';
 
 type ServiceKey =
@@ -62,7 +63,7 @@ const SERVICES: Service[] = [
   },
   {
     key: 'mortgages',
-    href: '/contatti',
+    href: contact.whatsapp.href,
     image: '/images/services/mortgages.webp',
     area: 'e',
     enabled: true,
@@ -70,7 +71,7 @@ const SERVICES: Service[] = [
   },
   {
     key: 'advisory',
-    href: '/contatti',
+    href: contact.whatsapp.href,
     image: '/images/services/advisory.webp',
     area: 'f',
     enabled: true,
@@ -110,7 +111,7 @@ export default function ServiceGrid() {
                   →
                 </span>
               </Link>
-              <Link href="/contatti" className="pill">
+              <Link href={contact.whatsapp.href} target="_blank" rel="noopener noreferrer" className="pill">
                 {t.nav.contact}
               </Link>
             </div>
@@ -119,6 +120,7 @@ export default function ServiceGrid() {
 
         {services.map(({ key, href, image, area, showCta = true }, i) => {
           const item = t.services.items[key];
+          const external = href.startsWith('http');
           return (
             <Link
               key={key}
@@ -126,6 +128,7 @@ export default function ServiceGrid() {
               className={styles.card}
               data-area={area}
               aria-label={`${item.title.replace('\n', ' ')} — ${item.body}`}
+              {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
             >
               <span className={styles.plate}>
                 <Image

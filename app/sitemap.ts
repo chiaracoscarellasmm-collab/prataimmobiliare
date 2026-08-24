@@ -13,7 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/vendi-affitta', priority: 0.9 },
     { path: '/locazioni-americani', priority: 0.8 },
     { path: '/chi-siamo', priority: 0.7 },
-    { path: '/contatti', priority: 0.6 },
     { path: '/privacy-policy', priority: 0.2 },
     { path: '/cookie-policy', priority: 0.2 },
   ];

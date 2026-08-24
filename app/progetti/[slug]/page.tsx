@@ -8,6 +8,7 @@ import Reveal from '@/components/ui/Reveal';
 import SectionLabel from '@/components/ui/SectionLabel';
 import { getProjectBySlug, projects } from '@/data/projects';
 import { labelOf } from '@/data/i18n';
+import { contact } from '@/data/site';
 import { getI18n } from '@/lib/i18n';
 import styles from './project.module.css';
 
@@ -193,7 +194,9 @@ export default async function ProjectPage({ params }: Params) {
           <h2 id="project-cta" className={styles.ctaTitle} style={{ margin: '1.25rem 0 1.75rem' }}>
             {t.project.tellYou}
           </h2>
-          <ArrowLink href="/contatti">{t.project.contact}</ArrowLink>
+          <ArrowLink href={contact.whatsapp.href} target="_blank" rel="noopener noreferrer">
+            {t.project.contact}
+          </ArrowLink>
         </div>
       </section>
 

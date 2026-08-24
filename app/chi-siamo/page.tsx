@@ -6,6 +6,7 @@ import PageHero from '@/components/ui/PageHero';
 import ProcessSection from '@/components/home/ProcessSection';
 import Reveal from '@/components/ui/Reveal';
 import SectionLabel from '@/components/ui/SectionLabel';
+import { contact } from '@/data/site';
 import { getI18n } from '@/lib/i18n';
 import styles from './about.module.css';
 
@@ -45,7 +46,11 @@ export default async function ChiSiamoPage() {
           </>
         }
         intro={t.about.intro}
-        actions={<ArrowLink href="/contatti">{t.about.cta}</ArrowLink>}
+        actions={
+          <ArrowLink href={contact.whatsapp.href} target="_blank" rel="noopener noreferrer">
+            {t.about.cta}
+          </ArrowLink>
+        }
       />
 
       <div className="container" style={{ paddingBottom: 'clamp(2.5rem, 6vw, 5rem)' }}>
@@ -175,7 +180,9 @@ export default async function ChiSiamoPage() {
             <div style={{ display: 'grid', gap: '0.5rem', justifyItems: 'start' }}>
               <ArrowLink href="/immobili">{t.about.seeProperties}</ArrowLink>
               <ArrowLink href="/vendi-affitta">{t.about.requestValuation}</ArrowLink>
-              <ArrowLink href="/contatti">{t.about.contact}</ArrowLink>
+              <ArrowLink href={contact.whatsapp.href} target="_blank" rel="noopener noreferrer">
+                {t.about.contact}
+              </ArrowLink>
             </div>
           </Reveal>
         </div>

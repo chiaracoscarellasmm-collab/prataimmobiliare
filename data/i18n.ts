@@ -58,13 +58,7 @@ const it = {
     vat: 'P.IVA',
   },
   contact: {
-    address: 'Indirizzo',
-    phone: 'Telefono',
-    email: 'Email',
-    hours: 'Orari',
     social: 'Social',
-    details: 'Recapiti',
-    write: 'Scrivici',
     whatsapp: 'Scrivici su WhatsApp',
   },
   footer: {
@@ -560,22 +554,6 @@ const it = {
       Venduto: 'Venduto',
     },
   },
-  contactsPage: {
-    metaTitle: 'Contatti',
-    metaDescription:
-      'Come raggiungere Prata Immobiliare: indirizzo, telefono, email e orari. Scrivici per una valutazione o per fissare una visita.',
-    label: 'Contatti',
-    title: 'Parliamo del tuo',
-    titleEm: 'prossimo passo.',
-    intro:
-      'Che tu stia cercando casa, valutando una vendita o pensando a una locazione, il modo più rapido è scriverci.',
-    writeTitle: 'Il modo più veloce per iniziare.',
-    writeBody:
-      'Se hai un immobile da vendere o da affittare, il questionario ci dà subito le informazioni che servono per prepararti una prima valutazione.',
-    valuation: 'Richiedi una valutazione',
-    seeProperties: 'Guarda gli immobili',
-    usaf: 'Locazioni Americani',
-  },
   sellPage: {
     metaTitle: 'Valutazione immobile',
     metaDescription:
@@ -937,13 +915,7 @@ const en: typeof it = {
     vat: 'VAT',
   },
   contact: {
-    address: 'Address',
-    phone: 'Phone',
-    email: 'Email',
-    hours: 'Hours',
     social: 'Social',
-    details: 'Contact details',
-    write: 'Write to us',
     whatsapp: 'Message us on WhatsApp',
   },
   footer: {
@@ -1433,22 +1405,6 @@ const en: typeof it = {
       Opzionato: 'Reserved',
       Venduto: 'Sold',
     },
-  },
-  contactsPage: {
-    metaTitle: 'Contact',
-    metaDescription:
-      'How to reach Prata Immobiliare: address, phone, email and opening hours. Write to us for a valuation or to book a viewing.',
-    label: 'Contact',
-    title: 'Let’s talk about your',
-    titleEm: 'next step.',
-    intro:
-      'Whether you are looking for a home, considering a sale or thinking about a rental, the quickest way is to write to us.',
-    writeTitle: 'The fastest way to begin.',
-    writeBody:
-      'If you have a property to sell or to rent, the questionnaire gives us the information we need to prepare a first valuation.',
-    valuation: 'Request a valuation',
-    seeProperties: 'Browse properties',
-    usaf: 'American Rentals',
   },
   sellPage: {
     metaTitle: 'Property valuation',

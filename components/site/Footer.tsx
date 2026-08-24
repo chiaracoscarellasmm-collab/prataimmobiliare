@@ -22,7 +22,9 @@ export default async function Footer() {
               <em className="em">{t.footer.ledeEm}</em>
             </p>
             <div style={{ marginTop: '1.75rem' }}>
-              <ArrowLink href="/contatti">{t.footer.cta}</ArrowLink>
+              <ArrowLink href={contact.whatsapp.href} target="_blank" rel="noopener noreferrer">
+                {t.footer.cta}
+              </ArrowLink>
             </div>
           </div>
 
