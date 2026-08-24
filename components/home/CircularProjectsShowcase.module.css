@@ -241,17 +241,8 @@
   padding: 0 var(--gutter) clamp(1.25rem, 3vw, 2.25rem);
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 1rem;
-}
-
-.counter {
-  font-family: var(--font-cond);
-  font-variation-settings: 'wdth' 74;
-  font-weight: 600;
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
-  letter-spacing: -0.02em;
-  font-variant-numeric: tabular-nums;
 }
 
 .status {

@@ -115,10 +115,19 @@ export function filterProperties(
     ? filters.features.split(',').map(norm).filter(Boolean)
     : [];
 
+  // "Pordenone" è un comune reale quanto "Prata di Pordenone": se il testo
+  // digitato coincide esattamente con un comune esistente, non deve
+  // includere gli altri che lo contengono come sottostringa. Il match
+  // parziale resta solo per la digitazione libera/incompleta.
+  const locationQuery = filters.location ? norm(filters.location) : '';
+  const isExactLocation =
+    locationQuery !== '' && properties.some((p) => norm(p.location.comune) === locationQuery);
+
   return properties.filter((p) => {
-    if (filters.location) {
-      // Loose match: "prata" should find "Prata di Pordenone".
-      if (!norm(p.location.comune).includes(norm(filters.location))) return false;
+    if (locationQuery) {
+      const comune = norm(p.location.comune);
+      const matches = isExactLocation ? comune === locationQuery : comune.includes(locationQuery);
+      if (!matches) return false;
     }
     if (filters.type && p.propertyType !== filters.type) return false;
     if (filters.transaction && p.transactionType !== filters.transaction) return false;

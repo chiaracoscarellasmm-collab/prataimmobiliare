@@ -251,9 +251,6 @@ export default function CircularProjectsShowcase({
         </div>
 
         <div className={styles.foot}>
-          <p className={styles.counter}>
-            {current.id} / {String(items.length).padStart(2, '0')}
-          </p>
           <p className={styles.status}>{propertyStatusLabel(t, current.status)}</p>
         </div>
 

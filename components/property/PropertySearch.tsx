@@ -1,17 +1,11 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { useI18n } from '@/components/i18n/LanguageProvider';
 import { interpolate } from '@/data/i18n';
-import { featureFacetLabel, propertyTypeLabel } from '@/lib/copy';
-import {
-  EMPTY_FILTERS,
-  PRICE_STEPS,
-  SURFACE_STEPS,
-  countActive,
-  type PropertyFilterState,
-} from '@/lib/filters';
+import { propertyTypeLabel } from '@/lib/copy';
+import { EMPTY_FILTERS, PRICE_STEPS, countActive, type PropertyFilterState } from '@/lib/filters';
 import FilterPopover from './FilterPopover';
 import styles from './PropertySearch.module.css';
 
@@ -56,17 +50,6 @@ export default function PropertySearch({ value, onChange, facets, resultCount }:
   };
 
   const activeCount = countActive(draft);
-  const selectedFeatures = useMemo(
-    () => (draft.features ? draft.features.split(',').filter(Boolean) : []),
-    [draft.features]
-  );
-
-  const toggleFeature = (feature: string) => {
-    const next = selectedFeatures.includes(feature)
-      ? selectedFeatures.filter((f) => f !== feature)
-      : [...selectedFeatures, feature];
-    set('features', next.join(','));
-  };
 
   /* ------------------------------------------------------------- labels -- */
   const typeLabel = draft.type ? propertyTypeLabel(t, draft.type) : '';
@@ -112,102 +95,6 @@ export default function PropertySearch({ value, onChange, facets, resultCount }:
         </li>
       ))}
     </ul>
-  );
-
-  /* The advanced panel is shared between the desktop popover and the mobile
-     sheet, so the two can never drift apart. */
-  const advanced = (
-    <div className={styles.advanced}>
-      <div className={styles.advGroup}>
-        <p className={styles.advLabel}>{t.search.surface}</p>
-        <div className={styles.advRow}>
-          <label className={styles.selectWrap}>
-            <span className="sr-only">{t.search.surfaceMin}</span>
-            <select
-              className={styles.select}
-              value={draft.surfaceMin}
-              onChange={(e) => set('surfaceMin', e.target.value)}
-            >
-              <option value="">{t.search.noMin}</option>
-              {SURFACE_STEPS.map((s) => (
-                <option key={s} value={String(s)}>
-                  {s} m²
-                </option>
-              ))}
-            </select>
-          </label>
-          <span className={styles.dash} aria-hidden="true">
-            —
-          </span>
-          <label className={styles.selectWrap}>
-            <span className="sr-only">{t.search.surfaceMax}</span>
-            <select
-              className={styles.select}
-              value={draft.surfaceMax}
-              onChange={(e) => set('surfaceMax', e.target.value)}
-            >
-              <option value="">{t.search.noMax}</option>
-              {SURFACE_STEPS.map((s) => (
-                <option key={s} value={String(s)}>
-                  {s} m²
-                </option>
-              ))}
-            </select>
-          </label>
-        </div>
-      </div>
-
-      <div className={styles.advGroup}>
-        <p className={styles.advLabel}>{t.search.bathrooms}</p>
-        <div className={styles.chips}>
-          {BEDROOM_STEPS.map((n) => (
-            <button
-              key={n}
-              type="button"
-              className={`${styles.chip} ${draft.bathrooms === n ? styles.chipOn : ''}`}
-              onClick={() => set('bathrooms', draft.bathrooms === n ? '' : n)}
-              aria-pressed={draft.bathrooms === n}
-            >
-              {n}+
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {facets.features.length > 0 && (
-        <div className={styles.advGroup}>
-          <p className={styles.advLabel}>{t.search.features}</p>
-          <div className={styles.chips}>
-            {facets.features.map((feature) => (
-              <button
-                key={feature}
-                type="button"
-                className={`${styles.chip} ${
-                  selectedFeatures.includes(feature) ? styles.chipOn : ''
-                }`}
-                onClick={() => toggleFeature(feature)}
-                aria-pressed={selectedFeatures.includes(feature)}
-              >
-                {featureFacetLabel(t, feature)}
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {facets.hasUsaf && (
-        <div className={styles.advGroup}>
-          <label className={styles.check}>
-            <input
-              type="checkbox"
-              checked={draft.usaf === '1'}
-              onChange={(e) => set('usaf', e.target.checked ? '1' : '')}
-            />
-            <span>{t.search.usaf}</span>
-          </label>
-        </div>
-      )}
-    </div>
   );
 
   const resultsLabel =
@@ -346,42 +233,6 @@ export default function PropertySearch({ value, onChange, facets, resultCount }:
                   close
                 )
               }
-            </FilterPopover>
-
-            <FilterPopover
-              label={t.search.more}
-              value={activeCount > 0 ? String(activeCount) : ''}
-              placeholder="—"
-              wide
-            >
-              {(close) => (
-                <>
-                  {advanced}
-                  <div className={styles.panelFoot}>
-                    <button
-                      type="button"
-                      className={styles.ghost}
-                      onClick={() => {
-                        setDraft(EMPTY_FILTERS);
-                        commit(EMPTY_FILTERS);
-                        close();
-                      }}
-                    >
-                      {t.search.reset}
-                    </button>
-                    <button
-                      type="button"
-                      className={styles.solid}
-                      onClick={() => {
-                        commit();
-                        close();
-                      }}
-                    >
-                      {t.search.apply}
-                    </button>
-                  </div>
-                </>
-              )}
             </FilterPopover>
 
             <button type="submit" className={styles.submit}>
@@ -524,8 +375,6 @@ export default function PropertySearch({ value, onChange, facets, resultCount }:
               ))}
             </div>
           </div>
-
-          {advanced}
         </div>
 
         <div className={styles.sheetFoot}>

@@ -3,6 +3,8 @@
 import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
+const REVEAL_SELECTOR = '[data-reveal]:not([data-in]), [data-reveal-media]:not([data-in])';
+
 /**
  * One IntersectionObserver for the whole site.
  *
@@ -10,6 +12,12 @@ import { usePathname } from 'next/navigation';
  * `data-reveal-media`; this engine arms them as they enter the viewport and
  * then stops watching. Cheaper than an observer per component, and it keeps
  * animation concerns out of the content components entirely.
+ *
+ * A MutationObserver backs the initial scan: content added later without a
+ * route change (load-more buttons, filtered results, anything client-side)
+ * still declares `data-reveal` but mounts after the one-time scan — without
+ * this, those elements are permanently armed-but-never-observed and stay at
+ * `opacity: 0` forever.
  *
  * It marks state with `data-in` / `data-instant` — attributes React never
  * renders — so mutating them can never trip a hydration mismatch against the
@@ -26,54 +34,58 @@ export default function RevealEngine() {
       el.setAttribute('data-in', '');
     };
 
-    const scan = () => {
-      const nodes = Array.from(
-        document.querySelectorAll<HTMLElement>(
-          '[data-reveal]:not([data-in]), [data-reveal-media]:not([data-in])'
-        )
-      );
+    let intersectionObserver: IntersectionObserver | null = null;
 
-      if (reduced) {
-        nodes.forEach((el) => arm(el, true));
-        return () => {};
-      }
-
-      /* Anything already on screen at mount is content the visitor asked for
-         by loading the page — show it at once. Only what they scroll to
-         animates. */
-      const fold = window.innerHeight * 0.95;
-      const below: HTMLElement[] = [];
-
-      for (const el of nodes) {
-        if (el.getBoundingClientRect().top < fold) arm(el, true);
-        else below.push(el);
-      }
-
-      const observer = new IntersectionObserver(
+    if (!reduced) {
+      intersectionObserver = new IntersectionObserver(
         (entries) => {
           for (const entry of entries) {
             if (!entry.isIntersecting) continue;
             arm(entry.target as HTMLElement, false);
-            observer.unobserve(entry.target);
+            intersectionObserver!.unobserve(entry.target);
           }
         },
         { rootMargin: '0px 0px -12% 0px', threshold: 0.08 }
       );
+    }
 
-      below.forEach((el) => observer.observe(el));
-      return () => observer.disconnect();
+    /* Anything already on screen when discovered is content the visitor
+       asked for (by loading the page, or by an action that just rendered
+       it) — show it at once. Only what's below the fold animates in. */
+    const armOrObserve = (el: HTMLElement) => {
+      if (reduced) {
+        arm(el, true);
+        return;
+      }
+      const fold = window.innerHeight * 0.95;
+      if (el.getBoundingClientRect().top < fold) {
+        arm(el, true);
+      } else {
+        intersectionObserver?.observe(el);
+      }
     };
 
-    /* Wait for hydration to settle so late-mounting client subtrees
-       (Suspense boundaries) are included in the first scan. */
-    let dispose = () => {};
-    const raf = requestAnimationFrame(() => {
-      dispose = scan();
+    const scan = (root: ParentNode) => {
+      root.querySelectorAll<HTMLElement>(REVEAL_SELECTOR).forEach(armOrObserve);
+    };
+
+    const raf = requestAnimationFrame(() => scan(document));
+
+    const mutationObserver = new MutationObserver((mutations) => {
+      for (const mutation of mutations) {
+        mutation.addedNodes.forEach((node) => {
+          if (!(node instanceof HTMLElement)) return;
+          if (node.matches(REVEAL_SELECTOR)) armOrObserve(node);
+          scan(node);
+        });
+      }
     });
+    mutationObserver.observe(document.body, { childList: true, subtree: true });
 
     return () => {
       cancelAnimationFrame(raf);
-      dispose();
+      intersectionObserver?.disconnect();
+      mutationObserver.disconnect();
     };
   }, [pathname]);
 
