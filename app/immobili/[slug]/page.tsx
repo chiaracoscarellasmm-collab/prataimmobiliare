@@ -5,15 +5,19 @@ import { notFound } from 'next/navigation';
 
 import PropertyCard from '@/components/property/PropertyCard';
 import PropertyGallery from '@/components/property/PropertyGallery';
+import PropertyVideoPlayer from '@/components/property/PropertyVideoPlayer';
+import ShareButton from '@/components/property/ShareButton';
 import Reveal from '@/components/ui/Reveal';
 import { interpolate } from '@/data/i18n';
 import { getPropertyBySlug, getRelatedProperties, properties } from '@/data/properties';
-import { contact, site } from '@/data/site';
-import { buildCharacteristics, buildEnergyInfo, buildKeyFacts } from '@/lib/characteristics';
+import { site } from '@/data/site';
+import { buildEnergyInfo, buildKeyCharacteristics, buildKeyFacts, buildPlusCharacteristics } from '@/lib/characteristics';
 import { propertyStatusLabel, propertyTitle, propertyTypeLabel } from '@/lib/copy';
 import { effectivePrice, formatPrice } from '@/lib/format';
 import { getI18n } from '@/lib/i18n';
 import { isMeaningfulValue } from '@/lib/properties/isMeaningfulValue';
+import { buildPropertyWhatsAppUrl } from '@/lib/propertyWhatsApp';
+import { extractYouTubeId } from '@/lib/youtube';
 import styles from './detail.module.css';
 
 type Params = { params: Promise<{ slug: string }> };
@@ -64,10 +68,14 @@ export default async function PropertyPage({ params }: Params) {
   const price = effectivePrice(property);
   const priceLabel = formatPrice(price, property.transactionType, t.property, locale);
   const statusLabel = propertyStatusLabel(t, property.status);
+  const propertyUrl = `${site.url}/immobili/${property.slug}`;
+  const whatsappHref = buildPropertyWhatsAppUrl(name, propertyUrl, locale);
 
   const keyFacts = buildKeyFacts(t, property, locale);
-  const characteristics = buildCharacteristics(t, property, locale);
+  const characteristics = buildKeyCharacteristics(t, property, locale);
+  const plusCharacteristics = buildPlusCharacteristics(t, property, locale);
   const energy = buildEnergyInfo(property, locale, t.property.energyIpeUnit);
+  const videoId = extractYouTubeId(property.videoUrl);
 
   /* Venduto/Affittato ma ancora pubblicato: niente più "prenota una visita"
      come invito principale, si propone di guardare altrove. */
@@ -229,21 +237,19 @@ export default async function PropertyPage({ params }: Params) {
               </>
             )}
 
-            {property.videoUrl && (
-              <p style={{ marginTop: '2rem' }}>
-                <a
-                  href={property.videoUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="pill pill-solid"
-                >
-                  {t.property.videoCta}
-                  <span className="arrow" aria-hidden="true">
-                    →
-                  </span>
-                </a>
-              </p>
+            {plusCharacteristics.length > 0 && (
+              <>
+                <p className={styles.plusTitle}>{t.property.plusTitle}</p>
+                <div className={styles.plusList}>
+                  {plusCharacteristics.map((tile, i) => (
+                    <span key={i} className={styles.plusItem}>
+                      {tile.key ? `${tile.key} · ${tile.value}` : tile.value}
+                    </span>
+                  ))}
+                </div>
+              </>
             )}
+
           </div>
 
           <aside className={styles.panel}>
@@ -257,70 +263,37 @@ export default async function PropertyPage({ params }: Params) {
                   {t.property.similarCta}
                 </Link>
               ) : (
-                <>
-                  <Link
-                    href={`/contatti?immobile=${property.slug}`}
-                    className={styles.panelPrimary}
-                  >
-                    {t.property.requestInfo}
-                  </Link>
-                  <Link
-                    href={`/contatti?immobile=${property.slug}&visita=1`}
-                    className={styles.panelSecondary}
-                  >
-                    {t.property.bookVisit}
-                  </Link>
-                </>
-              )}
-              {/* Only when a real number has been configured. */}
-              {contact.whatsapp.href && (
                 <a
-                  className={styles.panelSecondary}
-                  href={contact.whatsapp.href}
+                  href={whatsappHref}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className={styles.panelPrimary}
                 >
-                  WhatsApp
+                  {t.property.requestInfoWhatsapp}
                 </a>
               )}
+              <ShareButton
+                url={propertyUrl}
+                label={t.property.shareCta}
+                copiedLabel={t.property.shareCopied}
+                className={styles.panelSecondary}
+              />
             </div>
           </aside>
         </section>
 
-        {/* ------------------------------------------------ editorial shots */}
-        {rest.length > 0 && (
-          <section className="container" aria-label={t.property.characteristics}>
-            <div className={styles.shots}>
-              {rest.map((image) => (
-                <Reveal className={styles.shot} key={image.src}>
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    width={image.width}
-                    height={image.height}
-                    sizes="(min-width: 768px) 60vw, 100vw"
-                  />
-                </Reveal>
-              ))}
+        {/* ---------------------------------------------------------- video */}
+        {videoId && (
+          <section className="container section-sm" aria-labelledby="video-title">
+            <p className={styles.label}>{t.property.videoLabel}</p>
+            <h2 id="video-title" className={styles.sectionTitle}>
+              {t.property.videoTitle}
+            </h2>
+            <div className={styles.videoFrame}>
+              <PropertyVideoPlayer videoId={videoId} title={name} playLabel={t.property.videoPlay} />
             </div>
           </section>
         )}
-
-        {/* -------------------------------------------------------- location */}
-        <section className="container section-sm" aria-labelledby="where-title">
-          <p className={styles.label}>{t.property.whereIs}</p>
-          <h2 id="where-title" className={styles.sectionTitle}>
-            {property.location.showAddress && property.location.address
-              ? `${property.location.address}, ${property.location.comune}`
-              : property.location.zona
-                ? `${property.location.zona}, ${property.location.comune}`
-                : property.location.comune}
-          </h2>
-          {/* No invented coordinates: without them, no map. */}
-          <p className="meta" style={{ maxWidth: '52ch' }}>
-            {t.property.whereIsNote}
-          </p>
-        </section>
 
         {/* ------------------------------------------------------------- cta */}
         <div className="container">
@@ -336,19 +309,10 @@ export default async function PropertyPage({ params }: Params) {
                   <span aria-hidden="true">→</span>
                 </Link>
               ) : (
-                <>
-                  <Link
-                    href={`/contatti?immobile=${property.slug}&visita=1`}
-                    className={styles.ctaPrimary}
-                  >
-                    {t.property.bookVisit}
-                    <span aria-hidden="true">→</span>
-                  </Link>
-                  <Link href={`/contatti?immobile=${property.slug}`} className={styles.ctaGhost}>
-                    {t.property.requestInfo}
-                    <span aria-hidden="true">→</span>
-                  </Link>
-                </>
+                <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className={styles.ctaPrimary}>
+                  {t.property.bookVisit}
+                  <span aria-hidden="true">→</span>
+                </a>
               )}
             </div>
           </section>

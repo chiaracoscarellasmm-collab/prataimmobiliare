@@ -16,11 +16,12 @@ export interface CharacteristicTile {
 }
 
 /**
- * Griglia editoriale della pagina dettaglio: solo dati valorizzati, nell'ordine
- * dello spec (superficie → altre caratteristiche). Un booleano senza un
- * sotto-valore mostra solo la propria etichetta, mai "Sì" o un trattino.
+ * Griglia principale della pagina dettaglio: solo i dati che pesano in una
+ * decisione (dimensione, distribuzione, posizione), non l'elenco completo.
+ * Un booleano senza un sotto-valore mostra solo la propria etichetta, mai
+ * "Sì" o un trattino.
  */
-export function buildCharacteristics(t: Dictionary, property: Property, locale: Locale): CharacteristicTile[] {
+export function buildKeyCharacteristics(t: Dictionary, property: Property, locale: Locale): CharacteristicTile[] {
   const tiles: CharacteristicTile[] = [];
 
   if (meaningful(property.surface)) {
@@ -32,30 +33,30 @@ export function buildCharacteristics(t: Dictionary, property: Property, locale: 
   if (meaningful(property.bathrooms)) {
     tiles.push({ key: t.property.bathroomsLabel, value: String(property.bathrooms) });
   }
+
+  // Un immobile ha tipicamente l'uno o l'altro: un'unica tile, mai due.
+  if (property.garage) {
+    tiles.push({
+      key: t.property.garageParkingLabel,
+      value: meaningful(property.garageType) ? propertyFeatureLabel(t, property.garageType) : t.property.garage,
+    });
+  } else if (property.parkingSpot) {
+    tiles.push({
+      key: t.property.garageParkingLabel,
+      value: property.parkingSpotCovered
+        ? `${t.property.parkingSpot} · ${t.property.covered}`
+        : t.property.parkingSpot,
+    });
+  }
+
   if (meaningful(property.floor)) {
     tiles.push({ key: t.property.floorLabel, value: property.floor });
   }
-  if (meaningful(property.buildingFloors)) {
-    tiles.push({ key: t.property.buildingFloorsLabel, value: String(property.buildingFloors) });
+  if (meaningful(property.location.zona)) {
+    tiles.push({ key: t.property.zoneLabel, value: property.location.zona });
   }
   if (meaningful(property.constructionYear)) {
     tiles.push({ key: t.property.yearLabel, value: String(property.constructionYear) });
-  }
-
-  if (property.garage) {
-    tiles.push(
-      meaningful(property.garageType)
-        ? { key: t.property.garage, value: propertyFeatureLabel(t, property.garageType) }
-        : { value: t.property.garage }
-    );
-  }
-
-  if (property.parkingSpot) {
-    tiles.push(
-      property.parkingSpotCovered
-        ? { key: t.property.parkingSpot, value: t.property.covered }
-        : { value: t.property.parkingSpot }
-    );
   }
 
   if (property.garden) {
@@ -65,6 +66,17 @@ export function buildCharacteristics(t: Dictionary, property: Property, locale: 
         : { value: t.property.garden }
     );
   }
+
+  return tiles;
+}
+
+/**
+ * Blocco secondario ("plus"): comfort e dotazioni, mostrati come badge
+ * compatti sotto la griglia principale — non competono con i dati che
+ * servono a decidere.
+ */
+export function buildPlusCharacteristics(t: Dictionary, property: Property, locale: Locale): CharacteristicTile[] {
+  const tiles: CharacteristicTile[] = [];
 
   if (property.terrace) {
     tiles.push(
@@ -95,19 +107,13 @@ export function buildCharacteristics(t: Dictionary, property: Property, locale: 
     tiles.push({ key: t.property.heating, value: propertyFeatureLabel(t, property.heating) });
   }
 
-  if (meaningful(property.otherFeatures)) {
-    for (const feature of property.otherFeatures) {
-      tiles.push({ value: propertyFeatureLabel(t, feature) });
-    }
-  }
-
   return tiles;
 }
 
 /**
  * Striscia in alto, vicino al prezzo: solo un assaggio (superficie, camere,
  * bagni, piano, garage, classe energetica), non l'elenco completo — quello
- * vive più giù in {@link buildCharacteristics} e nel blocco energia a parte.
+ * vive più giù in {@link buildKeyCharacteristics} e nel blocco energia a parte.
  */
 export function buildKeyFacts(t: Dictionary, property: Property, locale: Locale): CharacteristicTile[] {
   const tiles: CharacteristicTile[] = [];

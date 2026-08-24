@@ -221,46 +221,36 @@
 .panelSecondary { border: 1px solid var(--line-strong); color: var(--ink); }
 .panelSecondary:hover { border-color: var(--ink); }
 
-/* -------------------------------------------------------- editorial shots */
-.shots {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: clamp(0.75rem, 1.5vw, 1.25rem);
-}
-
-.shot { overflow: hidden; border-radius: 16px; background: var(--surface-3); cursor: pointer; }
-.shot img { width: 100%; height: 100%; object-fit: cover; transition: transform 800ms var(--ease); }
-
-@media (hover: hover) and (pointer: fine) {
-  .shot:hover img { transform: scale(1.025); }
-}
+/* ------------------------------------------------------------------ video - */
+.videoFrame { margin-top: 1.5rem; }
 
 /* ------------------------------------------------------- characteristics - */
-/* Griglia editoriale, non una bullet-list: label piccola, valore importante. */
+/* Box uniformi, non una tabella: pochi dati, gerarchia forte. */
 .charGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0;
-  margin-top: 1.25rem;
-  border-top: 1px solid var(--line);
+  gap: 1px;
+  margin-top: 1.5rem;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .charTile {
   display: grid;
-  align-content: start;
-  gap: 0.3rem;
-  padding: clamp(1rem, 1.8vw, 1.4rem) clamp(0.75rem, 1.5vw, 1.25rem);
-  border-bottom: 1px solid var(--line);
+  align-content: center;
+  gap: 0.35rem;
+  padding: 1.25rem 1.1rem;
+  min-height: 6.5rem;
+  background: var(--surface-2);
 }
-
-.charTile:nth-child(2n + 1) { padding-left: 0; }
-.charTile:nth-child(2n + 2) { border-left: 1px solid var(--line); }
 
 .charValue {
   font-family: var(--font-cond);
   font-variation-settings: 'wdth' 78;
   font-weight: 600;
-  font-size: clamp(1rem, 1.5vw, 1.1875rem);
+  font-size: clamp(1.0625rem, 1.6vw, 1.25rem);
   line-height: 1.2;
   letter-spacing: -0.01em;
 }
@@ -273,14 +263,43 @@
   color: var(--ink-faint);
 }
 
-/* --------------------------------------------------------- energy block - */
-.energy {
+/* ---------------------------------------------------------------- plus - */
+/* Comfort e dotazioni: badge compatti, non righe di griglia. */
+.plusTitle {
+  margin-top: 2.5rem;
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.plusList {
   display: flex;
   flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.9rem;
+}
+
+.plusItem {
+  padding: 0.55rem 1.1rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--surface-2);
+  font-size: var(--fs-small);
+  color: var(--ink-muted);
+}
+
+/* --------------------------------------------------------- energy block - */
+.energy {
+  display: inline-flex;
+  flex-wrap: wrap;
   align-items: baseline;
-  gap: clamp(1rem, 2.5vw, 2rem);
+  gap: 0.75rem 1.25rem;
+  width: fit-content;
+  max-width: 100%;
   margin-top: 2.5rem;
-  padding: clamp(1.5rem, 3vw, 2.25rem);
+  padding: 1rem 1.5rem;
   border: 1px solid var(--line-strong);
   border-radius: 16px;
   background: var(--surface-2);
@@ -298,7 +317,7 @@
 .energyClass {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(2.25rem, 4vw, 3rem);
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
   line-height: 1;
   color: var(--brown);
 }
@@ -347,23 +366,6 @@
 
 .ctaPrimary:hover { background: var(--sand); }
 
-.ctaGhost {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0 1.6rem;
-  min-height: 52px;
-  border-radius: var(--radius);
-  border: 1px solid rgba(244, 239, 230, 0.4);
-  color: var(--cream);
-  font-size: var(--fs-label);
-  font-weight: 600;
-  letter-spacing: var(--ls-label);
-  text-transform: uppercase;
-}
-
-.ctaGhost:hover { background: var(--cream); color: var(--ink-900); }
-
 /* --------------------------------------------------------------- related - */
 .related { padding-bottom: clamp(4rem, 8vw, 7rem); }
 .relatedGrid { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(1.5rem, 3vw, 2.5rem); }
@@ -371,15 +373,8 @@
 /* ----------------------------------------------------------- breakpoints - */
 @media (min-width: 768px) {
   .specs { grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); }
-  .charGrid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .charTile { padding-left: clamp(0.75rem, 1.5vw, 1.25rem); border-left: 1px solid var(--line); }
-  .charTile:nth-child(3n + 1) { padding-left: 0; border-left: none; }
+  .charGrid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .relatedGrid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-
-  .shots { grid-template-columns: repeat(6, minmax(0, 1fr)); }
-  .shot:nth-child(3n + 1) { grid-column: span 4; aspect-ratio: 4 / 3; }
-  .shot:nth-child(3n + 2) { grid-column: span 2; aspect-ratio: 3 / 4; align-self: end; }
-  .shot:nth-child(3n + 3) { grid-column: span 6; aspect-ratio: 21 / 9; }
 }
 
 @media (min-width: 1024px) {
@@ -397,6 +392,3 @@
   .panel { position: sticky; top: calc(var(--header-h) + 1.5rem); }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .shot img { transition: none; }
-}

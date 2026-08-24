@@ -19,13 +19,16 @@
 
 .trigger:hover { background: var(--dark); color: var(--cream); }
 
+/* Sfondo quasi nero, foto protagonista, controlli minimi in overlay — niente
+   header/footer bar: più spazio possibile alla fotografia.
+   NB: --on-dark* sono alias "legacy" che dentro `.surface-light` risolvono ai
+   colori del tema chiaro (vedi globals.css) — qui i controlli usano sempre
+   --cream/rgba(cream) espliciti, lo stesso pattern già usato da `.cta`. */
 .viewer {
   position: fixed;
   inset: 0;
   z-index: 200;
   background: var(--dark);
-  display: flex;
-  flex-direction: column;
   opacity: 0;
   visibility: hidden;
   transition: opacity var(--dur) var(--ease), visibility 0s linear var(--dur);
@@ -33,76 +36,97 @@
 
 .viewerOpen { opacity: 1; visibility: visible; transition-delay: 0s; }
 
-.viewerHead {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: clamp(1rem, 2vw, 1.5rem) var(--gutter);
-  color: var(--on-dark);
-  border-bottom: 1px solid var(--on-dark-line);
+.viewerStage {
+  position: absolute;
+  inset: 0;
+  padding: clamp(1.5rem, 3.5vw, 2.5rem);
+  touch-action: none;
 }
 
-.viewerTitle {
+/* Riquadro di dimensioni definite (non "auto" via grid+place-items, che su
+   certi browser lascia la percentuale di max-height irrisolta e la foto
+   piccolissima): l'immagine riempie questo box, `object-fit:contain` fa il resto. */
+.viewerImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: galleryFade 220ms var(--ease);
+}
+
+/* Vicino immediato, montato ma invisibile: pronto per il prossimo swipe. */
+.preloadImage {
+  position: absolute;
+  inset: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.closeBtn {
+  position: absolute;
+  top: clamp(1rem, 2.5vw, 1.75rem);
+  right: clamp(1rem, 2.5vw, 1.75rem);
+  z-index: 3;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(244, 239, 230, 0.35);
+  border-radius: 50%;
+  background: rgba(16, 14, 12, 0.35);
+  color: var(--cream);
+  transition: background-color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+
+.closeBtn:hover { background: rgba(244, 239, 230, 0.92); color: var(--dark); border-color: transparent; }
+.closeBtn svg { width: 18px; height: 18px; }
+
+.counter {
+  position: absolute;
+  top: clamp(1rem, 2.5vw, 1.75rem);
+  left: clamp(1rem, 2.5vw, 1.75rem);
+  z-index: 3;
   font-size: var(--fs-label);
   font-weight: 600;
   letter-spacing: var(--ls-label);
-  text-transform: uppercase;
-}
-
-.viewerIndex {
-  font-size: var(--fs-label);
-  font-weight: 600;
-  letter-spacing: var(--ls-label);
-  color: var(--on-dark-muted);
+  color: rgba(244, 239, 230, 0.8);
   font-variant-numeric: tabular-nums;
 }
 
-.viewerStage {
-  flex: 1;
-  min-height: 0;
-  position: relative;
-  display: grid;
-  place-items: center;
-  padding: clamp(1rem, 3vw, 2.5rem) var(--gutter);
-}
-
-.viewerImage {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-}
-
-.viewerFoot {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: clamp(0.75rem, 2vw, 1.25rem) var(--gutter) max(1rem, env(safe-area-inset-bottom));
-  border-top: 1px solid var(--on-dark-line);
-}
-
 .navBtn {
-  width: 52px;
-  height: 52px;
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  width: 44px;
+  height: 44px;
   display: grid;
   place-items: center;
-  border: 1px solid var(--on-dark-line);
-  color: var(--on-dark);
-  border-radius: var(--radius-sm);
-  transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease);
+  border: 1px solid rgba(244, 239, 230, 0.35);
+  border-radius: 50%;
+  background: rgba(16, 14, 12, 0.35);
+  color: var(--cream);
+  transform: translateY(-50%);
+  transition: background-color var(--dur) var(--ease), border-color var(--dur) var(--ease);
 }
 
-.navBtn:hover { background: var(--on-dark); color: var(--dark); }
+.navBtn:hover { background: rgba(244, 239, 230, 0.92); color: var(--dark); border-color: transparent; }
+.navPrev { left: clamp(0.75rem, 2vw, 1.5rem); }
+.navNext { right: clamp(0.75rem, 2vw, 1.5rem); }
 
-.caption {
-  font-size: var(--fs-small);
-  color: var(--on-dark-muted);
-  margin-left: auto;
-  text-align: right;
+@media (min-width: 768px) {
+  .closeBtn { width: 48px; height: 48px; }
+  .navBtn { width: 52px; height: 52px; }
+}
+
+@keyframes galleryFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .viewer { transition: none; }
+  .viewerImage { animation: none; }
 }

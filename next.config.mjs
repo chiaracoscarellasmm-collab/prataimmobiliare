@@ -33,6 +33,8 @@ const nextConfig = {
       { protocol: 'https', hostname: '*.r2.cloudflarestorage.com' },
       // Solo per l'anteprima locale con scripts/dev-seed-fixture.mjs.
       { protocol: 'https', hostname: 'picsum.photos' },
+      // Thumbnail del video immobile (sezione video, click-to-load).
+      { protocol: 'https', hostname: 'i.ytimg.com' },
     ],
   },
 };
