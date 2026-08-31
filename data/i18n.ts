@@ -89,7 +89,6 @@ const it = {
   },
   spec: {
     label: 'Scheda tecnica',
-    plan: 'Planimetria',
     area: 'Metratura',
     cta: 'Vedi tutti gli immobili',
   },
@@ -945,7 +944,6 @@ const en: typeof it = {
   },
   spec: {
     label: 'Specification',
-    plan: 'Floor plan',
     area: 'Floor area',
     cta: 'View all properties',
   },

@@ -6,13 +6,24 @@
   grid-template-columns: minmax(0, 1fr);
   background: var(--ink-900);
   border-top: 1px solid var(--line);
+  /* Closing room before the divider/next section — Borgo Rose was reading as
+     glued to "Il nostro lavoro" right after the CTA. */
+  padding-bottom: 5.625rem; /* ~90px */
+}
+
+@media (min-width: 640px) {
+  .band { padding-bottom: 7.1875rem; } /* ~115px */
+}
+
+@media (min-width: 1024px) {
+  .band { padding-bottom: 10rem; } /* ~160px */
 }
 
 /* ---- left: the drawing ---- */
 .stage {
   display: flex;
   flex-direction: column;
-  gap: clamp(1.25rem, 2.5vw, 2rem);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
   padding: clamp(1.75rem, 3.4vw, 3.25rem);
   /* Distance for the pseudo-3D read on .plate's rotateX/rotateY below. */
   perspective: 1600px;
@@ -62,17 +73,6 @@
 .plateFrame img { width: 100%; height: 100%; object-fit: contain; }
 
 .plateImage { width: 100%; height: 100%; animation: fadeUp 520ms var(--ease) both; }
-
-.plateTag {
-  position: absolute;
-  left: clamp(1rem, 2vw, 1.75rem);
-  top: clamp(1rem, 2vw, 1.75rem);
-  font-size: var(--fs-label);
-  font-weight: 600;
-  letter-spacing: var(--ls-label);
-  text-transform: uppercase;
-  color: rgba(244, 239, 230, 0.6);
-}
 
 /* ---- the 01 / 02 / 03 selector — the only control, deliberately quiet. */
 .typeTabs {
@@ -181,7 +181,7 @@
 .description { max-width: 42ch; color: var(--ink-muted); }
 
 .foot {
-  padding-top: clamp(1rem, 2vw, 1.5rem);
+  padding-top: clamp(1.5rem, 2.5vw, 2rem);
   border-top: 1px solid var(--line);
 }
 

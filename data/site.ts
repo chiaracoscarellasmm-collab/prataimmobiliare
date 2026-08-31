@@ -60,8 +60,10 @@ export const socials = [
   { label: 'Facebook', href: 'https://www.facebook.com/prataimmobiliare/' },
 ] as const;
 
+/* "L'Agenzia" (/chi-siamo) è temporaneamente fuori dal menu — la pagina resta
+   pubblicata, verrà ricollegata più avanti. */
 export const nav = [
-  { key: 'about', href: '/chi-siamo' },
+  { key: 'home', href: '/' },
   { key: 'properties', href: '/immobili' },
   { key: 'sellRent', href: '/vendi-affitta' },
   { key: 'usaf', href: '/locazioni-americani' },

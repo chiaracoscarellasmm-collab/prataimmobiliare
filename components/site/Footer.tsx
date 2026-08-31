@@ -14,115 +14,190 @@ export default async function Footer() {
 
   return (
     <footer className={styles.footer}>
-      <div className="container">
-        <div className={styles.top}>
-          <div>
-            <p className={styles.lede}>
-              {t.footer.ledeBefore}
-              <em className="em">{t.footer.ledeEm}</em>
-            </p>
-            <div style={{ marginTop: '1.75rem' }}>
-              <ArrowLink href={contact.whatsapp.href} target="_blank" rel="noopener noreferrer">
-                {t.footer.cta}
-              </ArrowLink>
-            </div>
-          </div>
-
-          <div className={styles.cols}>
-            <nav className={styles.col} aria-label={t.nav.footer}>
-              <h2 className={styles.colHead}>{t.nav.site}</h2>
-              <Link href="/" className={styles.link}>
-                {t.nav.home}
-              </Link>
-              {nav.map((item) => (
-                <Link key={item.href} href={item.href} className={styles.link}>
-                  {t.nav[item.key]}
-                </Link>
-              ))}
-            </nav>
-
-            <div className={styles.col}>
-              <h2 className={styles.colHead}>{t.nav.contact}</h2>
-              <a href={contact.phone.href} className={styles.link}>
-                {contact.phone.label}
-              </a>
-              <p className={styles.value}>
-                {t.hours.vat} {contact.vat}
+      {/* Desktop / tablet (>=768px) — layout invariato. */}
+      <div className={styles.desktopBody}>
+        <div className="container">
+          <div className={styles.top}>
+            <div>
+              <p className={styles.lede}>
+                {t.footer.ledeBefore}
+                <em className="em">{t.footer.ledeEm}</em>
               </p>
-              <a href={contact.email.href} className={styles.link}>
-                {contact.email.label}
-              </a>
-              <address className={styles.value} style={{ fontStyle: 'normal' }}>
-                {contact.address.street}
-                <br />
-                {contact.address.city}
-                <br />
-                {contact.address.postalCode} {contact.address.province}
-              </address>
-              <a
-                href={contact.maps.href}
-                className={styles.link}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                {t.hours.maps}
-              </a>
+              <div style={{ marginTop: '1.75rem' }}>
+                <ArrowLink href={contact.whatsapp.href} target="_blank" rel="noopener noreferrer">
+                  {t.footer.cta}
+                </ArrowLink>
+              </div>
             </div>
 
-            <div className={styles.col}>
-              <h2 className={styles.colHead}>{t.hours.visit}</h2>
-              <dl className={styles.hours}>
-                {contact.hoursCompact.map((row) => (
-                  <div key={row.days} className={styles.hoursBlock}>
-                    <dt>{hourLabel(t, row.days)}</dt>
-                    <dd>{hourTime(t, row.time)}</dd>
-                  </div>
+            <div className={styles.cols}>
+              <nav className={styles.col} aria-label={t.nav.footer}>
+                <h2 className={styles.colHead}>{t.nav.site}</h2>
+                {nav.map((item) => (
+                  <Link key={item.href} href={item.href} className={styles.link}>
+                    {t.nav[item.key]}
+                  </Link>
                 ))}
-              </dl>
-              <p className={styles.hoursNote}>{t.hours.note}</p>
-            </div>
+              </nav>
 
-            <div className={styles.col}>
-              <h2 className={styles.colHead}>{t.contact.social}</h2>
-              {socials.map((s) => (
+              <div className={styles.col}>
+                <h2 className={styles.colHead}>{t.nav.contact}</h2>
+                <a href={contact.phone.href} className={styles.link}>
+                  {contact.phone.label}
+                </a>
+                <p className={styles.value}>
+                  {t.hours.vat} {contact.vat}
+                </p>
+                <a href={contact.email.href} className={styles.link}>
+                  {contact.email.label}
+                </a>
+                <address className={styles.value} style={{ fontStyle: 'normal' }}>
+                  {contact.address.street}
+                  <br />
+                  {contact.address.city}
+                  <br />
+                  {contact.address.postalCode} {contact.address.province}
+                </address>
                 <a
-                  key={s.label}
-                  href={s.href}
+                  href={contact.maps.href}
                   className={styles.link}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  {s.label}
+                  {t.hours.maps}
                 </a>
+              </div>
+
+              <div className={styles.col}>
+                <h2 className={styles.colHead}>{t.hours.visit}</h2>
+                <dl className={styles.hours}>
+                  {contact.hoursCompact.map((row) => (
+                    <div key={row.days} className={styles.hoursBlock}>
+                      <dt>{hourLabel(t, row.days)}</dt>
+                      <dd>{hourTime(t, row.time)}</dd>
+                    </div>
+                  ))}
+                </dl>
+                <p className={styles.hoursNote}>{t.hours.note}</p>
+              </div>
+
+              <div className={styles.col}>
+                <h2 className={styles.colHead}>{t.contact.social}</h2>
+                {socials.map((s) => (
+                  <a
+                    key={s.label}
+                    href={s.href}
+                    className={styles.link}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    {s.label}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.bottom}>
+            <p className={styles.fine}>
+              © {year} Prata Immobiliare · {t.hours.vat} {contact.vat}
+            </p>
+            <div className={styles.legal}>
+              {legalNav.map((item) => (
+                <Link key={item.href} href={item.href} className={styles.link}>
+                  {t.nav[item.key]}
+                </Link>
               ))}
             </div>
           </div>
         </div>
 
-        <div className={styles.bottom}>
-          <p className={styles.fine}>
-            © {year} Prata Immobiliare · {t.hours.vat} {contact.vat}
-          </p>
-          <div className={styles.legal}>
-            {legalNav.map((item) => (
-              <Link key={item.href} href={item.href} className={styles.link}>
-                {t.nav[item.key]}
-              </Link>
-            ))}
-          </div>
+        <div className={styles.wordmark} aria-hidden="true">
+          {/* Wordmark del brand col solo nome: la Didone del logo non esiste come
+              webfont nel progetto, quindi si usa l'artwork, nel beige di brand. */}
+          <Image
+            src="/brand/name-sand.png"
+            alt=""
+            width={1567}
+            height={141}
+            sizes="100vw"
+          />
         </div>
       </div>
 
-      <div className={styles.wordmark} aria-hidden="true">
-        {/* Wordmark del brand col solo nome: la Didone del logo non esiste come
-            webfont nel progetto, quindi si usa l'artwork, nel beige di brand. */}
-        <Image
-          src="/brand/name-sand.png"
-          alt=""
-          width={1567}
-          height={141}
-          sizes="100vw"
-        />
+      {/* Mobile (<768px) — composizione dedicata, compatta. */}
+      <div className={styles.mobileBody}>
+        <div className="container">
+          <div className={styles.mIntro}>
+            <p className={styles.mLede}>
+              {t.footer.ledeBefore}
+              <em className="em">{t.footer.ledeEm}</em>
+            </p>
+            <div className={styles.mCta}>
+              <ArrowLink href={contact.whatsapp.href} target="_blank" rel="noopener noreferrer">
+                {t.footer.cta}
+              </ArrowLink>
+            </div>
+            <div className={styles.mContact}>
+              <a href={contact.phone.href} className={styles.link}>
+                {contact.phone.label}
+              </a>
+              <a href={contact.email.href} className={styles.link}>
+                {contact.email.label}
+              </a>
+            </div>
+          </div>
+
+          <div className={styles.mVisit}>
+            <h2 className={styles.mVisitHead}>{t.hours.visit}</h2>
+            <address className={styles.value} style={{ fontStyle: 'normal' }}>
+              {contact.address.street}
+              <br />
+              {contact.address.city}
+              <br />
+              {contact.address.postalCode} {contact.address.province}
+            </address>
+            <a href={contact.maps.href} className={styles.link} rel="noopener noreferrer" target="_blank">
+              {t.hours.maps}
+            </a>
+            <dl className={styles.hours}>
+              {contact.hoursCompact.map((row) => (
+                <div key={row.days} className={styles.hoursBlock}>
+                  <dt>{hourLabel(t, row.days)}</dt>
+                  <dd>{hourTime(t, row.time)}</dd>
+                </div>
+              ))}
+            </dl>
+            <p className={styles.hoursNote}>{t.hours.note}</p>
+          </div>
+
+          <div className={styles.mSocial}>
+            {socials.map((s) => (
+              <a
+                key={s.label}
+                href={s.href}
+                className={styles.link}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                {s.label}
+              </a>
+            ))}
+          </div>
+
+          <div className={styles.bottom}>
+            <p className={styles.fine}>
+              © {year} Prata Immobiliare · {t.hours.vat} {contact.vat}
+            </p>
+            <div className={styles.legal}>
+              {legalNav.map((item) => (
+                <Link key={item.href} href={item.href} className={styles.link}>
+                  {t.nav[item.key]}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   );

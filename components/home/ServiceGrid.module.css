@@ -4,6 +4,11 @@
    ========================================================================= */
 .section { background: var(--surface); }
 
+/* Editorial hairline that reads as a deliberate chapter break from Borgo
+   Rose, not a leftover rule — same container as the rest of the homepage,
+   never full-bleed. */
+.divider { height: 1px; background: var(--line); }
+
 .grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -17,8 +22,27 @@
   justify-content: space-between;
   gap: clamp(2.5rem, 6vw, 5rem);
   padding: clamp(2rem, 4vw, 3.5rem);
+  /* Independent of the shorthand above: more air after the divider before
+     the eyebrow, and before the photographs start, without touching the
+     card grid itself. */
+  padding-top: 3.75rem; /* ~60px */
+  padding-bottom: 2.75rem; /* ~44px */
   border-bottom: 1px solid var(--line);
   background: var(--surface);
+}
+
+@media (min-width: 640px) {
+  .copy {
+    padding-top: 4.375rem; /* ~70px */
+    padding-bottom: 3.5rem; /* ~56px */
+  }
+}
+
+@media (min-width: 1024px) {
+  .copy {
+    padding-top: 5.9375rem; /* ~95px */
+    padding-bottom: 4.5rem; /* ~72px */
+  }
 }
 
 .label {

@@ -211,6 +211,31 @@
   .support { display: none; }
 }
 
+/* On a narrow, tall mobile frame `cover` shows much less of the photo than
+   on desktop, so the same scrim reads proportionally darker. Lighten it
+   here only — text keeps full contrast, the image just stays visible.
+   The default centered crop also lands mid-pillar, hiding the framed shot
+   and the office chairs that read the scene; shift the focal point right
+   so that context stays in frame. */
+@media (max-width: 767px) {
+  .frame img { object-position: 60% 46%; }
+
+  .scrim {
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(16, 14, 12, 0.42) 0%,
+        rgba(16, 14, 12, 0.18) 30%,
+        rgba(16, 14, 12, 0.32) 60%,
+        rgba(16, 14, 12, 0.78) 100%
+      );
+  }
+
+  .floorScrim {
+    background: linear-gradient(to bottom, rgba(16, 14, 12, 0) 0%, rgba(16, 14, 12, 0.5) 55%, rgba(16, 14, 12, 0.88) 100%);
+  }
+}
+
 /* ------------------------------------------------------- reduced motion -- */
 @media (prefers-reduced-motion: reduce) {
   .hero { height: auto; --zoom: 0; }

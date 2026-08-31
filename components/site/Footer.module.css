@@ -61,6 +61,12 @@
 .link:hover::after,
 .link:focus-visible::after { transform: scaleX(1); }
 
+/* Taller tap area on mobile only — desktop spacing (and the underline
+   position) stays exactly as designed. */
+@media (max-width: 767px) {
+  .link { padding-block: 0.7rem; }
+}
+
 .value {
   font-size: var(--fs-small);
   color: var(--on-dark-muted);
@@ -144,4 +150,71 @@
     align-items: start;
   }
   .cols { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+/* ================================================================
+   Composizione mobile dedicata (<768px). Il desktop/tablet esistente
+   (.desktopBody, sopra) resta identico: qui sotto solo elementi nuovi,
+   usati esclusivamente dal blocco .mobileBody.
+   ================================================================ */
+
+.mobileBody { display: none; }
+
+@media (max-width: 767px) {
+  .desktopBody { display: none; }
+  .mobileBody { display: block; }
+}
+
+.mIntro { padding-block: clamp(2.5rem, 9vw, 3.5rem) 1.5rem; }
+
+.mLede {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 7vw, 1.875rem);
+  line-height: 1.1;
+  letter-spacing: -0.022em;
+  max-width: 20ch;
+}
+
+.mCta { margin-top: 1.1rem; }
+
+.mContact {
+  margin-top: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.mContact .link { font-size: var(--fs-body); }
+
+.mVisit {
+  display: grid;
+  gap: 0.55rem;
+  padding-block: 1.5rem;
+  border-top: 1px solid var(--on-dark-line);
+}
+
+.mVisitHead {
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: rgba(239, 231, 219, 0.45);
+  margin: 0 0 0.3rem;
+}
+
+.mSocial {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.5rem;
+  padding-block: 1.1rem;
+  border-top: 1px solid var(--on-dark-line);
+}
+
+.mSocial .link { font-size: var(--fs-small); }
+
+/* Il pulsante WhatsApp è fisso in basso a destra: riserviamo clearance
+   perché non copra mai i link legali, ultimo contenuto della pagina. */
+@media (max-width: 767px) {
+  .mobileBody .bottom { padding-right: calc(1.25rem + 4.5rem); }
 }

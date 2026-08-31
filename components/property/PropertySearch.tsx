@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { useI18n } from '@/components/i18n/LanguageProvider';
 import { interpolate } from '@/data/i18n';
@@ -37,9 +37,50 @@ export default function PropertySearch({ value, onChange, facets, resultCount }:
   const { t, locale } = useI18n();
   const [draft, setDraft] = useState(value);
   const [sheetOpen, setSheetOpen] = useState(false);
+  const sheetRef = useRef<HTMLDivElement>(null);
 
   // The bar edits a draft; the URL only changes when the user commits.
   useEffect(() => setDraft(value), [value]);
+
+  // The mobile sheet is a full-screen modal: lock the page behind it, trap
+  // Tab inside it (the sheet can't apply `inert` to its page siblings from
+  // here), and let Esc dismiss it — same as the gallery and the header's
+  // mobile menu.
+  useEffect(() => {
+    if (!sheetOpen) return;
+    const bodyOverflow = document.body.style.overflow;
+    const htmlOverflow = document.documentElement.style.overflow;
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setSheetOpen(false);
+        return;
+      }
+      if (e.key === 'Tab') {
+        const focusable = sheetRef.current?.querySelectorAll<HTMLElement>(
+          'button:not([disabled]), input, select, [href]'
+        );
+        if (!focusable || focusable.length === 0) return;
+        const list = Array.from(focusable);
+        const first = list[0];
+        const last = list[list.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => {
+      document.body.style.overflow = bodyOverflow;
+      document.documentElement.style.overflow = htmlOverflow;
+      window.removeEventListener('keydown', onKey);
+    };
+  }, [sheetOpen]);
 
   const set = <K extends keyof PropertyFilterState>(key: K, next: PropertyFilterState[K]) =>
     setDraft((d) => ({ ...d, [key]: next }));
@@ -259,6 +300,7 @@ export default function PropertySearch({ value, onChange, facets, resultCount }:
 
       {/* ------------------------------------------------------ mobile sheet */}
       <div
+        ref={sheetRef}
         className={`${styles.sheet} ${sheetOpen ? styles.sheetOpen : ''}`}
         role="dialog"
         aria-modal="true"

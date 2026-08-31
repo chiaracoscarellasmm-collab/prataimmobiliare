@@ -93,6 +93,9 @@ export default function ServiceGrid() {
 
   return (
     <section className={styles.section} aria-labelledby="services-title">
+      <div className="container">
+        <div className={styles.divider} aria-hidden="true" />
+      </div>
       <div className={styles.grid}>
         <div className={styles.copy}>
           <div>

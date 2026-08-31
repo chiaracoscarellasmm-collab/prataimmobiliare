@@ -165,7 +165,7 @@ export default function Header() {
       >
         <nav aria-label={t.nav.mobile}>
           <ul className={styles.menuList}>
-            {[{ href: '/', key: 'home' as const }, ...nav].map((item, i) => (
+            {nav.map((item, i) => (
               <li key={item.href} className={styles.menuItem}>
                 <Link
                   href={item.href}

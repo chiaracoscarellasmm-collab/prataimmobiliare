@@ -49,3 +49,15 @@
 .active:disabled {
   cursor: wait;
 }
+
+/* Touch target on mobile only: same look, more forgiving tap area — desktop
+   untouched. */
+@media (max-width: 767px) {
+  .idle,
+  .active {
+    padding-inline: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .dot { margin-inline: 0.2rem; }
+}

@@ -81,7 +81,7 @@ export const projects: Project[] = [
       { src: '/images/projects/residenze-a-02.webp', alt: 'Interno tipo — immagine placeholder', width: 1200, height: 1500 },
     ],
     floorPlans: [
-      { src: '/images/plans/borgo-rose-01.webp', alt: 'Planimetria Borgo Rose', width: 1086, height: 1448 },
+      { src: '/images/plans/borgo-rose-01.webp', alt: 'Planimetria Borgo Rose', width: 1448, height: 1086 },
     ],
     apartmentTypes: [
       {
@@ -93,8 +93,8 @@ export const projects: Project[] = [
         image: {
           src: '/images/plans/borgo-rose-01.webp',
           alt: 'Planimetria — Tricamere piano terra con giardino',
-          width: 1086,
-          height: 1448,
+          width: 1448,
+          height: 1086,
         },
       },
       {
@@ -106,8 +106,8 @@ export const projects: Project[] = [
         image: {
           src: '/images/plans/borgo-rose-02.webp',
           alt: 'Planimetria — Bicamere piano terra con giardino',
-          width: 1086,
-          height: 1448,
+          width: 1448,
+          height: 1086,
         },
       },
       {
@@ -119,8 +119,8 @@ export const projects: Project[] = [
         image: {
           src: '/images/plans/borgo-rose-03.webp',
           alt: 'Planimetria — 3 camere piano primo con terrazzo',
-          width: 1536,
-          height: 1024,
+          width: 1448,
+          height: 1086,
         },
       },
     ],

@@ -257,6 +257,10 @@
     background: var(--warm-white);
     margin-inline: -1.25rem;
     padding-inline: 1.25rem;
+    /* Extra clearance on the right: the fixed WhatsApp button sits over this
+       same corner and would otherwise cover the Continua button. */
+    padding-right: calc(1.25rem + 4.5rem);
+    padding-block: 1rem;
     box-shadow: 0 -12px 24px -12px rgba(16, 14, 12, 0.08);
   }
 }

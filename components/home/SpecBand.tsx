@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRef, useState, type MouseEvent } from 'react';
+import { useRef, useState, type MouseEvent, type TouchEvent } from 'react';
 
 import { useI18n } from '@/components/i18n/LanguageProvider';
 import { projects } from '@/data/projects';
@@ -27,6 +27,8 @@ export default function SpecBand() {
   const { t } = useI18n();
   const [active, setActive] = useState(0);
   const plateRef = useRef<HTMLDivElement>(null);
+  const touchStartX = useRef<number | null>(null);
+  const touchDeltaX = useRef(0);
 
   if (!project || TYPES.length === 0) return null;
 
@@ -53,10 +55,41 @@ export default function SpecBand() {
     el.style.setProperty('--ry', '0deg');
   };
 
+  /* Swipe to switch plate on touch devices — mouse/desktop is untouched,
+     since touchstart/touchmove/touchend never fire from a mouse pointer. */
+  const onTouchStart = (event: TouchEvent<HTMLDivElement>) => {
+    touchStartX.current = event.touches[0].clientX;
+    touchDeltaX.current = 0;
+  };
+
+  const onTouchMove = (event: TouchEvent<HTMLDivElement>) => {
+    if (touchStartX.current === null) return;
+    touchDeltaX.current = event.touches[0].clientX - touchStartX.current;
+  };
+
+  const onTouchEnd = () => {
+    const SWIPE_THRESHOLD = 40;
+    if (touchDeltaX.current <= -SWIPE_THRESHOLD) {
+      setActive((i) => Math.min(TYPES.length - 1, i + 1));
+    } else if (touchDeltaX.current >= SWIPE_THRESHOLD) {
+      setActive((i) => Math.max(0, i - 1));
+    }
+    touchStartX.current = null;
+    touchDeltaX.current = 0;
+  };
+
   return (
     <section className={styles.band} aria-label={t.spec.label}>
       <div className={styles.stage}>
-        <div ref={plateRef} className={styles.plate} onMouseMove={tilt} onMouseLeave={resetTilt}>
+        <div
+          ref={plateRef}
+          className={styles.plate}
+          onMouseMove={tilt}
+          onMouseLeave={resetTilt}
+          onTouchStart={onTouchStart}
+          onTouchMove={onTouchMove}
+          onTouchEnd={onTouchEnd}
+        >
           <div className={styles.plateFrame}>
             <div key={type.id} className={styles.plateImage}>
               <Image
@@ -68,7 +101,6 @@ export default function SpecBand() {
               />
             </div>
           </div>
-          <span className={styles.plateTag}>{t.spec.plan}</span>
         </div>
 
         <ol className={styles.typeTabs}>
