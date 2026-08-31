@@ -72,7 +72,23 @@
 /* `contain`, non `cover`: una planimetria non va mai ritagliata. */
 .plateFrame img { width: 100%; height: 100%; object-fit: contain; }
 
-.plateImage { width: 100%; height: 100%; animation: fadeUp 520ms var(--ease) both; }
+/* All three plans are mounted at once (see SpecBand.tsx) so the browser can
+   fetch them together as soon as the section is in view; only the active
+   one is shown, via a plain opacity crossfade instead of a mount animation. */
+.plateImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 420ms var(--ease);
+}
+
+.plateImageActive {
+  opacity: 1;
+  pointer-events: auto;
+}
 
 /* ---- the 01 / 02 / 03 selector — the only control, deliberately quiet. */
 .typeTabs {
@@ -212,7 +228,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .plate { transition: none; transform: none; }
-  .plateImage,
+  .plateImage { transition: none; }
   .typeBlock { animation: none; }
   .typeTab { transition: none; }
   .typeTab::after { transition: none; }

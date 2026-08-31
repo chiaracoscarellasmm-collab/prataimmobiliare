@@ -91,15 +91,25 @@ export default function SpecBand() {
           onTouchEnd={onTouchEnd}
         >
           <div className={styles.plateFrame}>
-            <div key={type.id} className={styles.plateImage}>
-              <Image
-                src={type.image.src}
-                alt={type.image.alt}
-                width={type.image.width}
-                height={type.image.height}
-                sizes="(min-width: 900px) 52vw, 100vw"
-              />
-            </div>
+            {/* All three plans mount together (stacked, only the active one
+                visible) so the browser fetches them as soon as this section
+                enters view — switching tabs is then instant, no fresh
+                request per click. */}
+            {TYPES.map((item, i) => (
+              <div
+                key={item.id}
+                className={`${styles.plateImage} ${i === active ? styles.plateImageActive : ''}`}
+                aria-hidden={i === active ? undefined : true}
+              >
+                <Image
+                  src={item.image.src}
+                  alt={item.image.alt}
+                  width={item.image.width}
+                  height={item.image.height}
+                  sizes="(min-width: 900px) 550px, 380px"
+                />
+              </div>
+            ))}
           </div>
         </div>
 
