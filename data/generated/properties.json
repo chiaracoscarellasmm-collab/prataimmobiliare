@@ -15,7 +15,7 @@
     "projectName": null,
     "location": {
       "comune": "Pordenone",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": "San Valentino-Ospedale",
       "address": null,
       "showAddress": false
@@ -276,7 +276,7 @@
     "projectName": null,
     "location": {
       "comune": "Brugnera",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": "Maron",
       "address": null,
       "showAddress": false
@@ -788,7 +788,7 @@
     "projectName": null,
     "location": {
       "comune": "Prata di Pordenone",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": null,
       "address": null,
       "showAddress": false
@@ -913,7 +913,7 @@
     "projectName": null,
     "location": {
       "comune": "Prata di Pordenone",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": null,
       "address": null,
       "showAddress": false
@@ -1068,7 +1068,7 @@
     "projectName": null,
     "location": {
       "comune": "Pasiano di Pordenone",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": null,
       "address": null,
       "showAddress": false
@@ -1341,7 +1341,7 @@
     "projectName": null,
     "location": {
       "comune": "Prata di Pordenone",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": "Centro",
       "address": null,
       "showAddress": false
@@ -1740,7 +1740,7 @@
     "projectName": "Borgo Rose",
     "location": {
       "comune": "Brugnera",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": null,
       "address": null,
       "showAddress": false
@@ -1885,7 +1885,7 @@
     "projectName": "Borgo Rose",
     "location": {
       "comune": "Brugnera",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": null,
       "address": null,
       "showAddress": false
@@ -2021,7 +2021,7 @@
     "projectName": "Borgo Rose",
     "location": {
       "comune": "Brugnera",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": null,
       "address": null,
       "showAddress": false
@@ -2170,7 +2170,7 @@
     "projectName": "Borgo Rose",
     "location": {
       "comune": "Brugnera",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": null,
       "address": null,
       "showAddress": false
@@ -2295,7 +2295,7 @@
     "projectName": null,
     "location": {
       "comune": "Brugnera",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": "Maron",
       "address": null,
       "showAddress": false
@@ -2519,7 +2519,7 @@
     "projectName": null,
     "location": {
       "comune": "Pordenone",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": "San Lorenzo",
       "address": null,
       "showAddress": false
@@ -2780,7 +2780,7 @@
     "projectName": null,
     "location": {
       "comune": "Azzano Decimo",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": null,
       "address": null,
       "showAddress": false
@@ -3029,7 +3029,7 @@
     "projectName": null,
     "location": {
       "comune": "Prata di Pordenone",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": "Centro",
       "address": null,
       "showAddress": false
@@ -3429,7 +3429,7 @@
     "projectName": null,
     "location": {
       "comune": "Pordenone",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": "San Valentino-Ospedale",
       "address": null,
       "showAddress": false
@@ -3552,7 +3552,7 @@
     "projectName": null,
     "location": {
       "comune": "Prata di Pordenone",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": null,
       "address": null,
       "showAddress": false
@@ -3676,7 +3676,7 @@
     "projectName": null,
     "location": {
       "comune": "Pasiano di Pordenone",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": null,
       "address": null,
       "showAddress": false
@@ -3956,7 +3956,7 @@
     "projectName": null,
     "location": {
       "comune": "Pasiano di Pordenone",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": null,
       "address": null,
       "showAddress": false
@@ -4174,7 +4174,7 @@
     "projectName": null,
     "location": {
       "comune": "Pasiano di Pordenone",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": null,
       "address": null,
       "showAddress": false
@@ -4284,7 +4284,7 @@
     "projectName": null,
     "location": {
       "comune": "Prata di Pordenone",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": "Centro",
       "address": null,
       "showAddress": false
@@ -4452,7 +4452,7 @@
     "projectName": null,
     "location": {
       "comune": "Brugnera",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": null,
       "address": null,
       "showAddress": false
@@ -4532,7 +4532,7 @@
     "projectName": null,
     "location": {
       "comune": "Brugnera",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": "Zona municipio",
       "address": null,
       "showAddress": false
@@ -4617,7 +4617,7 @@
     "projectName": null,
     "location": {
       "comune": "Brugnera",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": null,
       "address": null,
       "showAddress": false
@@ -4700,7 +4700,7 @@
     "projectName": null,
     "location": {
       "comune": "Cordenons",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": null,
       "address": null,
       "showAddress": false
@@ -4796,7 +4796,7 @@
     "projectName": null,
     "location": {
       "comune": "Prata di Pordenone",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": "Centro",
       "address": null,
       "showAddress": false
@@ -4887,7 +4887,7 @@
     "projectName": null,
     "location": {
       "comune": "Pasiano di Pordenone",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": null,
       "address": null,
       "showAddress": false
@@ -5536,7 +5536,7 @@
     "projectName": null,
     "location": {
       "comune": "Prata di Pordenone",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": null,
       "address": null,
       "showAddress": false
@@ -5623,7 +5623,7 @@
     "projectName": null,
     "location": {
       "comune": "Pasiano di Pordenone",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": null,
       "address": null,
       "showAddress": false
@@ -5713,7 +5713,7 @@
     "projectName": null,
     "location": {
       "comune": "Caneva",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": "Sarone",
       "address": null,
       "showAddress": false
@@ -5794,6 +5794,588 @@
     ]
   },
   {
+    "id": "VB-496",
+    "slug": "vb-496",
+    "title": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Villa",
+    "publicationDate": null,
+    "featuredHome": false,
+    "homeOrder": null,
+    "usafEligible": false,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Pasiano di Pordenone",
+      "provincia": "Pordenone",
+      "zona": null,
+      "address": null,
+      "showAddress": false
+    },
+    "price": 600000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 500,
+    "bedrooms": 4,
+    "bathrooms": 6,
+    "floor": "Disposta su 3 livelli",
+    "buildingFloors": 3,
+    "constructionYear": null,
+    "energy": null,
+    "garage": true,
+    "garageType": "Box doppio",
+    "parkingSpot": false,
+    "parkingSpotCovered": false,
+    "garden": true,
+    "gardenSurface": null,
+    "terrace": true,
+    "terraceSurface": null,
+    "balcony": false,
+    "porch": true,
+    "porchSurface": null,
+    "elevator": false,
+    "cellar": true,
+    "airConditioning": false,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": "Autonomo",
+    "otherFeatures": [
+      "Villa composta da 2 unità abitative",
+      "500 mq commerciali",
+      "450 mq calpestabili",
+      "3 livelli",
+      "4 camere effettive",
+      "Possibilità di ricavare ulteriori camere",
+      "6 bagni",
+      "Terrazzo",
+      "Box doppio",
+      "Cantina",
+      "Ampio giardino e parco di oltre 3.700 mq",
+      "Porticato esterno",
+      "2 soggiorni",
+      "Caminetti",
+      "Cucine separate",
+      "Studio",
+      "Sala da pranzo",
+      "Cucinino",
+      "Mansarda",
+      "Taverna con cucina e caminetto",
+      "Lavanderia",
+      "Ripostigli",
+      "Locali accessori",
+      "Garage e magazzini",
+      "Finiture di pregio",
+      "Esterni rifiniti in roccia naturale",
+      "Impianto idraulico centralizzato in comune tra le due unità",
+      "Possibilità di realizzare una piscina",
+      "Buono stato",
+      "Orientamento nord, sud, est e ovest",
+      "Riscaldamento autonomo",
+      "Ideale per due nuclei familiari",
+      "Possibilità di utilizzo indipendente delle due unità",
+      "Disponibilità immediata"
+    ],
+    "shortDescription": "Villa di circa 500 mq commerciali in vendita a Pasiano di Pordenone, composta da due unità abitative, con 4 camere, 6 bagni, box doppio e ampio parco di oltre 3.700 mq.",
+    "description": "A Pasiano di Pordenone proponiamo in vendita un'importante villa composta da due unità abitative, per una superficie complessiva di circa 500 mq commerciali e 450 mq calpestabili, immersa in un ampio contesto verde di oltre 3.700 mq.\n\nUna proprietà dal carattere distintivo, capace di unire ambienti di rappresentanza, spazi generosi e soluzioni architettoniche differenti, ideale per due nuclei familiari che desiderano vivere vicini mantenendo la propria autonomia oppure per chi cerca una residenza di ampie dimensioni e grande versatilità.\n\nLa prima unità accoglie con un ampio ingresso di rappresentanza. La zona giorno comprende un luminoso soggiorno, cucina abitabile separata, sala da pranzo e un pratico cucinino aggiuntivo.\n\nLa zona notte dispone di due ampie camere matrimoniali, con la possibilità di ricavarne una terza, oltre a servizi e spazi accessori.\n\nAl piano seminterrato si sviluppa una grande taverna con cucina e caminetto, pensata per i momenti conviviali e il relax, accompagnata da lavanderia, bagno, cantina e ulteriori locali di servizio.\n\nLa seconda unità si distingue per un'impronta più contemporanea e per una distribuzione dinamica degli ambienti.\n\nAl piano terra troviamo un ampio e luminoso soggiorno con caminetto, uno studio e una cucina spaziosa collegata direttamente al porticato esterno, naturale estensione della zona giorno.\n\nUna scala in legno conduce al piano superiore mansardato, caratterizzato da ampie finestre e lucernari. Qui si trovano due camere, con possibilità di ricavarne una terza, ripostiglio e due bagni.\n\nParticolare attenzione è stata dedicata alle finiture, con elementi di pregio e curati dettagli esterni in roccia naturale che contribuiscono a conferire alla villa un'identità architettonica riconoscibile.\n\nA fare da cornice alla proprietà è l'ampio giardino e parco di oltre 3.700 mq, uno spazio verde che garantisce privacy e offre numerose possibilità di utilizzo, dalle aree relax agli spazi conviviali all'aperto, con possibilità di realizzare una piscina.\n\nCompletano la proprietà box doppio, garage, magazzini, cantina, terrazzo e numerosi locali accessori.\n\nLa villa dispone complessivamente di quattro camere attualmente configurate e sei bagni, con ulteriori possibilità di personalizzazione degli spazi.\n\nLa configurazione in due unità rende la proprietà particolarmente interessante per famiglie numerose o per due nuclei familiari che desiderano condividere la stessa proprietà mantenendo spazi autonomi.\n\nIl riscaldamento è autonomo. L'indice di prestazione energetica indicato è pari a 195,65 kWh/m² anno; la lettera della classe energetica non è specificata nella fonte.\n\nDisponibilità immediata.",
+    "videoUrl": null,
+    "seo": {
+      "title": "Villa con ampio parco in vendita a Pasiano di Pordenone | Prata Immobiliare",
+      "description": "Villa di 500 mq in vendita a Pasiano di Pordenone, composta da 2 unità abitative, con 4 camere, 6 bagni, box doppio e parco di oltre 3.700 mq."
+    },
+    "coverImage": {
+      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/01.webp",
+      "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+      "width": 960,
+      "height": 1280
+    },
+    "images": [
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/01.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/02.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/03.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/04.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/05.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/06.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/07.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/08.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/09.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/10.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/11.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/12.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/13.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/14.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/15.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/16.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/17.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/18.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/19.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/20.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/21.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/22.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/23.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/24.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/25.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/26.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/27.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/28.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/29.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/30.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/31.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/32.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/33.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/34.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/35.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/36.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/37.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/38.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/39.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/40.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/41.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/42.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/43.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/44.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/45.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/46.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/47.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/48.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/49.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/50.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/51.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/52.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/53.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/54.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/55.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/56.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/57.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/58.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/59.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/60.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/61.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/62.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/63.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/64.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/65.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/66.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/67.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/68.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/69.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/70.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/71.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/72.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/73.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/74.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/75.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/76.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/77.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/78.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/79.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/vb-496/80.webp",
+        "alt": "Villa esclusiva con ampio parco in vendita a Pasiano di Pordenone",
+        "width": 960,
+        "height": 1280
+      }
+    ]
+  },
+  {
     "id": "VS-499",
     "slug": "vs-499",
     "title": "Villa singola in vendita",
@@ -5809,7 +6391,7 @@
     "projectName": null,
     "location": {
       "comune": "Pasiano di Pordenone",
-      "provincia": null,
+      "provincia": "Pordenone",
       "zona": null,
       "address": null,
       "showAddress": false
@@ -6363,6 +6945,152 @@
         "alt": "Villa singola in vendita",
         "width": 960,
         "height": 1280
+      }
+    ]
+  },
+  {
+    "id": "T-201",
+    "slug": "t-201",
+    "title": "Terreno in vendita a Prata di Pordenone",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Terreno",
+    "publicationDate": null,
+    "featuredHome": false,
+    "homeOrder": null,
+    "usafEligible": false,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Prata di Pordenone",
+      "provincia": "Pordenone",
+      "zona": null,
+      "address": null,
+      "showAddress": false
+    },
+    "price": 45000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 15000,
+    "bedrooms": null,
+    "bathrooms": null,
+    "floor": null,
+    "buildingFloors": null,
+    "constructionYear": null,
+    "energy": null,
+    "garage": false,
+    "garageType": null,
+    "parkingSpot": false,
+    "parkingSpotCovered": false,
+    "garden": false,
+    "gardenSurface": null,
+    "terrace": false,
+    "terraceSurface": null,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": false,
+    "cellar": false,
+    "airConditioning": false,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": null,
+    "otherFeatures": [],
+    "shortDescription": "Terreno, a Prata di Pordenone, 15000 m².",
+    "description": "TERRENO AGRICOLO IN VENDITA – A PRATA DI PORDENONE\nIn frazione di Prata di Pordenone, nelle vicinanze del fiume Meduna, proponiamo in vendita un terreno agricolo di circa 15.000 m².\nCaratteristiche principali:\n-Corpo unico: L'appezzamento è formato da più mappali, ma costituisce un unico blocco.\n-Superficie regolare: Conformazione geometrica e regolare, ideale per agevolare le lavorazioni agricole e il passaggio dei mezzi.\n-Posizione: In contesto agricolo tranquillo, vicino al fiume Meduna.\n-Disponibilità: Immediata.\n\nRappresenta un'ottima opportunità sia per aziende agricole sia come investimento immobiliare.",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/t-201/01.webp",
+      "alt": "Terreno in vendita a Prata di Pordenone",
+      "width": 1448,
+      "height": 1086
+    },
+    "images": [
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/t-201/01.webp",
+        "alt": "Terreno in vendita a Prata di Pordenone",
+        "width": 1448,
+        "height": 1086
+      }
+    ]
+  },
+  {
+    "id": "T-20",
+    "slug": "t-20",
+    "title": "Terreno in vendita a Prata di Pordenone",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Terreno",
+    "publicationDate": null,
+    "featuredHome": false,
+    "homeOrder": null,
+    "usafEligible": false,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Prata di Pordenone",
+      "provincia": "Pordenone",
+      "zona": null,
+      "address": null,
+      "showAddress": false
+    },
+    "price": 25000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 8200,
+    "bedrooms": null,
+    "bathrooms": null,
+    "floor": null,
+    "buildingFloors": null,
+    "constructionYear": null,
+    "energy": null,
+    "garage": false,
+    "garageType": null,
+    "parkingSpot": false,
+    "parkingSpotCovered": false,
+    "garden": false,
+    "gardenSurface": null,
+    "terrace": false,
+    "terraceSurface": null,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": false,
+    "cellar": false,
+    "airConditioning": false,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": null,
+    "otherFeatures": [],
+    "shortDescription": "Terreno, a Prata di Pordenone, 8200 m².",
+    "description": "A Prata di Pordenone, proponiamo in vendita un terreno agricolo della superficie di circa 8.200 m².\nCaratteristiche principali:\nLotto unico: La proprietà costituisce un unico blocco unitario.\nConformazione regolare: Geometricamente squadrato e dalla superficie regolare, risulta estremamente comodo e facile da lavorare con i mezzi agricoli.\nAccesso comodo: Facilmente raggiungibile tramite strada sterrata.\nPosizione: Inserito in un contesto tranquillo e strategico, nelle immediate vicinanze del fiume Livenza.\nDisponibilità: Immediata.\nPrezzo di vendita: € 25.000 – Prezzo davvero interessante!\nUna soluzione ideale sia per coltivatori e aziende agricole, sia per chi cerca un investimento sicuro nel territorio.\nRif. T20",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/t-20/01.webp",
+      "alt": "Terreno in vendita a Prata di Pordenone",
+      "width": 1448,
+      "height": 1086
+    },
+    "images": [
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/t-20/01.webp",
+        "alt": "Terreno in vendita a Prata di Pordenone",
+        "width": 1448,
+        "height": 1086
       }
     ]
   }
