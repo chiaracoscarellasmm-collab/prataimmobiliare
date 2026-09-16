@@ -42,7 +42,7 @@ jobs:
       - name: Run property sync
         run: npm run sync:properties
         env:
-          GOOGLE_APPLICATION_CREDENTIALS: ${{ env.RUNNER_TEMP }}/google-sheets.json
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/google-sheets.json
           GOOGLE_SHEETS_SPREADSHEET_ID: ${{ secrets.GOOGLE_SHEETS_SPREADSHEET_ID }}
           GOOGLE_SHEETS_SHEET_NAME: ${{ secrets.GOOGLE_SHEETS_SHEET_NAME }}
           R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
