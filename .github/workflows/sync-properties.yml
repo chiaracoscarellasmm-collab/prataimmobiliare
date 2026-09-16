@@ -1,0 +1,64 @@
+name: Sync properties from Google Sheet
+
+# Ogni 30 minuti legge il foglio "Immobili", verifica le foto su R2 e — solo
+# se tutto è valido — rigenera data/generated/properties.json. Se cambia
+# qualcosa lo committa e lo pusha: il push fa scattare il deploy automatico
+# su Vercel, esattamente come un push manuale.
+#
+# Se il foglio ha un errore, lo script esce con codice diverso da zero, il
+# job fallisce PRIMA del commit e il sito continua a mostrare l'ultimo
+# dataset valido — stessa rete di sicurezza del sync manuale.
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-properties
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Write Google service account credentials
+        run: echo "$GOOGLE_SERVICE_ACCOUNT_JSON" > "$RUNNER_TEMP/google-sheets.json"
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+
+      - name: Run property sync
+        run: npm run sync:properties
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ env.RUNNER_TEMP }}/google-sheets.json
+          GOOGLE_SHEETS_SPREADSHEET_ID: ${{ secrets.GOOGLE_SHEETS_SPREADSHEET_ID }}
+          GOOGLE_SHEETS_SHEET_NAME: ${{ secrets.GOOGLE_SHEETS_SHEET_NAME }}
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_BUCKET_NAME: ${{ secrets.R2_BUCKET_NAME }}
+          R2_PUBLIC_BASE_URL: ${{ secrets.R2_PUBLIC_BASE_URL }}
+
+      - name: Commit and push if the dataset changed
+        run: |
+          if git diff --quiet -- data/generated/properties.json; then
+            echo "Nessuna modifica nel foglio, niente da pubblicare."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/generated/properties.json
+          git commit -m "chore: sync properties from Google Sheet [automated]"
+          git push
