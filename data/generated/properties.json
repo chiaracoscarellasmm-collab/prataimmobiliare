@@ -6951,7 +6951,7 @@
   {
     "id": "T-201",
     "slug": "t-201",
-    "title": "Terreno in vendita a Prata di Pordenone",
+    "title": "Terreno agricolo in vendita a Prata di Pordenone",
     "visible": true,
     "status": "Disponibile",
     "transactionType": "vendita",
@@ -7008,14 +7008,14 @@
     },
     "coverImage": {
       "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/t-201/01.webp",
-      "alt": "Terreno in vendita a Prata di Pordenone",
+      "alt": "Terreno agricolo in vendita a Prata di Pordenone",
       "width": 1448,
       "height": 1086
     },
     "images": [
       {
         "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/t-201/01.webp",
-        "alt": "Terreno in vendita a Prata di Pordenone",
+        "alt": "Terreno agricolo in vendita a Prata di Pordenone",
         "width": 1448,
         "height": 1086
       }
@@ -7024,7 +7024,7 @@
   {
     "id": "T-20",
     "slug": "t-20",
-    "title": "Terreno in vendita a Prata di Pordenone",
+    "title": "Terreno agricolo in vendita a Prata di Pordenone",
     "visible": true,
     "status": "Disponibile",
     "transactionType": "vendita",
@@ -7081,14 +7081,87 @@
     },
     "coverImage": {
       "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/t-20/01.webp",
-      "alt": "Terreno in vendita a Prata di Pordenone",
+      "alt": "Terreno agricolo in vendita a Prata di Pordenone",
       "width": 1448,
       "height": 1086
     },
     "images": [
       {
         "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/t-20/01.webp",
-        "alt": "Terreno in vendita a Prata di Pordenone",
+        "alt": "Terreno agricolo in vendita a Prata di Pordenone",
+        "width": 1448,
+        "height": 1086
+      }
+    ]
+  },
+  {
+    "id": "T-205",
+    "slug": "t-205",
+    "title": "Terreno agricolo in vendita a Prata di Pordenone",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Terreno",
+    "publicationDate": null,
+    "featuredHome": false,
+    "homeOrder": null,
+    "usafEligible": false,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Prata di Pordenone",
+      "provincia": "Pordenone",
+      "zona": null,
+      "address": null,
+      "showAddress": false
+    },
+    "price": 60000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 18000,
+    "bedrooms": null,
+    "bathrooms": null,
+    "floor": null,
+    "buildingFloors": null,
+    "constructionYear": null,
+    "energy": null,
+    "garage": false,
+    "garageType": null,
+    "parkingSpot": false,
+    "parkingSpotCovered": false,
+    "garden": false,
+    "gardenSurface": null,
+    "terrace": false,
+    "terraceSurface": null,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": false,
+    "cellar": false,
+    "airConditioning": false,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": null,
+    "otherFeatures": [],
+    "shortDescription": "Terreno, a Prata di Pordenone, 18000 m².",
+    "description": "TERRENO AGRICOLO IN VENDITA – PRATA DI PORDENONE / VILLANOVA\nNella prima periferia di Prata di Pordenone, proponiamo in vendita un terreno agricolo della superficie di circa 18.000 m².\nCaratteristiche principali:\nLotto unico: La proprietà costituisce un unico appezzamento.\nForma regolare: Conformazione abbastanza regolare, ideale per facilitare le lavorazioni e il passaggio dei mezzi agricoli.\nOttima accessibilità: Facilmente raggiungibile tramite strada sterrata.\nPosizione: Inserito in un contesto tranquillo, nelle immediate vicinanze del fiume Meduna.\nDisponibilità: Immediata.\nPrezzo di vendita: € 60.000\nSoluzione ideale per coltivatori, aziende agricole e per chi cerca un investimento sicuro nel territorio.",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/t-205/01.webp",
+      "alt": "Terreno agricolo in vendita a Prata di Pordenone",
+      "width": 1448,
+      "height": 1086
+    },
+    "images": [
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/t-205/01.webp",
+        "alt": "Terreno agricolo in vendita a Prata di Pordenone",
         "width": 1448,
         "height": 1086
       }
