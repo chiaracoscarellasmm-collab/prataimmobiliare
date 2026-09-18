@@ -299,6 +299,8 @@ const it = {
   search: {
     where: 'Dove cerchi?',
     whereLabel: 'Dove',
+    code: 'Codice immobile',
+    codeLabel: 'Codice',
     type: 'Tipologia',
     typeAny: 'Tutte le tipologie',
     transaction: 'Vendita / Affitto',
@@ -1154,6 +1156,8 @@ const en: typeof it = {
   search: {
     where: 'Where are you looking?',
     whereLabel: 'Where',
+    code: 'Property code',
+    codeLabel: 'Code',
     type: 'Type',
     typeAny: 'All types',
     transaction: 'Sale / Rent',

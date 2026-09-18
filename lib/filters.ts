@@ -12,6 +12,8 @@ import { effectivePrice } from '@/lib/format';
 export interface PropertyFilterState {
   /** Free-text location, matched loosely against the comune. */
   location: string;
+  /** Free-text reference code (e.g. "AT-593"), matched loosely against the ID. */
+  code: string;
   type: string;
   transaction: string;
   priceMin: string;
@@ -28,6 +30,7 @@ export interface PropertyFilterState {
 
 export const EMPTY_FILTERS: PropertyFilterState = {
   location: '',
+  code: '',
   type: '',
   transaction: '',
   priceMin: '',
@@ -47,6 +50,7 @@ export const SORT_KEYS: SortKey[] = ['recent', 'price-asc', 'price-desc', 'surfa
 /** Short URL keys, so a shared link stays readable. */
 const URL_KEYS: Record<keyof PropertyFilterState, string> = {
   location: 'dove',
+  code: 'codice',
   type: 'tipo',
   transaction: 'contratto',
   priceMin: 'pmin',
@@ -122,6 +126,7 @@ export function filterProperties(
   const locationQuery = filters.location ? norm(filters.location) : '';
   const isExactLocation =
     locationQuery !== '' && properties.some((p) => norm(p.location.comune) === locationQuery);
+  const codeQuery = filters.code ? norm(filters.code) : '';
 
   return properties.filter((p) => {
     if (locationQuery) {
@@ -129,6 +134,7 @@ export function filterProperties(
       const matches = isExactLocation ? comune === locationQuery : comune.includes(locationQuery);
       if (!matches) return false;
     }
+    if (codeQuery && !norm(p.id).includes(codeQuery)) return false;
     if (filters.type && p.propertyType !== filters.type) return false;
     if (filters.transaction && p.transactionType !== filters.transaction) return false;
     if (filters.bedrooms && (p.bedrooms ?? 0) < Number(filters.bedrooms)) return false;

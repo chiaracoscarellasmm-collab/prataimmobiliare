@@ -176,6 +176,21 @@ export default function PropertySearch({ value, onChange, facets, resultCount }:
               </datalist>
             </div>
 
+            {/* Reference code — free text, matched loosely against the ID. */}
+            <div className={styles.field}>
+              <label className={styles.pill} htmlFor="search-code">
+                <span className={styles.pillLabel}>{t.search.codeLabel}</span>
+                <input
+                  id="search-code"
+                  className={styles.input}
+                  value={draft.code}
+                  onChange={(e) => set('code', e.target.value)}
+                  placeholder={t.search.code}
+                  autoComplete="off"
+                />
+              </label>
+            </div>
+
             <FilterPopover
               label={t.search.type}
               value={typeLabel}
@@ -321,6 +336,20 @@ export default function PropertySearch({ value, onChange, facets, resultCount }:
         </div>
 
         <div className={styles.sheetBody}>
+          <div className={styles.advGroup}>
+            <label className={styles.advLabel} htmlFor="search-code-mobile">
+              {t.search.codeLabel}
+            </label>
+            <input
+              id="search-code-mobile"
+              className={styles.textField}
+              value={draft.code}
+              onChange={(e) => set('code', e.target.value)}
+              placeholder={t.search.code}
+              autoComplete="off"
+            />
+          </div>
+
           <div className={styles.advGroup}>
             <p className={styles.advLabel}>{t.search.type}</p>
             <div className={styles.chips}>
