@@ -4768,15 +4768,63 @@
     "coverImage": {
       "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/nl-108/01.webp",
       "alt": "Locale commerciale in affitto a Cordenons",
-      "width": 1448,
-      "height": 1086
+      "width": 1536,
+      "height": 1024
     },
     "images": [
       {
         "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/nl-108/01.webp",
         "alt": "Locale commerciale in affitto a Cordenons",
-        "width": 1448,
-        "height": 1086
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/nl-108/02.webp",
+        "alt": "Locale commerciale in affitto a Cordenons",
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/nl-108/03.webp",
+        "alt": "Locale commerciale in affitto a Cordenons",
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/nl-108/04.webp",
+        "alt": "Locale commerciale in affitto a Cordenons",
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/nl-108/05.webp",
+        "alt": "Locale commerciale in affitto a Cordenons",
+        "width": 1024,
+        "height": 1536
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/nl-108/06.webp",
+        "alt": "Locale commerciale in affitto a Cordenons",
+        "width": 1024,
+        "height": 1536
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/nl-108/07.webp",
+        "alt": "Locale commerciale in affitto a Cordenons",
+        "width": 1024,
+        "height": 1536
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/nl-108/08.webp",
+        "alt": "Locale commerciale in affitto a Cordenons",
+        "width": 1024,
+        "height": 1536
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/nl-108/09.webp",
+        "alt": "Locale commerciale in affitto a Cordenons",
+        "width": 1024,
+        "height": 1536
       }
     ]
   },
