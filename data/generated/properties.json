@@ -8226,5 +8226,192 @@
         "height": 960
       }
     ]
+  },
+  {
+    "id": "A-547",
+    "slug": "a-547",
+    "title": "Appartamento in vendita zona Policlinico",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Appartamento",
+    "publicationDate": null,
+    "featuredHome": false,
+    "homeOrder": null,
+    "usafEligible": false,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Pordenone",
+      "provincia": "Pordenone",
+      "zona": null,
+      "address": null,
+      "showAddress": false
+    },
+    "price": 145000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 127,
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "floor": "Piano rialzato",
+    "buildingFloors": null,
+    "constructionYear": 1964,
+    "energy": null,
+    "garage": true,
+    "garageType": null,
+    "parkingSpot": true,
+    "parkingSpotCovered": false,
+    "garden": true,
+    "gardenSurface": null,
+    "terrace": true,
+    "terraceSurface": null,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": false,
+    "cellar": true,
+    "airConditioning": true,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": "Autonomo",
+    "otherFeatures": [],
+    "shortDescription": "Appartamento, a Pordenone, 127 m².",
+    "description": "Pordenone, Zona Policlinico – Luminoso Appartamento Tricamere in Bifamiliare Sovrapposta \nIn una delle zone più servite e ricercate di Pordenone, all'interno del quartiere Policlinico, proponiamo in vendita un spazioso appartamento sviluppato al piano semirialzato di una bifamiliare in orizzontale.\nLa soluzione si distingue per l'eccellente indipendenza e l'ottima distribuzione degli spazi interni.\nCaratteristiche dell'immobile:\n-Zona giorno: Ingresso con funzionale disimpegno, ampia cucina abitabile e luminoso soggiorno separato.\n-Zona notte: Tre grandi camere da letto matrimoniali e un bagno.\n-Spazi esterni: Terrazzo e ampio giardino in comune tra le sole due unità, mantenendo comunque un'ottima autonomia grazie agli ingressi carrabili separati e indipendenti.\n-Pertinenze: Grandissima cantina al piano seminterrato e garage di proprietà.\nDettagli tecnici e gestionali:\n-Utenze: Completamente autonome.\n-Spese condominiali: Quasi nulle, limitate unicamente all'illuminazione delle parti comuni.\n-Anno di costruzione: 1964.\n-Classe energetica: In fase di redazione.\nPrezzo richiesto: € 145.000\nPer maggiori informazioni o per prenotare una visita, contattaci in agenzia.",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-547/01.webp",
+      "alt": "Appartamento in vendita zona Policlinico",
+      "width": 1280,
+      "height": 960
+    },
+    "images": [
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-547/01.webp",
+        "alt": "Appartamento in vendita zona Policlinico",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-547/02.webp",
+        "alt": "Appartamento in vendita zona Policlinico",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-547/03.webp",
+        "alt": "Appartamento in vendita zona Policlinico",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-547/04.webp",
+        "alt": "Appartamento in vendita zona Policlinico",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-547/05.webp",
+        "alt": "Appartamento in vendita zona Policlinico",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-547/06.webp",
+        "alt": "Appartamento in vendita zona Policlinico",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-547/07.webp",
+        "alt": "Appartamento in vendita zona Policlinico",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-547/08.webp",
+        "alt": "Appartamento in vendita zona Policlinico",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-547/09.webp",
+        "alt": "Appartamento in vendita zona Policlinico",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-547/10.webp",
+        "alt": "Appartamento in vendita zona Policlinico",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-547/11.webp",
+        "alt": "Appartamento in vendita zona Policlinico",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-547/12.webp",
+        "alt": "Appartamento in vendita zona Policlinico",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-547/13.webp",
+        "alt": "Appartamento in vendita zona Policlinico",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-547/14.webp",
+        "alt": "Appartamento in vendita zona Policlinico",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-547/15.webp",
+        "alt": "Appartamento in vendita zona Policlinico",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-547/16.webp",
+        "alt": "Appartamento in vendita zona Policlinico",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-547/17.webp",
+        "alt": "Appartamento in vendita zona Policlinico",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-547/18.webp",
+        "alt": "Appartamento in vendita zona Policlinico",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-547/19.webp",
+        "alt": "Appartamento in vendita zona Policlinico",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-547/20.webp",
+        "alt": "Appartamento in vendita zona Policlinico",
+        "width": 1280,
+        "height": 960
+      }
+    ]
   }
 ]
