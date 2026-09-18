@@ -7312,5 +7312,919 @@
         "height": 1086
       }
     ]
+  },
+  {
+    "id": "A-555",
+    "slug": "a-555",
+    "title": "Esclusivo Appartamento in vendita al piano primo",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Appartamento",
+    "publicationDate": null,
+    "featuredHome": false,
+    "homeOrder": null,
+    "usafEligible": false,
+    "newDevelopment": true,
+    "projectName": null,
+    "location": {
+      "comune": "Pordenone",
+      "provincia": "Pordenone",
+      "zona": null,
+      "address": null,
+      "showAddress": false
+    },
+    "price": 600000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 150,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "floor": "Piano primo",
+    "buildingFloors": null,
+    "constructionYear": 2026,
+    "energy": {
+      "class": "A4",
+      "ipe": 0.96
+    },
+    "garage": false,
+    "garageType": null,
+    "parkingSpot": true,
+    "parkingSpotCovered": false,
+    "garden": false,
+    "gardenSurface": null,
+    "terrace": false,
+    "terraceSurface": null,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": true,
+    "cellar": true,
+    "airConditioning": false,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": "Centralizzato",
+    "otherFeatures": [],
+    "shortDescription": "Appartamento, a Pordenone, 150 m².",
+    "description": "All'interno di un elegante palazzo Liberty di metà '900, oggetto di un completo e raffinato intervento di ristrutturazione green, proponiamo in vendita un'esclusivo appartamento al primo piano (nuova, mai abitata, primo ingresso).\nGli ambienti, attualmente privi di arredo, offrono la rara opportunità di personalizzare le finiture e gli spazi interni secondo il proprio stile.\nComposizione interna: Ingresso, luminoso soggiorno con sala da pranzo e cucina separabile (o trasformabile in moderno open space con isola/penisola), disimpegno, camera matrimoniale, seconda camera singola e terza camera matrimoniale con bagno padronale en-suite. Secondo ampio bagno finestrato, completano la proprietà una cantina al piano terra ed un posto auto di proprietà.\nClasse Energetica: A4 (EPgl, nren: 22,56 kWh/m² anno) – massimo risparmio ed efficienza abitativa.\nSoluzione unica di alto profilo per chi cerca il fascino del centro e le prestazioni di una costruzione di ultima generazione.",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-555/01.webp",
+      "alt": "Esclusivo Appartamento in vendita al piano primo",
+      "width": 1280,
+      "height": 960
+    },
+    "images": [
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-555/01.webp",
+        "alt": "Esclusivo Appartamento in vendita al piano primo",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-555/02.webp",
+        "alt": "Esclusivo Appartamento in vendita al piano primo",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-555/03.webp",
+        "alt": "Esclusivo Appartamento in vendita al piano primo",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-555/04.webp",
+        "alt": "Esclusivo Appartamento in vendita al piano primo",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-555/05.webp",
+        "alt": "Esclusivo Appartamento in vendita al piano primo",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-555/06.webp",
+        "alt": "Esclusivo Appartamento in vendita al piano primo",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-555/07.webp",
+        "alt": "Esclusivo Appartamento in vendita al piano primo",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-555/08.webp",
+        "alt": "Esclusivo Appartamento in vendita al piano primo",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-555/09.webp",
+        "alt": "Esclusivo Appartamento in vendita al piano primo",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-555/10.webp",
+        "alt": "Esclusivo Appartamento in vendita al piano primo",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-555/11.webp",
+        "alt": "Esclusivo Appartamento in vendita al piano primo",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-555/12.webp",
+        "alt": "Esclusivo Appartamento in vendita al piano primo",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-555/13.webp",
+        "alt": "Esclusivo Appartamento in vendita al piano primo",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-555/14.webp",
+        "alt": "Esclusivo Appartamento in vendita al piano primo",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-555/15.webp",
+        "alt": "Esclusivo Appartamento in vendita al piano primo",
+        "width": 960,
+        "height": 1280
+      }
+    ]
+  },
+  {
+    "id": "A-556",
+    "slug": "a-556",
+    "title": "In vendita un'esclusivo appartamento al secondo piano",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Appartamento",
+    "publicationDate": null,
+    "featuredHome": false,
+    "homeOrder": null,
+    "usafEligible": false,
+    "newDevelopment": true,
+    "projectName": null,
+    "location": {
+      "comune": "Pordenone",
+      "provincia": "Pordenone",
+      "zona": null,
+      "address": null,
+      "showAddress": false
+    },
+    "price": 520000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 125,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "floor": "Piano secondo",
+    "buildingFloors": null,
+    "constructionYear": 2026,
+    "energy": {
+      "class": "A4",
+      "ipe": 0.89
+    },
+    "garage": false,
+    "garageType": null,
+    "parkingSpot": true,
+    "parkingSpotCovered": false,
+    "garden": false,
+    "gardenSurface": null,
+    "terrace": false,
+    "terraceSurface": null,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": true,
+    "cellar": true,
+    "airConditioning": true,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": "Centralizzato",
+    "otherFeatures": [],
+    "shortDescription": "Appartamento, a Pordenone, 125 m².",
+    "description": "All'interno di un elegante palazzo Liberty di metà '900, oggetto di un completo e raffinato intervento di ristrutturazione green, proponiamo in vendita un'esclusivo appartamento al secondo piano (nuova, mai abitata, primo ingresso).\nGli ambienti, attualmente privi di arredo, offrono la rara opportunità di personalizzare le finiture e gli spazi interni secondo il proprio stile.\nComposizione interna: Ingresso, luminoso soggiorno con sala da pranzo e cucina separabile (o trasformabile in moderno open space con isola/penisola), disimpegno, due camere singole e terza camera matrimoniale con bagno padronale en-suite. Secondo ampio bagno finestrato, completano la proprietà una cantina al piano terra ed un posto auto di proprietà.\nClasse Energetica: A4 (EPgl, nren: 21,27 kWh/m² anno) – massimo risparmio ed efficienza abitativa.\nSoluzione unica di alto profilo per chi cerca il fascino del centro e le prestazioni di una costruzione di ultima generazione.",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-556/01.webp",
+      "alt": "In vendita un'esclusivo appartamento al secondo piano",
+      "width": 2000,
+      "height": 1500
+    },
+    "images": [
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-556/01.webp",
+        "alt": "In vendita un'esclusivo appartamento al secondo piano",
+        "width": 2000,
+        "height": 1500
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-556/02.webp",
+        "alt": "In vendita un'esclusivo appartamento al secondo piano",
+        "width": 2000,
+        "height": 1500
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-556/03.webp",
+        "alt": "In vendita un'esclusivo appartamento al secondo piano",
+        "width": 2000,
+        "height": 1500
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-556/04.webp",
+        "alt": "In vendita un'esclusivo appartamento al secondo piano",
+        "width": 2000,
+        "height": 1500
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-556/05.webp",
+        "alt": "In vendita un'esclusivo appartamento al secondo piano",
+        "width": 2000,
+        "height": 1500
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-556/06.webp",
+        "alt": "In vendita un'esclusivo appartamento al secondo piano",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-556/07.webp",
+        "alt": "In vendita un'esclusivo appartamento al secondo piano",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-556/08.webp",
+        "alt": "In vendita un'esclusivo appartamento al secondo piano",
+        "width": 1500,
+        "height": 2000
+      }
+    ]
+  },
+  {
+    "id": "A-557",
+    "slug": "a-557",
+    "title": "In vendita un'esclusivo appartamento al primo piano",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Appartamento",
+    "publicationDate": null,
+    "featuredHome": false,
+    "homeOrder": null,
+    "usafEligible": false,
+    "newDevelopment": true,
+    "projectName": null,
+    "location": {
+      "comune": "Pordenone",
+      "provincia": "Pordenone",
+      "zona": null,
+      "address": null,
+      "showAddress": false
+    },
+    "price": 400000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 95,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "floor": "Piano secondo",
+    "buildingFloors": null,
+    "constructionYear": 2026,
+    "energy": {
+      "class": "A4",
+      "ipe": 23.3
+    },
+    "garage": false,
+    "garageType": null,
+    "parkingSpot": true,
+    "parkingSpotCovered": false,
+    "garden": false,
+    "gardenSurface": null,
+    "terrace": false,
+    "terraceSurface": null,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": true,
+    "cellar": true,
+    "airConditioning": true,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": "Centralizzato",
+    "otherFeatures": [],
+    "shortDescription": "Appartamento, a Pordenone, 95 m².",
+    "description": "All'interno di un elegante palazzo Liberty di metà '900, oggetto di un completo e raffinato intervento di ristrutturazione green, proponiamo in vendita un'esclusivo appartamento al primo piano (nuova, mai abitata, primo ingresso).\nGli ambienti, attualmente privi di arredo, offrono la rara opportunità di personalizzare le finiture e gli spazi interni secondo il proprio stile.\nComposizione interna: Ingresso, luminoso soggiorno con sala da pranzo e cucina separabile in moderno open space, disimpegno, due camere matrimoniali, due ampi bagni, di cui il più grande finestrato, completano la proprietà una cantina al piano terra ed un posto auto di proprietà.\nClasse Energetica: A4 (EPgl, nren: 23,30 kWh/m² anno) – massimo risparmio ed efficienza abitativa.\nSoluzione unica di alto profilo per chi cerca il fascino del centro e le prestazioni di una costruzione di ultima generazione.",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-557/01.webp",
+      "alt": "In vendita un'esclusivo appartamento al primo piano",
+      "width": 1280,
+      "height": 960
+    },
+    "images": [
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-557/01.webp",
+        "alt": "In vendita un'esclusivo appartamento al primo piano",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-557/02.webp",
+        "alt": "In vendita un'esclusivo appartamento al primo piano",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-557/03.webp",
+        "alt": "In vendita un'esclusivo appartamento al primo piano",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-557/04.webp",
+        "alt": "In vendita un'esclusivo appartamento al primo piano",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-557/05.webp",
+        "alt": "In vendita un'esclusivo appartamento al primo piano",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-557/06.webp",
+        "alt": "In vendita un'esclusivo appartamento al primo piano",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-557/07.webp",
+        "alt": "In vendita un'esclusivo appartamento al primo piano",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-557/08.webp",
+        "alt": "In vendita un'esclusivo appartamento al primo piano",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-557/09.webp",
+        "alt": "In vendita un'esclusivo appartamento al primo piano",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-557/10.webp",
+        "alt": "In vendita un'esclusivo appartamento al primo piano",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-557/11.webp",
+        "alt": "In vendita un'esclusivo appartamento al primo piano",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-557/12.webp",
+        "alt": "In vendita un'esclusivo appartamento al primo piano",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-557/13.webp",
+        "alt": "In vendita un'esclusivo appartamento al primo piano",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-557/14.webp",
+        "alt": "In vendita un'esclusivo appartamento al primo piano",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-557/15.webp",
+        "alt": "In vendita un'esclusivo appartamento al primo piano",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-557/16.webp",
+        "alt": "In vendita un'esclusivo appartamento al primo piano",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-557/17.webp",
+        "alt": "In vendita un'esclusivo appartamento al primo piano",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-557/18.webp",
+        "alt": "In vendita un'esclusivo appartamento al primo piano",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-557/19.webp",
+        "alt": "In vendita un'esclusivo appartamento al primo piano",
+        "width": 960,
+        "height": 1280
+      }
+    ]
+  },
+  {
+    "id": "A-558",
+    "slug": "a-558",
+    "title": "Splendido Appartamento mansardato in vendita",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Appartamento",
+    "publicationDate": null,
+    "featuredHome": false,
+    "homeOrder": null,
+    "usafEligible": false,
+    "newDevelopment": true,
+    "projectName": null,
+    "location": {
+      "comune": "Pordenone",
+      "provincia": "Pordenone",
+      "zona": null,
+      "address": null,
+      "showAddress": false
+    },
+    "price": 625000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 150,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "floor": "Piano terzo",
+    "buildingFloors": null,
+    "constructionYear": 2026,
+    "energy": {
+      "class": "A4",
+      "ipe": 1.25
+    },
+    "garage": false,
+    "garageType": null,
+    "parkingSpot": true,
+    "parkingSpotCovered": false,
+    "garden": false,
+    "gardenSurface": null,
+    "terrace": false,
+    "terraceSurface": null,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": true,
+    "cellar": true,
+    "airConditioning": true,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": "Centralizzato",
+    "otherFeatures": [],
+    "shortDescription": "Appartamento, a Pordenone, 150 m².",
+    "description": "All'interno di un elegante palazzo Liberty di metà '900, oggetto di un completo e raffinato intervento di ristrutturazione green, proponiamo in vendita un'esclusiva mansarda al terzo piano (nuova, mai abitata, primo ingresso).\nGli ambienti, attualmente privi di arredo, offrono la rara opportunità di personalizzare le finiture e gli spazi interni secondo il proprio stile.\nComposizione interna: Ingresso, luminoso soggiorno con sala da pranzo e cucina separabile (o trasformabile in moderno open space con isola/penisola), disimpegno, camera matrimoniale, seconda camera singola e terza camera matrimoniale con bagno padronale en-suite. Secondo ampio bagno finestrato. , completano la proprietà una cantina al piano terra ed un posto auto di proprietà.\nClasse Energetica: A4 (EPgl, nren: 29,53 kWh/m² anno) – massimo risparmio ed efficienza abitativa.\nSoluzione unica di alto profilo per chi cerca il fascino del centro e le prestazioni di una costruzione di ultima generazione.",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/01.webp",
+      "alt": "Splendido Appartamento mansardato in vendita",
+      "width": 1500,
+      "height": 2000
+    },
+    "images": [
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/01.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/02.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/03.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 2000,
+        "height": 1500
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/04.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 2000,
+        "height": 1500
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/05.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 2000,
+        "height": 1500
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/06.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 2000,
+        "height": 1500
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/07.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 2000,
+        "height": 1500
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/08.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 2000,
+        "height": 1500
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/09.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/10.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/11.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/12.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/13.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/14.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/15.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/16.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/17.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 2000,
+        "height": 1500
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/18.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 2000,
+        "height": 1500
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/19.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/20.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/21.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/22.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/23.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/24.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/25.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/26.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/27.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/28.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/29.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/30.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/31.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/32.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/33.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/34.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/35.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/36.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/37.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 2000,
+        "height": 1500
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/38.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 2000,
+        "height": 1500
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/39.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/40.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 2000,
+        "height": 1500
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-558/41.webp",
+        "alt": "Splendido Appartamento mansardato in vendita",
+        "width": 2000,
+        "height": 1500
+      }
+    ]
+  },
+  {
+    "id": "DL-559",
+    "slug": "dl-559",
+    "title": "Splendido Appartamento su due livelli in affitto",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "affitto",
+    "propertyType": "Appartamento",
+    "publicationDate": null,
+    "featuredHome": false,
+    "homeOrder": null,
+    "usafEligible": false,
+    "newDevelopment": true,
+    "projectName": null,
+    "location": {
+      "comune": "Pordenone",
+      "provincia": "Pordenone",
+      "zona": null,
+      "address": null,
+      "showAddress": false
+    },
+    "price": null,
+    "priceOnRequest": false,
+    "monthlyRent": 1600,
+    "monthlyCondoFees": null,
+    "surface": 140,
+    "bedrooms": 1,
+    "bathrooms": 2,
+    "floor": "Piano terra",
+    "buildingFloors": null,
+    "constructionYear": 2026,
+    "energy": {
+      "class": "A4",
+      "ipe": null
+    },
+    "garage": false,
+    "garageType": null,
+    "parkingSpot": true,
+    "parkingSpotCovered": false,
+    "garden": false,
+    "gardenSurface": null,
+    "terrace": false,
+    "terraceSurface": null,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": false,
+    "cellar": true,
+    "airConditioning": true,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": "Centralizzato",
+    "otherFeatures": [],
+    "shortDescription": "Appartamento, a Pordenone, 140 m².",
+    "description": "All'interno di un elegante palazzo Liberty di metà '900, oggetto di un completo e raffinato intervento di ristrutturazione green, proponiamo in affitto un'esclusivo appartamento posto su due livelli, piano terra e primo piano (nuova, mai abitata, primo ingresso).\nGli ambienti, attualmente privi di arredo, offrono la rara opportunità di personalizzare le finiture e gli spazi interni secondo il proprio stile.\nComposizione interna: al piano terra troviamo l'ingresso, con una anti wc e il rispettivo bagno, mentre al primo piano salendo le scale interne troviamo luminoso soggiorno con sala da pranzo e cucina in moderno open space, un piccolo disimpegno, una camera matrimoniale, il secondo bagno finestrato, un'ampia cabina armadio trasformabile a proprio piacimento, completano la proprietà una cantina al piano terra ed un posto auto di proprietà.\nSoluzione unica di alto profilo per chi cerca il fascino del centro e le prestazioni di una costruzione di ultima generazione.",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/dl-559/01.webp",
+      "alt": "Splendido Appartamento su due livelli in affitto",
+      "width": 1280,
+      "height": 960
+    },
+    "images": [
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/dl-559/01.webp",
+        "alt": "Splendido Appartamento su due livelli in affitto",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/dl-559/02.webp",
+        "alt": "Splendido Appartamento su due livelli in affitto",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/dl-559/03.webp",
+        "alt": "Splendido Appartamento su due livelli in affitto",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/dl-559/04.webp",
+        "alt": "Splendido Appartamento su due livelli in affitto",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/dl-559/05.webp",
+        "alt": "Splendido Appartamento su due livelli in affitto",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/dl-559/06.webp",
+        "alt": "Splendido Appartamento su due livelli in affitto",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/dl-559/07.webp",
+        "alt": "Splendido Appartamento su due livelli in affitto",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/dl-559/08.webp",
+        "alt": "Splendido Appartamento su due livelli in affitto",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/dl-559/09.webp",
+        "alt": "Splendido Appartamento su due livelli in affitto",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/dl-559/10.webp",
+        "alt": "Splendido Appartamento su due livelli in affitto",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/dl-559/11.webp",
+        "alt": "Splendido Appartamento su due livelli in affitto",
+        "width": 1280,
+        "height": 960
+      }
+    ]
   }
 ]
