@@ -76,7 +76,7 @@ export default function PropertyCard({
 
       <div className={styles.body}>
         <p className={styles.meta}>
-          {propertyTypeLabel(t, property.propertyType)} · {property.location.comune}
+          {propertyTypeLabel(t, property.propertyType)} · {property.location.comune} · {property.id}
         </p>
 
         <h3 className={styles.title}>{propertyTitle(t, property)}</h3>
