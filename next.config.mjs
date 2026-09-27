@@ -21,8 +21,12 @@ const nextConfig = {
     ];
   },
   images: {
-    formats: ['image/avif', 'image/webp'],
-    qualities: [70, 75, 80, 82, 85, 90],
+    // WebP only: sorgenti già in WebP, l'AVIF aggiuntivo raddoppiava le
+    // trasformazioni Vercel per un guadagno marginale.
+    formats: ['image/webp'],
+    // Solo i valori realmente usati nel codice (vedi grep "quality=" prima
+    // di aggiungerne altri) — 70 e 90 non erano mai richiesti.
+    qualities: [75, 80, 82, 85],
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",

@@ -120,7 +120,7 @@ export default async function Footer() {
             alt=""
             width={1567}
             height={141}
-            sizes="100vw"
+            sizes="65vw"
           />
         </div>
       </div>

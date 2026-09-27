@@ -109,6 +109,7 @@ export default function Header() {
               alt="Prata Immobiliare"
               width={1200}
               height={225}
+              sizes="160px"
               priority
             />
             <Image
@@ -118,6 +119,7 @@ export default function Header() {
               aria-hidden="true"
               width={1200}
               height={225}
+              sizes="160px"
               priority
             />
           </Link>
