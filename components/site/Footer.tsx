@@ -101,6 +101,13 @@ export default async function Footer() {
           <div className={styles.bottom}>
             <p className={styles.fine}>
               © {year} Prata Immobiliare · {t.hours.vat} {contact.vat}
+              <span className={styles.credit}>
+                {' · '}
+                {t.footer.credit}{' '}
+                <a href="https://chiaracoscarella.com/" rel="noopener" target="_blank">
+                  Chiara Coscarella
+                </a>
+              </span>
             </p>
             <div className={styles.legal}>
               {legalNav.map((item) => (
@@ -188,6 +195,13 @@ export default async function Footer() {
           <div className={styles.bottom}>
             <p className={styles.fine}>
               © {year} Prata Immobiliare · {t.hours.vat} {contact.vat}
+              <span className={styles.credit}>
+                {' · '}
+                {t.footer.credit}{' '}
+                <a href="https://chiaracoscarella.com/" rel="noopener" target="_blank">
+                  Chiara Coscarella
+                </a>
+              </span>
             </p>
             <div className={styles.legal}>
               {legalNav.map((item) => (
