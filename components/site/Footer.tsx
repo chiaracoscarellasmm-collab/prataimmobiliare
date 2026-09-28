@@ -13,7 +13,7 @@ export default async function Footer() {
   const { t } = await getI18n();
 
   return (
-    <footer className={styles.footer}>
+    <footer id="contatti" className={styles.footer}>
       {/* Desktop / tablet (>=768px) — layout invariato. */}
       <div className={styles.desktopBody}>
         <div className="container">

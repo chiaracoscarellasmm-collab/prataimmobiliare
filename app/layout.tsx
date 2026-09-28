@@ -57,7 +57,7 @@ export async function generateMetadata(): Promise<Metadata> {
     robots: { index: true, follow: true },
     icons: {
       icon: [{ url: '/brand/icon.png', type: 'image/png' }],
-      apple: [{ url: '/brand/icon.png' }],
+      apple: [{ url: '/apple-touch-icon.png' }],
     },
   };
 }

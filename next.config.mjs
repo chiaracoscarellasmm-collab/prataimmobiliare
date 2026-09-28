@@ -1,3 +1,5 @@
+import { readFileSync } from 'node:fs';
+
 // Le fotografie degli immobili vivono su R2, non nel repo: next/image deve
 // avere l'host in whitelist esplicita. L'hostname reale si legge dall'env
 // così non serve toccare questo file quando cambia il bucket o si passa a
@@ -10,6 +12,25 @@ const r2PublicHostname = (() => {
   }
 })();
 
+// Link del vecchio sito WordPress ancora indicizzati o salvati: le schede
+// erano /project/<titolo>-<codice> (es. /project/villa-in-vendita-con-giardino-vs-499).
+// Il codice finale coincide con quello degli slug attuali, quindi ogni scheda
+// ancora pubblicata riceve il suo redirect; le altre finiscono sull'elenco.
+// Ricalcolato a ogni build, quindi segue da solo la sync dal Google Sheet.
+const legacyPropertyRedirects = (() => {
+  try {
+    const properties = JSON.parse(readFileSync(new URL('./data/generated/properties.json', import.meta.url), 'utf8'));
+    return properties.flatMap(({ slug }) => {
+      const code = slug.match(/[a-z]{1,3}-\d+$/)?.[0];
+      return code
+        ? [{ source: `/project/:old(.*-${code})/:rest*`, destination: `/immobili/${slug}`, permanent: true }]
+        : [];
+    });
+  } catch {
+    return [];
+  }
+})();
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -18,6 +39,21 @@ const nextConfig = {
       // La pagina USAF Housing è diventata "Locazioni Americani" — redirect
       // permanente per non rompere eventuali link o segnalibri esistenti.
       { source: '/locazioni-base-usaf', destination: '/locazioni-americani', permanent: true },
+      // Vecchio sito WordPress (vedi legacyPropertyRedirects sopra).
+      ...legacyPropertyRedirects,
+      ...[
+        '/project/:path*',
+        '/project_category/:path*',
+        '/property_location/:path*',
+        '/listing/:path*',
+        '/listings-prata-immobiliare',
+        '/case-in-affitto',
+        '/confronta-immobili',
+      ].map((source) => ({ source, destination: '/immobili', permanent: true })),
+      ...['/our-story', '/about', '/about-us'].map((source) => ({ source, destination: '/chi-siamo', permanent: true })),
+      // Non esiste una pagina contatti: recapiti e orari stanno nel footer.
+      ...['/contatti', '/contact', '/p/contatti.html'].map((source) => ({ source, destination: '/#contatti', permanent: true })),
+      { source: '/home', destination: '/', permanent: true },
     ];
   },
   images: {
