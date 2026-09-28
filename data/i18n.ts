@@ -65,7 +65,7 @@ const it = {
     ledeBefore: 'Parliamo del tuo ',
     ledeEm: 'prossimo passo.',
     cta: 'Contattaci',
-    credit: 'Sito realizzato da',
+    credit: 'Designed by',
   },
   hero: {
     titleLine1: 'Il piacere di',
@@ -924,7 +924,7 @@ const en: typeof it = {
     ledeBefore: 'Let’s talk about your ',
     ledeEm: 'next step.',
     cta: 'Get in touch',
-    credit: 'Website by',
+    credit: 'Designed by',
   },
   hero: {
     titleLine1: 'The pleasure of',

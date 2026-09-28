@@ -105,7 +105,7 @@ export default async function Footer() {
                 {' · '}
                 {t.footer.credit}{' '}
                 <a href="https://chiaracoscarella.com/" rel="noopener" target="_blank">
-                  Chiara Coscarella
+                  Social Chemistry
                 </a>
               </span>
             </p>
@@ -199,7 +199,7 @@ export default async function Footer() {
                 {' · '}
                 {t.footer.credit}{' '}
                 <a href="https://chiaracoscarella.com/" rel="noopener" target="_blank">
-                  Chiara Coscarella
+                  Social Chemistry
                 </a>
               </span>
             </p>
