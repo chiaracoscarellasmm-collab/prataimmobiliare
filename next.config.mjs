@@ -21,6 +21,14 @@ const nextConfig = {
     ];
   },
   images: {
+    // Ottimizzazione Vercel disattivata: il piano Hobby include solo 5.000
+    // trasformazioni/mese e ogni combinazione foto × larghezza ne consuma una
+    // (con ~750 foto su R2 il limite si esaurisce subito). Le sorgenti sono
+    // già WebP compresse e ridimensionate a monte (scripts/photos/prepare-
+    // property-photos.mjs per R2, npm run images:optimize per public/), quindi
+    // vengono servite così come sono. Per i marchi usare file già alla
+    // dimensione di visualizzazione (es. brand/wordmark-*-480.webp).
+    unoptimized: true,
     // WebP only: sorgenti già in WebP, l'AVIF aggiuntivo raddoppiava le
     // trasformazioni Vercel per un guadagno marginale.
     formats: ['image/webp'],

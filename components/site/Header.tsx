@@ -105,7 +105,7 @@ export default function Header() {
                 photograph, the dark one takes over on the solid bar. */}
             <Image
               className={styles.markLight}
-              src="/brand/wordmark-light.png"
+              src="/brand/wordmark-light-480.webp"
               alt="Prata Immobiliare"
               width={1200}
               height={225}
@@ -114,7 +114,7 @@ export default function Header() {
             />
             <Image
               className={styles.markDark}
-              src="/brand/wordmark-dark.png"
+              src="/brand/wordmark-dark-480.webp"
               alt=""
               aria-hidden="true"
               width={1200}
