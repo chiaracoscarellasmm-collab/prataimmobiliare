@@ -8533,5 +8533,236 @@
         "height": 960
       }
     ]
+  },
+  {
+    "id": "A-293",
+    "slug": "a-293",
+    "title": "Appartamento in vendita a Prata",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Appartamento",
+    "publicationDate": null,
+    "featuredHome": false,
+    "homeOrder": null,
+    "usafEligible": false,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Prata di Pordenone",
+      "provincia": "Pordenone",
+      "zona": null,
+      "address": null,
+      "showAddress": false
+    },
+    "price": 225000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 94,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "floor": "Piano secondo",
+    "buildingFloors": null,
+    "constructionYear": 2007,
+    "energy": {
+      "class": "D",
+      "ipe": 90.98
+    },
+    "garage": true,
+    "garageType": "Garage doppio di 26 mq",
+    "parkingSpot": false,
+    "parkingSpotCovered": false,
+    "garden": false,
+    "gardenSurface": null,
+    "terrace": true,
+    "terraceSurface": 16,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": true,
+    "cellar": true,
+    "airConditioning": true,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": "Autonomo a gas naturale",
+    "otherFeatures": [
+      "Posizione angolare, libera su due lati",
+      "Palazzina del 2007 con ascensore",
+      "94 mq commerciali",
+      "72 mq calpestabili",
+      "Cucina separata",
+      "Zona pranzo e soggiorno in ambiente unico",
+      "Camera matrimoniale",
+      "Camera doppia",
+      "2 bagni finestrati",
+      "2 terrazzi per 16 mq totali",
+      "Garage doppio di 26 mq al piano terra",
+      "Cantina di 6,50 mq",
+      "Vano tecnico esterno per la centrale termica",
+      "Armadi a muro",
+      "Aria condizionata",
+      "Buono stato",
+      "Costruzione del 2007",
+      "Classe energetica D",
+      "Immobile locato fino a novembre 2027",
+      "Canone mensile 520 euro",
+      "Ideale per investimento",
+      "Accesso e abitazione adattati per persone a mobilità ridotta"
+    ],
+    "shortDescription": "Appartamento bicamere di 94 mq commerciali a Prata di Pordenone, al secondo piano con ascensore, due terrazzi, garage doppio e cantina. Attualmente locato, ideale per investimento.",
+    "description": "A Prata di Pordenone, proponiamo in vendita appartamento bicamere situato al secondo piano di una palazzina recente, costruita nel 2007.\n\nL'abitazione si trova in posizione angolare, libera su due lati, ed è composta da cucina separata, zona pranzo e soggiorno in ambiente unico, 2 bagni finestrati, una camera matrimoniale e una camera doppia. Sono presenti 2 terrazzi oltre a un vano tecnico centrale termica esterno.\n\nCompletano la proprietà una cantina e un garage doppio al piano terra.\n\nL'appartamento ha una superficie netta di 72 mq e una superficie commerciale di 94 mq. I terrazzi misurano complessivamente 16 mq, l'autorimessa 26 mq e la cantina 6,50 mq. Riscaldamento autonomo a metano. Classe energetica D, EPgl 90,98.\n\nL'immobile è attualmente locato fino a novembre 2027 con canone mensile di euro 520, rendendolo una soluzione ideale per investimento.",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/01.webp",
+      "alt": "Appartamento in vendita a Prata",
+      "width": 1280,
+      "height": 960
+    },
+    "images": [
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/01.webp",
+        "alt": "Appartamento in vendita a Prata",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/02.webp",
+        "alt": "Appartamento in vendita a Prata",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/03.webp",
+        "alt": "Appartamento in vendita a Prata",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/04.webp",
+        "alt": "Appartamento in vendita a Prata",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/05.webp",
+        "alt": "Appartamento in vendita a Prata",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/06.webp",
+        "alt": "Appartamento in vendita a Prata",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/07.webp",
+        "alt": "Appartamento in vendita a Prata",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/08.webp",
+        "alt": "Appartamento in vendita a Prata",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/09.webp",
+        "alt": "Appartamento in vendita a Prata",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/10.webp",
+        "alt": "Appartamento in vendita a Prata",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/11.webp",
+        "alt": "Appartamento in vendita a Prata",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/12.webp",
+        "alt": "Appartamento in vendita a Prata",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/13.webp",
+        "alt": "Appartamento in vendita a Prata",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/14.webp",
+        "alt": "Appartamento in vendita a Prata",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/15.webp",
+        "alt": "Appartamento in vendita a Prata",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/16.webp",
+        "alt": "Appartamento in vendita a Prata",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/17.webp",
+        "alt": "Appartamento in vendita a Prata",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/18.webp",
+        "alt": "Appartamento in vendita a Prata",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/19.webp",
+        "alt": "Appartamento in vendita a Prata",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/20.webp",
+        "alt": "Appartamento in vendita a Prata",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/21.webp",
+        "alt": "Appartamento in vendita a Prata",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/22.webp",
+        "alt": "Appartamento in vendita a Prata",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-293/23.webp",
+        "alt": "Appartamento in vendita a Prata",
+        "width": 960,
+        "height": 1280
+      }
+    ]
   }
 ]
