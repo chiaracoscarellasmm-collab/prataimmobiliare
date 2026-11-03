@@ -8274,5 +8274,181 @@
         "height": 960
       }
     ]
+  },
+  {
+    "id": "A-279",
+    "slug": "a-279",
+    "title": "Quadrilocale in vendita",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Appartamento",
+    "publicationDate": null,
+    "featuredHome": false,
+    "homeOrder": null,
+    "usafEligible": false,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Prata di Pordenone",
+      "provincia": "Pordenone",
+      "zona": null,
+      "address": null,
+      "showAddress": false
+    },
+    "price": 123000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 64,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "floor": "Piano secondo",
+    "buildingFloors": null,
+    "constructionYear": 2007,
+    "energy": null,
+    "garage": false,
+    "garageType": null,
+    "parkingSpot": true,
+    "parkingSpotCovered": false,
+    "garden": false,
+    "gardenSurface": null,
+    "terrace": true,
+    "terraceSurface": 4,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": true,
+    "cellar": false,
+    "airConditioning": false,
+    "furnished": true,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": "Autonomo a gas naturale",
+    "otherFeatures": [
+      "Quadrilocale",
+      "64 mq commerciali",
+      "Palazzina del 2007 con ascensore",
+      "Zona residenziale tranquilla",
+      "Completamente arredato",
+      "Ingresso direttamente sul soggiorno",
+      "Cucina in open space",
+      "Disimpegno",
+      "Camera matrimoniale",
+      "Ampia camera singola",
+      "Bagno finestrato",
+      "Terrazzo di 4 mq",
+      "Posto auto scoperto esclusivo al piano terra",
+      "Riscaldamento autonomo a metano",
+      "Buono stato",
+      "Costruzione del 2007",
+      "Classe energetica in corso",
+      "Accesso e abitazione adattati per persone a mobilità ridotta"
+    ],
+    "shortDescription": "Quadrilocale di 64 mq in vendita a Prata di Pordenone, al secondo piano con ascensore, terrazzo e posto auto esclusivo, venduto completamente arredato.",
+    "description": "A Prata, in una tranquilla zona residenziale, vendiamo un grazioso appartamento di 64 mq in una palazzina del 2007 con ascensore. L'immobile viene venduto completamente arredato, quindi è pronto da abitare subito oppure da affittare senza dover pensare all'arredamento.\n\nZona giorno: ingresso direttamente sul soggiorno con cucina in open space.\n\nZona notte: disimpegno, camera matrimoniale, ampia camera singola e bagno finestrato.\n\nEsterno: terrazzo di 4 mq.\n\nCompletano la proprietà il riscaldamento autonomo a metano e un posto auto esclusivo al piano terra.\n\nÈ adatto sia come prima casa per single o coppie sia come investimento da mettere a reddito. Contattaci per maggiori informazioni o per fissare una visita!",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-279/01.webp",
+      "alt": "Quadrilocale in vendita",
+      "width": 1280,
+      "height": 960
+    },
+    "images": [
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-279/01.webp",
+        "alt": "Quadrilocale in vendita",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-279/02.webp",
+        "alt": "Quadrilocale in vendita",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-279/03.webp",
+        "alt": "Quadrilocale in vendita",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-279/04.webp",
+        "alt": "Quadrilocale in vendita",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-279/05.webp",
+        "alt": "Quadrilocale in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-279/06.webp",
+        "alt": "Quadrilocale in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-279/07.webp",
+        "alt": "Quadrilocale in vendita",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-279/08.webp",
+        "alt": "Quadrilocale in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-279/09.webp",
+        "alt": "Quadrilocale in vendita",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-279/10.webp",
+        "alt": "Quadrilocale in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-279/11.webp",
+        "alt": "Quadrilocale in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-279/12.webp",
+        "alt": "Quadrilocale in vendita",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-279/13.webp",
+        "alt": "Quadrilocale in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-279/14.webp",
+        "alt": "Quadrilocale in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-279/15.webp",
+        "alt": "Quadrilocale in vendita",
+        "width": 960,
+        "height": 1280
+      }
+    ]
   }
 ]
