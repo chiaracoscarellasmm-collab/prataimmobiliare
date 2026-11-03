@@ -8368,5 +8368,170 @@
         "height": 1280
       }
     ]
+  },
+  {
+    "id": "A-489",
+    "slug": "a-489",
+    "title": "Appartamento in vendita",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Appartamento",
+    "publicationDate": null,
+    "featuredHome": false,
+    "homeOrder": null,
+    "usafEligible": false,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Pasiano di Pordenone",
+      "provincia": "Pordenone",
+      "zona": null,
+      "address": null,
+      "showAddress": false
+    },
+    "price": 124000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 70,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "floor": "Piano primo",
+    "buildingFloors": null,
+    "constructionYear": null,
+    "energy": null,
+    "garage": true,
+    "garageType": "Garage singolo di 17 mq",
+    "parkingSpot": true,
+    "parkingSpotCovered": true,
+    "garden": false,
+    "gardenSurface": null,
+    "terrace": true,
+    "terraceSurface": 4,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": false,
+    "cellar": false,
+    "airConditioning": false,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": null,
+    "otherFeatures": [
+      "Appartamento al primo piano",
+      "Piccolo residence con palazzine da 2 sole unità",
+      "Zona tranquilla e residenziale",
+      "Soggiorno con cucina open space",
+      "Disimpegno",
+      "Camera matrimoniale",
+      "Cameretta",
+      "Terrazzino di 4 mq",
+      "Ripostiglio",
+      "Garage singolo di 17 mq",
+      "Posto auto coperto",
+      "Buono stato",
+      "Classe energetica in corso"
+    ],
+    "shortDescription": "Appartamento di 70 mq in vendita a Pasiano di Pordenone, al primo piano di un piccolo residence, con terrazzino, garage di 17 mq e posto auto coperto.",
+    "description": "In una zona tranquilla e residenziale proponiamo un appartamento di 70 mq al primo piano di un piccolo residence. Ogni palazzina del complesso ospita soltanto due unità abitative, una al piano terra e una al primo piano. Questo garantisce riservatezza, pochi vicini e un contesto sereno, lontano dalla confusione dei grandi condomini.\n\nZona giorno: dall'ingresso si entra direttamente nel soggiorno, che condivide lo spazio con la cucina in un unico ambiente aperto, pratico nella vita di tutti i giorni e ideale per ricevere amici e parenti. Completa la zona giorno un terrazzino di 4 mq, comodo per stendere o per qualche pianta.\n\nZona notte: un disimpegno separa la zona notte da quella giorno e porta a una camera matrimoniale, a una cameretta e al bagno. La cameretta si presta bene come stanza per i figli, studio o camera degli ospiti. C'è anche un ripostiglio, utile per tenere in ordine la casa.\n\nGarage e posto auto: completano la proprietà un garage di 17 mq, con spazio per l'auto e per riporre biciclette, attrezzi o oggetti stagionali, e un posto auto coperto. Si possono quindi tenere al riparo due veicoli.\n\nÈ una soluzione adatta a coppie, piccole famiglie o a chi cerca la prima casa in un contesto tranquillo e riservato.\n\nPer informazioni dettagliate o per fissare una visita, contattate esclusivamente l'agenzia per telefono.",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-489/01.webp",
+      "alt": "Appartamento in vendita",
+      "width": 1280,
+      "height": 960
+    },
+    "images": [
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-489/01.webp",
+        "alt": "Appartamento in vendita",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-489/02.webp",
+        "alt": "Appartamento in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-489/03.webp",
+        "alt": "Appartamento in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-489/04.webp",
+        "alt": "Appartamento in vendita",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-489/05.webp",
+        "alt": "Appartamento in vendita",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-489/06.webp",
+        "alt": "Appartamento in vendita",
+        "width": 960,
+        "height": 1044
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-489/07.webp",
+        "alt": "Appartamento in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-489/08.webp",
+        "alt": "Appartamento in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-489/09.webp",
+        "alt": "Appartamento in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-489/10.webp",
+        "alt": "Appartamento in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-489/11.webp",
+        "alt": "Appartamento in vendita",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-489/12.webp",
+        "alt": "Appartamento in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-489/13.webp",
+        "alt": "Appartamento in vendita",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-489/14.webp",
+        "alt": "Appartamento in vendita",
+        "width": 1280,
+        "height": 960
+      }
+    ]
   }
 ]
