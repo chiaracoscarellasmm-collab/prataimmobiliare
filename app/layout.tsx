@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Archivo, Plus_Jakarta_Sans } from 'next/font/google';
+import localFont from 'next/font/local';
 
 import './globals.css';
 import Header from '@/components/site/Header';
@@ -13,19 +13,20 @@ import { getI18n } from '@/lib/i18n';
 /**
  * One variable grotesque covers display, UI and — via the width axis — the
  * condensed numerals used for surfaces, prices and dates. The brand serif
- * lives only in the logo artwork.
+ * lives only in the logo artwork. Font files are self-hosted (app/fonts, latin
+ * subset) so the build never depends on fetching Google Fonts.
  */
-const display = Archivo({
-  subsets: ['latin'],
-  axes: ['wdth'],
-  style: ['normal', 'italic'],
+const display = localFont({
+  src: [
+    { path: './fonts/Archivo-latin.woff2', weight: '100 900', style: 'normal' },
+    { path: './fonts/Archivo-Italic-latin.woff2', weight: '100 900', style: 'italic' },
+  ],
   display: 'swap',
   variable: '--font-archivo',
 });
 
-const sans = Plus_Jakarta_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+const sans = localFont({
+  src: [{ path: './fonts/PlusJakartaSans-latin.woff2', weight: '200 800', style: 'normal' }],
   display: 'swap',
   variable: '--font-plus-jakarta',
 });
