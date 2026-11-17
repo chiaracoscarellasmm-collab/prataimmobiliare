@@ -8513,5 +8513,208 @@
         "height": 1500
       }
     ]
+  },
+  {
+    "id": "A-541",
+    "slug": "a-541",
+    "title": "Appartamento tricamere in vendita a Pordenone",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Appartamento",
+    "publicationDate": null,
+    "featuredHome": false,
+    "homeOrder": null,
+    "usafEligible": false,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Pordenone",
+      "provincia": "Pordenone",
+      "zona": "Policlinico",
+      "address": null,
+      "showAddress": false
+    },
+    "price": 155000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": null,
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "floor": "Piano terra",
+    "buildingFloors": null,
+    "constructionYear": 1964,
+    "energy": null,
+    "garage": true,
+    "garageType": null,
+    "parkingSpot": false,
+    "parkingSpotCovered": false,
+    "garden": true,
+    "gardenSurface": null,
+    "terrace": false,
+    "terraceSurface": null,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": false,
+    "cellar": true,
+    "airConditioning": false,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": "Autonomo",
+    "otherFeatures": [
+      "Zona Policlinico",
+      "Bifamiliare in orizzontale",
+      "Piano terra",
+      "Ingresso con disimpegno",
+      "Ampia cucina abitabile",
+      "Soggiorno separato",
+      "Tre camere matrimoniali",
+      "Giardino in comune tra le due sole unità",
+      "Ingressi carrabili indipendenti",
+      "Cantina al piano seminterrato",
+      "Garage di proprietà",
+      "Utenze autonome",
+      "Spese condominiali quasi nulle",
+      "Costruzione del 1964",
+      "Classe energetica in corso"
+    ],
+    "shortDescription": "Appartamento tricamere in vendita a Pordenone, zona Policlinico, al piano terra di una bifamiliare, con giardino, cantina e garage di proprietà.",
+    "description": "A Pordenone, in zona Policlinico, una delle zone più servite e ricercate della città, proponiamo in vendita un luminoso e spazioso appartamento tricamere sviluppato al piano terra di una bifamiliare in orizzontale. La soluzione si distingue per l'eccellente indipendenza e l'ottima distribuzione degli spazi interni.\n\nZona giorno: ingresso con funzionale disimpegno, ampia cucina abitabile e luminoso soggiorno separato.\n\nZona notte: tre grandi camere da letto matrimoniali e un bagno.\n\nSpazi esterni: ampio giardino in comune tra le sole due unità, mantenendo comunque un'ottima autonomia grazie agli ingressi carrabili separati e indipendenti.\n\nPertinenze: grandissima cantina al piano seminterrato e garage di proprietà.\n\nUtenze completamente autonome. Spese condominiali quasi nulle, limitate unicamente all'illuminazione delle parti comuni. Costruzione del 1964, classe energetica in fase di redazione.\n\nPer maggiori informazioni o per prenotare una visita, contattaci in agenzia.",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-541/01.webp",
+      "alt": "Appartamento tricamere in vendita a Pordenone",
+      "width": 1280,
+      "height": 960
+    },
+    "images": [
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-541/01.webp",
+        "alt": "Appartamento tricamere in vendita a Pordenone",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-541/02.webp",
+        "alt": "Appartamento tricamere in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-541/03.webp",
+        "alt": "Appartamento tricamere in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-541/04.webp",
+        "alt": "Appartamento tricamere in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-541/05.webp",
+        "alt": "Appartamento tricamere in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-541/06.webp",
+        "alt": "Appartamento tricamere in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-541/07.webp",
+        "alt": "Appartamento tricamere in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-541/08.webp",
+        "alt": "Appartamento tricamere in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-541/09.webp",
+        "alt": "Appartamento tricamere in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-541/10.webp",
+        "alt": "Appartamento tricamere in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-541/11.webp",
+        "alt": "Appartamento tricamere in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-541/12.webp",
+        "alt": "Appartamento tricamere in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-541/13.webp",
+        "alt": "Appartamento tricamere in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-541/14.webp",
+        "alt": "Appartamento tricamere in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-541/15.webp",
+        "alt": "Appartamento tricamere in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-541/16.webp",
+        "alt": "Appartamento tricamere in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-541/17.webp",
+        "alt": "Appartamento tricamere in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-541/18.webp",
+        "alt": "Appartamento tricamere in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-541/19.webp",
+        "alt": "Appartamento tricamere in vendita a Pordenone",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-541/20.webp",
+        "alt": "Appartamento tricamere in vendita a Pordenone",
+        "width": 1280,
+        "height": 960
+      }
+    ]
   }
 ]
