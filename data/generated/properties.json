@@ -8410,5 +8410,108 @@
         "height": 960
       }
     ]
+  },
+  {
+    "id": "C-277",
+    "slug": "c-277",
+    "title": "Porzione di bifamiliare in vendita a Prata",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Casa bifamiliare",
+    "publicationDate": null,
+    "featuredHome": false,
+    "homeOrder": null,
+    "usafEligible": false,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Prata di Pordenone",
+      "provincia": "Pordenone",
+      "zona": null,
+      "address": null,
+      "showAddress": false
+    },
+    "price": 270000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 163,
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "floor": "Disposta su 2 livelli",
+    "buildingFloors": null,
+    "constructionYear": null,
+    "energy": null,
+    "garage": true,
+    "garageType": null,
+    "parkingSpot": false,
+    "parkingSpotCovered": false,
+    "garden": true,
+    "gardenSurface": null,
+    "terrace": true,
+    "terraceSurface": null,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": false,
+    "cellar": true,
+    "airConditioning": false,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": null,
+    "otherFeatures": [
+      "Porzione di bifamiliare",
+      "Zona centrale",
+      "Disposta su 2 livelli",
+      "163 mq",
+      "Ingresso",
+      "Zona giorno luminosa",
+      "Cucina separata",
+      "Tre camere da letto",
+      "Disimpegno",
+      "Terrazzo",
+      "Garage",
+      "Cantina",
+      "Ripostigli",
+      "Lavanderia",
+      "Giardino recintato",
+      "Disponibile in tempi brevi",
+      "Vendita in esclusiva"
+    ],
+    "shortDescription": "Porzione di bifamiliare di 163 mq in vendita in esclusiva a Prata di Pordenone, in zona centrale, su due livelli con tre camere, garage, cantina e giardino recintato.",
+    "description": "A Prata di Pordenone, zona centrale, proponiamo in vendita esclusiva una spaziosa porzione di bifamiliare disposta su due livelli.\n\nLa proprietà offre una distribuzione funzionale degli spazi: al piano primo ingresso, zona giorno luminosa, cucina separata, tre camere da letto, bagno, disimpegno e terrazzo; al piano terra comodi locali accessori tra cui garage, cantina, ripostigli e lavanderia. Completa la proprietà un giardino recintato.\n\nL'immobile è disponibile in tempi brevi.\n\nVuoi conoscere tutti i dettagli e visionare ulteriore materiale fotografico? Ti aspettiamo di persona in agenzia per fornirti tutte le informazioni del caso e fissare una visita sul posto. Contattaci subito per fissare un appuntamento!",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-277/01.webp",
+      "alt": "Porzione di bifamiliare in vendita a Prata",
+      "width": 2000,
+      "height": 1500
+    },
+    "images": [
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-277/01.webp",
+        "alt": "Porzione di bifamiliare in vendita a Prata",
+        "width": 2000,
+        "height": 1500
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-277/02.webp",
+        "alt": "Porzione di bifamiliare in vendita a Prata",
+        "width": 2000,
+        "height": 1500
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/c-277/03.webp",
+        "alt": "Porzione di bifamiliare in vendita a Prata",
+        "width": 2000,
+        "height": 1500
+      }
+    ]
   }
 ]
