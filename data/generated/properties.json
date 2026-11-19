@@ -8716,5 +8716,327 @@
         "height": 960
       }
     ]
+  },
+  {
+    "id": "A-333",
+    "slug": "a-333",
+    "title": "Ampio appartamento in vendita a Brugnera",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Appartamento",
+    "publicationDate": null,
+    "featuredHome": false,
+    "homeOrder": null,
+    "usafEligible": false,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Brugnera",
+      "provincia": "Pordenone",
+      "zona": "Maron",
+      "address": null,
+      "showAddress": false
+    },
+    "price": 270000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 176,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "floor": "Piano primo",
+    "buildingFloors": 2,
+    "constructionYear": null,
+    "energy": null,
+    "garage": true,
+    "garageType": "Garage di 27 mq",
+    "parkingSpot": false,
+    "parkingSpotCovered": false,
+    "garden": false,
+    "gardenSurface": null,
+    "terrace": false,
+    "terraceSurface": null,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": false,
+    "cellar": true,
+    "airConditioning": false,
+    "furnished": true,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": "Autonomo",
+    "otherFeatures": [
+      "176 mq",
+      "Primo piano di una palazzina di soli due piani",
+      "Stabile di fine anni 80",
+      "Completamente ristrutturato",
+      "Zona centrale e comoda a tutti i servizi",
+      "Ampio ingresso",
+      "Disimpegno",
+      "Cucina",
+      "Soggiorno-salotto di 39 mq",
+      "Tre camere matrimoniali",
+      "Due bagni",
+      "Ripostiglio",
+      "Garage di 27 mq",
+      "Cantina di 18 mq",
+      "Giardino condominiale",
+      "Ampio parcheggio",
+      "Venduto arredato",
+      "Arredo moderno del 2020",
+      "Termoautonomo",
+      "Minime spese condominiali"
+    ],
+    "shortDescription": "Ampio appartamento ristrutturato di 176 mq in vendita a Maron di Brugnera, al primo piano, con tre camere, due bagni, garage, cantina e arredo moderno incluso.",
+    "description": "A Maron di Brugnera, in zona centrale e comoda a tutti i servizi, proponiamo in vendita un luminoso ed ampio appartamento di 176 mq posto al primo piano di una palazzina di soli due piani (piano terra e primo piano), in stabile di fine anni '80, completamente ristrutturato.\n\nUna soluzione dagli spazi generosi e ben organizzati, ideale per chi cerca metratura, praticità quotidiana e contenimento dei costi: ampio ingresso, disimpegno, cucina, soggiorno-salotto di 39 mq perfetto per vivere gli spazi con comodità, tre camere matrimoniali e due bagni, oltre a un utile ripostiglio.\n\nCompletano la proprietà un garage di 27 mq e una cantina di 18 mq al piano terra, con giardino condominiale e ampio parcheggio disponibile.\n\nL'appartamento viene venduto arredato, con arredo moderno acquistato nel 2020. Termoautonomo, con minime spese condominiali.\n\nUn'abitazione ampia e funzionale in posizione strategica a Maron di Brugnera, con metrature e pertinenze oggi poco comuni.\n\nContattaci in agenzia per ricevere maggiori dettagli o programmare una visita.",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/01.webp",
+      "alt": "Ampio appartamento in vendita a Brugnera",
+      "width": 1280,
+      "height": 960
+    },
+    "images": [
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/01.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/02.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/03.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/04.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/05.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/06.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/07.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/08.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/09.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/10.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/11.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/12.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/13.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/14.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/15.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/16.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/17.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/18.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/19.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/20.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/21.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/22.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/23.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/24.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/25.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/26.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/27.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/28.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/29.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/30.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/31.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/32.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/33.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/34.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/35.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/36.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/37.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/38.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-333/39.webp",
+        "alt": "Ampio appartamento in vendita a Brugnera",
+        "width": 960,
+        "height": 1280
+      }
+    ]
   }
 ]
