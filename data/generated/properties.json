@@ -9038,5 +9038,250 @@
         "height": 1280
       }
     ]
+  },
+  {
+    "id": "AA-587",
+    "slug": "aa-587",
+    "title": "Attico su due livelli in vendita a Pordenone",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Attico",
+    "publicationDate": null,
+    "featuredHome": false,
+    "homeOrder": null,
+    "usafEligible": false,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Pordenone",
+      "provincia": "Pordenone",
+      "zona": null,
+      "address": null,
+      "showAddress": false
+    },
+    "price": null,
+    "priceOnRequest": true,
+    "monthlyRent": null,
+    "monthlyCondoFees": null,
+    "surface": 194,
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "floor": "6° piano",
+    "buildingFloors": null,
+    "constructionYear": null,
+    "energy": {
+      "class": "C",
+      "ipe": 122.23
+    },
+    "garage": true,
+    "garageType": "Garage interrato di 18 mq",
+    "parkingSpot": false,
+    "parkingSpotCovered": false,
+    "garden": false,
+    "gardenSurface": null,
+    "terrace": true,
+    "terraceSurface": 25,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": true,
+    "cellar": false,
+    "airConditioning": false,
+    "furnished": false,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": null,
+    "otherFeatures": [
+      "Attico su due livelli",
+      "Ingresso privato",
+      "Sesto piano con ascensore",
+      "194 mq",
+      "Soggiorno-pranzo",
+      "Grande terrazzo in parte coperto con travatura a vista",
+      "Ampie vetrate",
+      "Ampia cucina",
+      "Lavanderia con doccia",
+      "Scala interna",
+      "Tre camere",
+      "Bagno padronale con vasca idromassaggio",
+      "Secondo bagno con doccia",
+      "Terrazzo principale di 25 mq",
+      "Altri spazi esterni per 11,60 mq",
+      "Garage interrato di 18 mq",
+      "Classe energetica C",
+      "Visite riservate"
+    ],
+    "shortDescription": "Attico di 194 mq su due livelli in vendita a Pordenone, con ingresso privato al sesto piano, grande terrazzo, tre camere, tre bagni e garage interrato.",
+    "description": "A Pordenone proponiamo in vendita un prestigioso attico di 194 mq disposto su due livelli, con ingresso privato al sesto piano servito da ascensore. Una soluzione di grande personalità, pensata per chi cerca spazi ampi, luminosi e di pregio.\n\nLivello d'ingresso (zona giorno): ingresso con ampia zona soggiorno-pranzo che si apre su un grande terrazzo, in parte coperto con suggestiva travatura a vista e ampie vetrate. Completano il piano un disimpegno, un bagno, un'ampia cucina e una lavanderia con doccia.\n\nLivello inferiore (zona notte): scendendo la scala interna si accede alla zona notte, composta da 3 camere, ampio disimpegno, bagno padronale con vasca idromassaggio nella camera principale e un secondo bagno con doccia.\n\nCompletano la proprietà un garage al piano interrato di 18 mq e un terrazzo principale di 25 mq, oltre a due ulteriori spazi esterni per complessivi 11,60 mq.\n\nCaratteristiche principali: superficie di 194 mq su due livelli, classe energetica C (122,23 kWh/m² anno), ingresso privato, ascensore, terrazzi e garage.\n\nPer informazioni e per fissare un appuntamento, contattaci in agenzia: saremo lieti di organizzare una visita riservata.",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/01.webp",
+      "alt": "Attico su due livelli in vendita a Pordenone",
+      "width": 1448,
+      "height": 1086
+    },
+    "images": [
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/01.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1448,
+        "height": 1086
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/02.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1086,
+        "height": 1448
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/03.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1086,
+        "height": 1448
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/04.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1086,
+        "height": 1448
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/05.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1086,
+        "height": 1448
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/06.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1448,
+        "height": 1086
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/07.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1086,
+        "height": 1448
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/08.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1086,
+        "height": 1448
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/09.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1086,
+        "height": 1448
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/10.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1448,
+        "height": 1086
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/11.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1448,
+        "height": 1086
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/12.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1086,
+        "height": 1448
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/13.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1086,
+        "height": 1448
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/14.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1086,
+        "height": 1448
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/15.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1448,
+        "height": 1086
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/16.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1086,
+        "height": 1448
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/17.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1448,
+        "height": 1086
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/18.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1086,
+        "height": 1448
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/19.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1086,
+        "height": 1448
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/20.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1086,
+        "height": 1448
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/21.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1086,
+        "height": 1448
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/22.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1448,
+        "height": 1086
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/23.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1448,
+        "height": 1086
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/24.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1448,
+        "height": 1086
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/25.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1086,
+        "height": 1448
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/aa-587/26.webp",
+        "alt": "Attico su due livelli in vendita a Pordenone",
+        "width": 1086,
+        "height": 1448
+      }
+    ]
   }
 ]
