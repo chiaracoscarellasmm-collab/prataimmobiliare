@@ -9283,5 +9283,179 @@
         "height": 1448
       }
     ]
+  },
+  {
+    "id": "A-277",
+    "slug": "a-277",
+    "title": "Appartamento arredato in vendita a Prata",
+    "visible": true,
+    "status": "Disponibile",
+    "transactionType": "vendita",
+    "propertyType": "Appartamento",
+    "publicationDate": null,
+    "featuredHome": false,
+    "homeOrder": null,
+    "usafEligible": false,
+    "newDevelopment": false,
+    "projectName": null,
+    "location": {
+      "comune": "Prata di Pordenone",
+      "provincia": "Pordenone",
+      "zona": "Semicentro",
+      "address": null,
+      "showAddress": false
+    },
+    "price": 90000,
+    "priceOnRequest": false,
+    "monthlyRent": null,
+    "monthlyCondoFees": 130,
+    "surface": 57,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "floor": "Piano primo",
+    "buildingFloors": null,
+    "constructionYear": 1982,
+    "energy": {
+      "class": "E",
+      "ipe": null
+    },
+    "garage": false,
+    "garageType": null,
+    "parkingSpot": true,
+    "parkingSpotCovered": true,
+    "garden": false,
+    "gardenSurface": null,
+    "terrace": true,
+    "terraceSurface": null,
+    "balcony": false,
+    "porch": false,
+    "porchSurface": null,
+    "elevator": false,
+    "cellar": true,
+    "airConditioning": false,
+    "furnished": true,
+    "photovoltaic": false,
+    "pool": false,
+    "heating": "Centralizzato",
+    "otherFeatures": [
+      "Bilocale",
+      "Semicentro",
+      "Libero subito",
+      "Arredato",
+      "Open space con cucina a vista",
+      "Terrazzo",
+      "Disimpegno con armadiatura",
+      "Camera matrimoniale",
+      "Bagno finestrato con vasca",
+      "Bagno rimodernato",
+      "Serramenti esterni appena sostituiti",
+      "Tetto condominiale rifatto due anni fa",
+      "Cantina di 3,20 mq al piano seminterrato",
+      "Posto auto coperto di 19,50 mq",
+      "Ampio parcheggio esterno",
+      "Riscaldamento centralizzato",
+      "Spese condominiali circa 130 euro al mese, riscaldamento e acqua inclusi",
+      "Costruzione del 1982",
+      "Ideale prima casa o investimento"
+    ],
+    "shortDescription": "Bilocale arredato di 57 mq in vendita a Prata di Pordenone, al primo piano, con terrazzo, cantina e ampio posto auto coperto. Libero subito.",
+    "description": "A Prata, in semicentro e in posizione comoda ai principali servizi, proponiamo in vendita un bilocale arredato con terrazzo, cantina e ampio posto auto coperto, libero subito. Un immobile che si distingue per la distribuzione razionale e funzionale degli ambienti e per l'ampia generosità degli spazi.\n\nZona giorno: open space con ingresso diretto su un ambiente unico con cucina a vista, zona pranzo e soggiorno, con sfogo esterno su un terrazzo.\n\nZona notte: ampio disimpegno arredato con armadiatura, spaziosa camera matrimoniale e bagno finestrato dotato di vasca.\n\nPertinenze eccezionali: completano la proprietà una cantina di 3,20 m² al piano seminterrato e un posto auto coperto di ben 19,50 m². Grazie alla metratura particolarmente generosa, lo spazio coperto consente di parcheggiare comodamente l'auto mantenendo ancora ampio margine per ospitare biciclette, una moto, scaffalature o i bidoni della raccolta differenziata. Disponibile inoltre un ampio parcheggio esterno.\n\nI serramenti esterni sono stati appena sostituiti e hanno permesso di migliorare la prestazione energetica passando in classe E; il bagno è stato rimodernato, con sanitari e rubinetterie sostituiti da poco; il tetto condominiale è stato rifatto due anni fa.\n\nIl riscaldamento è centralizzato. Le spese condominiali medie ammontano a circa € 130 al mese e comprendono già i consumi di riscaldamento, acqua calda e acqua fredda (impianti centralizzati), oltre a luce e pulizia scale, assicurazione fabbricato, amministrazione, spese postali e bancarie. L'unica utenza autonoma è quella dell'energia elettrica.\n\nIdeale come prima casa pronta da abitare o come investimento a reddito. Definizione immediata.\n\nContattaci per maggiori informazioni o per fissare un appuntamento di visita!",
+    "videoUrl": null,
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "coverImage": {
+      "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-277/01.webp",
+      "alt": "Appartamento arredato in vendita a Prata",
+      "width": 960,
+      "height": 1280
+    },
+    "images": [
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-277/01.webp",
+        "alt": "Appartamento arredato in vendita a Prata",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-277/02.webp",
+        "alt": "Appartamento arredato in vendita a Prata",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-277/03.webp",
+        "alt": "Appartamento arredato in vendita a Prata",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-277/04.webp",
+        "alt": "Appartamento arredato in vendita a Prata",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-277/05.webp",
+        "alt": "Appartamento arredato in vendita a Prata",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-277/06.webp",
+        "alt": "Appartamento arredato in vendita a Prata",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-277/07.webp",
+        "alt": "Appartamento arredato in vendita a Prata",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-277/08.webp",
+        "alt": "Appartamento arredato in vendita a Prata",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-277/09.webp",
+        "alt": "Appartamento arredato in vendita a Prata",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-277/10.webp",
+        "alt": "Appartamento arredato in vendita a Prata",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-277/11.webp",
+        "alt": "Appartamento arredato in vendita a Prata",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-277/12.webp",
+        "alt": "Appartamento arredato in vendita a Prata",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-277/13.webp",
+        "alt": "Appartamento arredato in vendita a Prata",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "src": "https://pub-8bd8bc4abefe419790c3af9523ac4876.r2.dev/immobili/a-277/14.webp",
+        "alt": "Appartamento arredato in vendita a Prata",
+        "width": 1280,
+        "height": 960
+      }
+    ]
   }
 ]
